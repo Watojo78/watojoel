@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.18 60.18">
+  <g id="Calque_1-2" data-name="Calque 1">
+    <circle cx="30.09" cy="30.09" r="29.75" style="stroke: #000; stroke-width: .68px;"/>
+    <circle cx="23.94" cy="23.94" r="4.1" style="fill: #fff;"/>
+    <circle cx="23.87" cy="24.23" r="2" style="fill: #fff;"/>
+    <ellipse cx="35.63" cy="36.1" rx="3.19" ry="2.5" transform="translate(-11.37 55.17) rotate(-67.46)" style="fill: #8f85ac;"/>
+    <path d="m32.48,34.88c-3.01,4.38-4.22,4.22-4.79,3.42-.34.68-.75,1.23-1.03,2.05-.34,1.03,1.03,2.05,2.05,2.39,1.03.34,5.81-1.37,6.84-2.05,1.03-.68,3.76-2.73,4.1-4.1.34-1.37.68-7.86.68-8.55s.34-1.37,0-2.39c-.27-.82-1.71-.57-2.39-.34-.23.57-.82,1.91-1.37,2.74-.68,1.03-.34,1.37-4.1,6.84Z" style="fill: #494067;"/>
+  </g>
+</svg>

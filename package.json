@@ -19,10 +19,11 @@
     "@angular/platform-browser-dynamic": "^19.0.6",
     "@angular/router": "^19.0.6",
     "@primeng/themes": "^19.0.5",
-    "perfect-scrollbar": "^1.5.6",
+    "primeicons": "^7.0.0",
     "primeng": "^19.0.5",
     "quill": "^2.0.3",
     "rxjs": "~7.8.0",
+    "simplebar-angular": "^3.3.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
   },

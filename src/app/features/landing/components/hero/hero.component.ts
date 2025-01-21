@@ -1,8 +1,10 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'landing-hero',
-  imports: [],
+  imports: [RouterLink, ButtonModule],
   standalone: true,
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',

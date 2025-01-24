@@ -1,7 +1,7 @@
 import { RouterLink } from '@angular/router';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { LandingProjectCardMinimalComponent } from "../landing-project-card-minimal/landing-project-card-minimal.component";
 import { ButtonModule } from 'primeng/button';
+import { LandingProjectCardMinimalComponent } from './landing-project-card-minimal/landing-project-card-minimal.component';
 
 @Component({
   selector: 'landing-recent-projects',

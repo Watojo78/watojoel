@@ -14,6 +14,7 @@ body {
 }
 
 html {
+  scroll-behavior: smooth;
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
 }
@@ -78,4 +79,5 @@ i{
 
 .p-button{
   width: 100%;
+  //border-radius: 10px !important;
 }

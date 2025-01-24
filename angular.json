@@ -66,6 +66,10 @@
             },
             "development": {
               "buildTarget": "watojoel:build:development"
+            },
+            "mock": {
+              "buildTarget": "watojoel:build:development",
+              "proxyConfig": "src/app/mocks/proxy.config.json"
             }
           },
           "defaultConfiguration": "development"

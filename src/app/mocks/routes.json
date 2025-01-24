@@ -1,0 +1,135 @@
+[
+  {
+    "method": "GET",
+    "path": "/testimonies",
+    "handler": "/testimonies"
+  },
+  {
+    "method": "GET",
+    "path": "/testimonies/:id",
+    "handler": "/testimonies"
+  },
+  {
+    "method": "POST",
+    "path": "/testimonies",
+    "handler": "/testimonies"
+  },
+  {
+    "method": "PUT",
+    "path": "/testimonies/:id",
+    "handler": "/testimonies"
+  },
+  {
+    "method": "DELETE",
+    "path": "/testimonies/:id",
+    "handler": "/testimonies"
+  },
+  
+
+  {
+    "method": "GET",
+    "path": "/projects",
+    "handler": "/projects"
+  },
+  {
+    "method": "GET",
+    "path": "/projects/:id",
+    "handler": "/projects"
+  },
+  {
+    "method": "POST",
+    "path": "/projects",
+    "handler": "/projects"
+  },
+  {
+    "method": "PUT",
+    "path": "/projects/:id",
+    "handler": "/projects"
+  },
+  {
+    "method": "DELETE",
+    "path": "/projects/:id",
+    "handler": "/projects"
+  },
+
+
+  {
+    "method": "GET",
+    "path": "/about",
+    "handler": "/about"
+  },
+  {
+    "method": "GET",
+    "path": "/about/:id",
+    "handler": "/about"
+  },
+  {
+    "method": "POST",
+    "path": "/about",
+    "handler": "/about"
+  },
+  {
+    "method": "PUT",
+    "path": "/about/:id",
+    "handler": "/about"
+  },
+  {
+    "method": "DELETE",
+    "path": "/about/:id",
+    "handler": "/about"
+  },
+
+
+  {
+    "method": "GET",
+    "path": "/experiences",
+    "handler": "/experiences"
+  },
+  {
+    "method": "GET",
+    "path": "/experiences/:id",
+    "handler": "/experiences"
+  },
+  {
+    "method": "POST",
+    "path": "/experiences",
+    "handler": "/experiences"
+  },
+  {
+    "method": "PUT",
+    "path": "/experiences/:id",
+    "handler": "/experiences"
+  },
+  {
+    "method": "DELETE",
+    "path": "/experiences/:id",
+    "handler": "/experiences"
+  },
+
+  
+  {
+    "method": "GET",
+    "path": "/techstack",
+    "handler": "/techStack"
+  },
+  {
+    "method": "GET",
+    "path": "/techstack/:id",
+    "handler": "/techstack"
+  },
+  {
+    "method": "POST",
+    "path": "/techstack",
+    "handler": "/techstack"
+  },
+  {
+    "method": "PUT",
+    "path": "/techstack/:id",
+    "handler": "/techstack"
+  },
+  {
+    "method": "DELETE",
+    "path": "/techstack/:id",
+    "handler": "/techstack"
+  }
+]

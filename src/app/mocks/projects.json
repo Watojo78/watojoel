@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Portfolio Website",
+        "description": "This is my personal portfolio website, built with Angular.",
+        "technologies": [
+            1,
+            4,
+            8,
+            9
+        ],
+        "imageUrl": "path/to/image1.jpg",
+        "githubUrl": "https://github.com/watojoel/portfolio"
+    },
+    {
+        "id": 2,
+        "name": "E-commerce App",
+        "description": "A simple e-commerce application built with React.",
+        "technologies": [
+            2,
+            3,
+            5
+        ],
+        "imageUrl": "path/to/image2.jpg",
+        "githubUrl": "https://github.com/watojoel/e-commerce-app"
+    }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "role": "Client",
+    "testimonial": "Watojoel did an excellent job on my website. Highly recommended!"
+  },
+  {
+    "id": 2,
+    "name": "Jane Doe",
+    "role": "Colleague",
+    "testimonial": "Watojoel is a skilled and dedicated developer. It was a pleasure working with them."
+  }
+]

@@ -1,0 +1,38 @@
+.recent-projects{
+  &-wrapper{
+      width: 100%;
+      display: flex;
+      row-gap: 2.1rem;
+      flex-direction: column;
+  }
+
+  &-header{
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+
+      h3{
+          font-size: 32px;
+          display: flex;
+          align-items: center;
+          column-gap: 1rem;
+          font-family: 'Gilroy-Medium', Inter;
+      }
+
+      i{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+  }
+
+  &-grid{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      row-gap: 2.1rem;
+  }
+}

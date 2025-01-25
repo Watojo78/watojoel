@@ -1,0 +1,122 @@
+{
+  "about": [
+    {
+      "id": 1,
+      "fullname": "Joel Wafo Tokam",
+      "bio": "I am a passionate and skilled web developer with a strong focus on building user-friendly and high-quality applications.",
+      "profilePicture": "path/to/profile.jpg",
+      "contact": {
+        "email": "watojoel@example.com",
+        "linkedin": "https://www.linkedin.com/in/watojoel/",
+        "github": "https://github.com/Watojo78"
+      }
+    },
+    {
+      "id": 2,
+      "fullname": "Joel Wafo Tokam",
+      "bio": "I am a passionate and skilled mobile developer with a strong focus on building user-friendly and high-quality applications.",
+      "profilePicture": "path/to/profile.jpg",
+      "contact": {
+        "email": "watojoel@example.com",
+        "linkedin": "https://www.linkedin.com/in/watojoel/",
+        "github": "https://github.com/Watojo78"
+      }
+    }
+  ],
+  "experiences": [
+    {
+      "id": 1,
+      "institution": "University of XYZ",
+      "degree": "Bachelor of Science in Computer Science",
+      "startDate": "2018-09-01",
+      "endDate": "2022-05-31",
+      "description": "Relevant coursework in software engineering, data structures, and algorithms."
+    },
+    {
+      "id": 2,
+      "institution": "XYZ High School",
+      "degree": "High School Diploma",
+      "startDate": "2014-09-01",
+      "endDate": "2018-05-31"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "Portfolio Website",
+      "description": "This is my personal portfolio website, built with Angular.",
+      "technologies": [
+        1,
+        4,
+        8,
+        9
+      ],
+      "imageUrl": "path/to/image1.jpg",
+      "githubUrl": "https://github.com/watojoel/portfolio"
+    },
+    {
+      "id": 2,
+      "name": "E-commerce App",
+      "description": "A simple e-commerce application built with React.",
+      "technologies": [
+        2,
+        3,
+        5
+      ],
+      "imageUrl": "path/to/image2.jpg",
+      "githubUrl": "https://github.com/watojoel/e-commerce-app"
+    }
+  ],
+  "techStack": [
+    {
+      "id": 1,
+      "name": "Angular"
+    },
+    {
+      "id": 2,
+      "name": "React"
+    },
+    {
+      "id": 3,
+      "name": "JavaScript"
+    },
+    {
+      "id": 4,
+      "name": "TypeScript"
+    },
+    {
+      "id": 5,
+      "name": "Node.js"
+    },
+    {
+      "id": 6,
+      "name": "Python"
+    },
+    {
+      "id": 7,
+      "name": "Java"
+    },
+    {
+      "id": 8,
+      "name": "HTML"
+    },
+    {
+      "id": 9,
+      "name": "CSS"
+    }
+  ],
+  "testimonies": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "role": "Client",
+      "testimonial": "Watojoel did an excellent job on my website. Highly recommended!"
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "role": "Colleague",
+      "testimonial": "Watojoel is a skilled and dedicated developer. It was a pleasure working with them."
+    }
+  ]
+}

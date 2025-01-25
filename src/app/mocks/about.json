@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "fullname": "Joel Wafo Tokam",
+        "bio": "I am a passionate and skilled web developer with a strong focus on building user-friendly and high-quality applications.",
+        "profilePicture": "path/to/profile.jpg",
+        "contact": {
+            "email": "watojoel@example.com",
+            "linkedin": "https://www.linkedin.com/in/watojoel/",
+            "github": "https://github.com/Watojo78"
+        }
+    },
+    {
+        "id": 2,
+        "fullname": "Joel Wafo Tokam",
+        "bio": "I am a passionate and skilled mobile developer with a strong focus on building user-friendly and high-quality applications.",
+        "profilePicture": "path/to/profile.jpg",
+        "contact": {
+            "email": "watojoel@example.com",
+            "linkedin": "https://www.linkedin.com/in/watojoel/",
+            "github": "https://github.com/Watojo78"
+        }
+    }
+]

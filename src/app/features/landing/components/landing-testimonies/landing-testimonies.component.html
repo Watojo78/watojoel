@@ -1,0 +1,27 @@
+<div class="testimonies-container">
+    <div class="testimonies-header">
+         <h3>
+             <!--<img src="../../../../../assets/common/icons/comment-quote.svg" alt="" height="40">-->
+             <i class="fi fi-sr-comment-quote"></i>
+             <span>Témoignages récents</span>
+         </h3>
+    </div>
+    <div class="testimonies-wrapper">
+        <!--<div class="testimonies-grid">
+            <landing-testimony-card></landing-testimony-card>
+            <landing-testimony-card></landing-testimony-card>
+            <landing-testimony-card></landing-testimony-card>
+            <landing-testimony-card></landing-testimony-card>
+            <landing-testimony-card></landing-testimony-card>
+        </div>-->
+        <p-carousel 
+            [numVisible]="4" 
+            [numScroll]="3" 
+            [circular]="true"
+            [responsiveOptions]="responsiveOptions">
+            @for (testimony of testimonies; track $index) {
+                <landing-testimony-card></landing-testimony-card>
+            }
+        </p-carousel>
+    </div>
+</div>

@@ -79,5 +79,16 @@ i{
 
 .p-button{
   width: 100%;
-  //border-radius: 10px !important;
+}
+
+.landing-menu, .cta-one{
+  .p-button{
+    aspect-ratio: 1;
+  }
+}
+
+.sendinfos-wrapper{
+  .p-button{
+    border-radius: 14px !important;
+  }
 }

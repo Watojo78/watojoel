@@ -19,6 +19,7 @@
   &-nav{
       column-gap: 1.6rem;
   }
+
 }
 
 .nav{
@@ -31,6 +32,15 @@
           align-items: center;
           justify-content: center;
       }
+  }
+}
+
+.nav-sub{
+  &.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .7rem;
   }
 }
 
@@ -52,12 +62,14 @@
 }
 
 i{
-  font-size: 18px;
+  font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 a { color: black; }
+
+
 
 

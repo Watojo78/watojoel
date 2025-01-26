@@ -3,7 +3,8 @@
         <img src="../../../../../assets/common/logo/logo.png" alt="wtjoel_logo" height="28">
     </a>
     <div class="header-nav">
-        <a routerLink="/home" class="nav-sub">
+        <a routerLink="/home" class="nav-sub home">
+            <i class="fi fi-sr-house-chimney-crack"></i>
             <span>Accueil</span>
         </a>
         <a routerLink="/about-me" class="nav-sub">
@@ -12,12 +13,11 @@
         <a routerLink="/projects" class="nav-sub">
             <span>Projets</span>
         </a>
-        <a routerLink="/contact" class="nav-sub">
+        <a routerLink="/contact" class="nav-sub landing-menu">
             <p-button  
                 [rounded]="true"
-                severity="success">
-                <i class="fi fi-sr-mobile-button"></i>
-                <span>Me Joindre</span>
+                severity="secondary">
+                <i class="fi fi-sr-apps"></i>
             </p-button>
         </a>
     </div>

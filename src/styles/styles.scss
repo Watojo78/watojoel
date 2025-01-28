@@ -1,4 +1,11 @@
-@import "primeicons/primeicons.css";
+//Fonts and Icons import
+@use "primeicons/primeicons.css" as primeicons;
+@use '../assets/fonts/gilroy/gilroy.scss' as gilroy;
+@use '../assets/fonts/montserrat/montserrat.scss' as montserrat;
+@use '../assets/fonts/samsung/samsung-sharp-sans.scss' as samsungsharpsans;
+@use '../assets/fonts/Mogilte/moglite.scss' as moglite;
+@use '../assets/fonts/Gloock/gloock.scss' as gloock;
+@use '../assets/fonts/lcmogi/lcmogi.scss' as lcmogi;
 
 * {
   font-family: "Gilroy-Medium", Inter;

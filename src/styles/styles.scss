@@ -7,6 +7,10 @@
 @use '../assets/fonts/Gloock/gloock.scss' as gloock;
 @use '../assets/fonts/lcmogi/lcmogi.scss' as lcmogi;
 
+//tailwind utils and compnonents
+@tailwind components;
+@tailwind utilities;
+
 * {
   font-family: "Gilroy-Medium", Inter;
 }

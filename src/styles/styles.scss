@@ -11,12 +11,8 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  font-family: "Gilroy-Medium", Inter;
-}
-
+* { font-family: "Gilroy-Medium", Inter; }
 body::-webkit-scrollbar { display: none; }
-
 a { text-decoration: none; }
 
 html,

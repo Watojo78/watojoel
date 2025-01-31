@@ -1,17 +1,26 @@
 [
-    {
-        "id": 1,
-        "institution": "University of XYZ",
-        "degree": "Bachelor of Science in Computer Science",
-        "startDate": "2018-09-01",
-        "endDate": "2022-05-31",
-        "description": "Relevant coursework in software engineering, data structures, and algorithms."
-    },
-    {
-        "id": 2,
-        "institution": "XYZ High School",
-        "degree": "High School Diploma",
-        "startDate": "2014-09-01",
-        "endDate": "2018-05-31"
-    }
+  {
+    "id": 1,
+    "institution": "Institut Universitaire Technologique",
+    "degree": "Bachelor of Science in Software Engineering",
+    "startDate": "2018-09-01",
+    "endDate": "2022-05-31",
+    "description": "Relevant coursework in software engineering, data structures, and algorithms."
+  },
+  {
+    "id": 2,
+    "institution": "Institut Universitaire Technologique",
+    "degree": "High School Diploma",
+    "startDate": "2014-09-01",
+    "endDate": "2018-05-31",
+    "description": "Relevant coursework in Computer engineering."
+  },
+  {
+    "id": 3,
+    "institution": "EPFL",
+    "degree": "Professional certificate",
+    "startDate": "2014-09-01",
+    "endDate": "2018-05-31",
+    "description": "Relevant coursework in Java etc."
+  }
 ]

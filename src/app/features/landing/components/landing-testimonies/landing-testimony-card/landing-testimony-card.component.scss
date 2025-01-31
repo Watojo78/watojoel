@@ -1,47 +1,43 @@
-.testimony-card{
-  &, &-wrapper, &-profile, &-message{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
+.testimony-card {
+	padding: 1rem;
+	&,
+	&-profile,
+	&-message {
+		display: flex;
+		align-items: center;
+	}
 
-  &-wrapper, &-profile, &-message{
-      flex-direction: column;
-  }
+	&,
+	&-message {
+		flex-direction: column;
+	}
 
-  &-wrapper{
-      width: 280px;
-      gap: 1.21rem;
-      padding: 1.4rem;
-      border-radius: 32px;
-      border: 2px dotted rgba(181, 179, 179, 0.499); 
-  }
+	&-message,
+	&-profile{
+		width: 100%;
+	}
 
-  &-profile{  
-      gap: .42rem;
-      h4{font-size: 18.2px;}
-      span{font-size: 17.5px;}
-  }
+	&-profile {
+		gap: 0.42rem;
+		justify-content: space-between;
 
-  &-message{
-      gap: .8rem;
-      width: 100%; 
-  }
+		h4 {
+			font-size: 18.2px;
+		}
+
+		span {
+			font-size: 17.5px;
+		}
+	}
+
+	&-message {
+		gap: 0.8rem;
+		width: 100%;
+	}
 }
 
-.profile{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: .28rem;
-  border-radius: 50%;
-  aspect-ratio: 1/1;
-  border: 1.6px dotted rgba(181, 179, 179, 0.499);
-
-  & img{
-      overflow: hidden;
-      aspect-ratio: 1/1;
-      border-radius: 200px;
-  }
+.role-name {
+	gap: 0.8rem;
+	display: flex;
+	flex-direction: column;
 }
-

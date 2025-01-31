@@ -1,4 +1,3 @@
-@if (testimony) {
 <div class="testimony-card rounded-3xl shadow flex flex-grow">
   <div class="testimony-card-message ">
     <p>{{testimony.testimonial}}</p>
@@ -13,22 +12,3 @@
     <img src="../../../../../assets/images/sample_ppfinal.png" alt="testimony-profile-sample" height="56">
   </div>
 </div>
-}
-@else {
-<div class="testimony-card rounded-3xl shadow flex flex-grow">
-  <div class="testimony-card-message ">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatem adipisci debitis corrupti veniam
-      tempora, odit quisquam aspernatur inventore saepe, placeat ipsam pariatur aut ad labore. Vero sunt aspernatur
-      aperiam.</p>
-    <p-rating [(ngModel)]="value" [stars]="5" [readonly]="true" />
-  </div>
-  <p-divider class="my-2" />
-  <div class="testimony-card-profile">
-    <div class="role-name">
-      <h4 class="title">Developer</h4>
-      <span class="fullname">Watojo Fokamel</span>
-    </div>
-    <img src="../../../../../assets/images/sample_ppfinal.png" alt="testimony-profile-sample" height="56">
-  </div>
-</div>
-}

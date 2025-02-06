@@ -20,6 +20,7 @@
     "@angular/platform-browser": "^19.0.6",
     "@angular/platform-browser-dynamic": "^19.0.6",
     "@angular/router": "^19.0.6",
+    "@flaticon/flaticon-uicons": "^3.3.1",
     "@primeng/themes": "^19.0.5",
     "@tailwindcss/postcss": "^4.0.3",
     "primeicons": "^7.0.0",

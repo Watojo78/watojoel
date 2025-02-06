@@ -1,0 +1,29 @@
+<div class="certs-wrapper">
+  <p-timeline [value]="(certs$ | async) || []" align="left" styleClass="customized-timeline">
+    <ng-template #marker let-cert>
+      <span class="flex w-8 h-8 items-center justify-center rounded-full z-10 bg-white">
+        <!--<i [class]="event.icon"></i>-->
+        <img src="../../../../../../assets/icons/diploma.svg" alt="certificate" class="w-5">
+      </span>
+    </ng-template>
+    <ng-template #content let-cert>
+      <div class="cert-content">
+        <div class="flex items-start justify-between w-full">
+          <div>
+            <h4 class="content-degree">{{cert.name}}</h4>
+            <p class="font-semibold">{{cert.provider}}</p>
+          </div>
+          <div class="content-period">
+            <p>{{cert.dateEarned}}</p>
+          </div>
+        </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ipsam minus. Nobis ipsum pariatur qui !</p>
+        <div class="flex items-center justify-start gap-3 mt-4 mb-4">
+          <span class="rounded-full bg-white pb-2 pt-2 pl-3 pr-3">Angular</span>
+          <span class="rounded-full bg-white pb-2 pt-2 pl-3 pr-3">Tailwind</span>
+          <span class="rounded-full bg-white pb-2 pt-2 pl-3 pr-3">Directus</span>
+        </div>
+      </div>
+    </ng-template>
+  </p-timeline>
+</div>

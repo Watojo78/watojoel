@@ -27,10 +27,14 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "*.json", "input": "src/app/mocks", "output": "assets"
+              }
             ],
             "styles": [
-              "src/styles/styles.scss"
+              "src/styles/styles.scss",
+              "node_modules/@flaticon/flaticon-uicons/css/all/all.css"
             ],
             "scripts": []
           },

@@ -1,24 +1,32 @@
 <div class="header-wrapper">
-    <a routerLink="/home" class="header-logo">
-        <img src="../../../../../assets/common/logo/logo.png" alt="wtjoel_logo" height="28">
+  <a routerLink="/home" class="header-logo">
+    <img src="../../../../../assets/common/logo/logo.png" alt="wtjoel_logo" height="28">
+  </a>
+  <div class="header-nav">
+    <a routerLink="/home" class="nav-sub home">
+      <span>Accueil</span>
     </a>
-    <div class="header-nav">
-        <a routerLink="/home" class="nav-sub home">
-            <i class="fi fi-sr-house-chimney-crack"></i>
-            <span>Accueil</span>
-        </a>
-        <a routerLink="/projects" class="nav-sub">
-            <span>Projets</span>
-        </a>
-        <a routerLink="/blog" class="nav-sub">
-            <span>Blog</span>
-        </a>
-        <a routerLink="/contact" class="nav-sub landing-menu">
-            <p-button
-                [rounded]="true"
-                [text]="true">
-                <img src="../../../../../assets/common/icons/apps.svg" alt="landing_menu" height="20">
-            </p-button>
-        </a>
+    <a routerLink="/projects" class="nav-sub">
+      <span>Projets</span>
+    </a>
+    <div class="lang"><p-button
+      [rounded]="true"
+      severity="secondary"
+      (click)="switchLanguage()">  <img
+        [src]="isFrench ? '../../../../../assets/icons/frrect.svg' : '../../../../../assets/icons/engrect.svg'"
+        [alt]="isFrench ? 'french' : 'english'"
+        height="15">
+    </p-button>
     </div>
+    <div class="bright">
+      <p-toggleswitch [(ngModel)]="checked">
+        <ng-template #handle let-checked="checked">
+          <img
+            [src]="[checked ? '../../../../../assets/icons/moon.svg' : '../../../../../assets/icons/brightness.svg']"
+            [alt]="[checked ? 'moon' : 'brightness']"
+            height="11">
+        </ng-template>
+      </p-toggleswitch>
+    </div>
+  </div>
 </div>

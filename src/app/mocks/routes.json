@@ -1,30 +1,30 @@
 [
   {
     "method": "GET",
-    "path": "/testimonies",
-    "handler": "/testimonies"
+    "path": "/about",
+    "handler": "/about"
   },
   {
     "method": "GET",
-    "path": "/testimonies/:id",
-    "handler": "/testimonies"
+    "path": "/about/:id",
+    "handler": "/about"
   },
   {
     "method": "POST",
-    "path": "/testimonies",
-    "handler": "/testimonies"
+    "path": "/about",
+    "handler": "/about"
   },
   {
     "method": "PUT",
-    "path": "/testimonies/:id",
-    "handler": "/testimonies"
+    "path": "/about/:id",
+    "handler": "/about"
   },
   {
     "method": "DELETE",
-    "path": "/testimonies/:id",
-    "handler": "/testimonies"
+    "path": "/about/:id",
+    "handler": "/about"
   },
-  
+
 
   {
     "method": "GET",
@@ -55,81 +55,134 @@
 
   {
     "method": "GET",
-    "path": "/about",
-    "handler": "/about"
+    "path": "/work-experiences",
+    "handler": "/work-experiences"
   },
   {
     "method": "GET",
-    "path": "/about/:id",
-    "handler": "/about"
+    "path": "/work-experiences/:id",
+    "handler": "/work-experiences"
   },
   {
     "method": "POST",
-    "path": "/about",
-    "handler": "/about"
+    "path": "/work-experiences",
+    "handler": "/work-experiences"
   },
   {
     "method": "PUT",
-    "path": "/about/:id",
-    "handler": "/about"
+    "path": "/work-experiences/:id",
+    "handler": "/work-experiences"
   },
   {
     "method": "DELETE",
-    "path": "/about/:id",
-    "handler": "/about"
+    "path": "/work-experiences/:id",
+    "handler": "/work-experiences"
   },
-
 
   {
     "method": "GET",
-    "path": "/experiences",
-    "handler": "/experiences"
+    "path": "/educations",
+    "handler": "/educations"
   },
   {
     "method": "GET",
-    "path": "/experiences/:id",
-    "handler": "/experiences"
+    "path": "/educations/:id",
+    "handler": "/educations"
   },
   {
     "method": "POST",
-    "path": "/experiences",
-    "handler": "/experiences"
+    "path": "/educations",
+    "handler": "/educations"
   },
   {
     "method": "PUT",
-    "path": "/experiences/:id",
-    "handler": "/experiences"
+    "path": "/educations/:id",
+    "handler": "/educations"
   },
   {
     "method": "DELETE",
-    "path": "/experiences/:id",
-    "handler": "/experiences"
+    "path": "/educations/:id",
+    "handler": "/educations"
   },
 
+
+  {
+    "method": "GET",
+    "path": "/certifications",
+    "handler": "/certifications"
+  },
+  {
+    "method": "GET",
+    "path": "/certifications/:id",
+    "handler": "/certifications"
+  },
+  {
+    "method": "POST",
+    "path": "/certifications",
+    "handler": "/certifications"
+  },
+  {
+    "method": "PUT",
+    "path": "/certifications/:id",
+    "handler": "/certifications"
+  },
+  {
+    "method": "DELETE",
+    "path": "/certifications/:id",
+    "handler": "/certifications"
+  },
   
+
   {
     "method": "GET",
-    "path": "/techstack",
-    "handler": "/techStack"
+    "path": "/skills",
+    "handler": "/skills"
   },
   {
     "method": "GET",
-    "path": "/techstack/:id",
-    "handler": "/techstack"
+    "path": "/skills/:id",
+    "handler": "/skills"
   },
   {
     "method": "POST",
-    "path": "/techstack",
-    "handler": "/techstack"
+    "path": "/skills",
+    "handler": "/skills"
   },
   {
     "method": "PUT",
-    "path": "/techstack/:id",
-    "handler": "/techstack"
+    "path": "/skills/:id",
+    "handler": "/skills"
   },
   {
     "method": "DELETE",
-    "path": "/techstack/:id",
-    "handler": "/techstack"
+    "path": "/skills/:id",
+    "handler": "/skills"
+  },
+
+
+  {
+    "method": "GET",
+    "path": "/testimonies",
+    "handler": "/testimonies"
+  },
+  {
+    "method": "GET",
+    "path": "/testimonies/:id",
+    "handler": "/testimonies"
+  },
+  {
+    "method": "POST",
+    "path": "/testimonies",
+    "handler": "/testimonies"
+  },
+  {
+    "method": "PUT",
+    "path": "/testimonies/:id",
+    "handler": "/testimonies"
+  },
+  {
+    "method": "DELETE",
+    "path": "/testimonies/:id",
+    "handler": "/testimonies"
   }
 ]

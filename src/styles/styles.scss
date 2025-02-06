@@ -6,8 +6,8 @@
 @use '../assets/fonts/Mogilte/moglite.scss' as moglite;
 @use '../assets/fonts/Gloock/gloock.scss' as gloock;
 @use '../assets/fonts/lcmogi/lcmogi.scss' as lcmogi;
-
-//tailwind utils and compnonents
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-chubby/css/uicons-solid-chubby.css');
+//tailwind utils and components
 @tailwind components;
 @tailwind utilities;
 
@@ -76,19 +76,69 @@ ol {
   }
 }
 
-.simplebar-scrollbar:before{ background-color: green !important; }
-
 i{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.simplebar-scrollbar:before{
+  background-color: rgb(0, 128, 0) !important;
+}
+
+.p-tab {
+  border-radius: 50px !important;
+  padding: unset !important;
+
+  span{
+    font-family: 'Gilroy-Bold', Inter;
+    font-weight: 400 !important;
+  }
+
+  &s, &list-tab-list, &{
+    gap: 1rem;
+    border: unset !important;
+  }
+
+  &panels{
+    padding: unset !important;
+  }
+
+  &list-active-bar{
+    display: none !important;
+  }
+
+  &list-viewport{
+    display: flex;
+    align-items: center;
+    height: 2.8rem !important;
+  }
+}
+
+.p-ripple{
+  height: max-content;
+  border-radius: 50px !important;
+}
+
 .p-button{
   width: 100%;
 }
 
-.landing-menu, .cta-one{
+.lang, .cta-one{
+  .p-button{
+    backdrop-filter: blur(4px) !important;
+  }
+}
+
+.lang{
+  .p-button{
+    background-color: #ffffff40 !important;
+    padding: .35rem !important;
+    border-radius: 10px !important;
+  }
+}
+
+.cta-one{
   .p-button{
     aspect-ratio: 1;
   }
@@ -98,4 +148,12 @@ i{
   .p-button{
     border-radius: 14px !important;
   }
+}
+
+.p-timeline-event-opposite {
+  flex: unset !important;
+}
+
+.p-toggleswitch{
+  display: flex !important;
 }

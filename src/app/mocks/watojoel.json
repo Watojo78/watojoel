@@ -23,23 +23,6 @@
       }
     }
   ],
-  "experiences": [
-    {
-      "id": 1,
-      "institution": "University of XYZ",
-      "degree": "Bachelor of Science in Computer Science",
-      "startDate": "2018-09-01",
-      "endDate": "2022-05-31",
-      "description": "Relevant coursework in software engineering, data structures, and algorithms."
-    },
-    {
-      "id": 2,
-      "institution": "XYZ High School",
-      "degree": "High School Diploma",
-      "startDate": "2014-09-01",
-      "endDate": "2018-05-31"
-    }
-  ],
   "projects": [
     {
       "id": 1,
@@ -67,42 +50,176 @@
       "githubUrl": "https://github.com/watojoel/e-commerce-app"
     }
   ],
-  "techStack": [
+  "work-experiences": [
+    {
+      "id": 0,
+      "company": "AfroMetaverse",
+      "title": "Angular Developer",
+      "startDate": "2023/11",
+      "endDate": "2024/05",
+      "description": [
+        ""
+      ]
+    },
     {
       "id": 1,
-      "name": "Angular"
+      "company": "Institut Universitaire de Technologie",
+      "title": "Angular Developer",
+      "startDate": "2023/11",
+      "endDate": "2024/05",
+      "description": [
+        ""
+      ]
+    }
+  ],
+  "educations": [
+    {
+      "id": 0,
+      "institution": "Institut Universitaire Technologique",
+      "degree": "Licence en Génie Logiciel",
+      "startDate": "2021/11",
+      "endDate": "2022/08",
+      "description": [
+        "Specialized in Natural Language Processing (NLP) and Computer Vision.",
+        "Relevant coursework included: Deep Learning, Machine Learning, NLP, Computer Vision, and Reinforcement Learning.",
+        "GPA: 3.9/4.0"
+      ],
+      "relevantSkills": [
+        {
+          "id": 1,
+          "name": "Angular",
+          "logoPath": "/angular.svg"
+        },
+        {
+          "id": 3,
+          "name": "Taiwindcss",
+          "logoPath": "/tailwind.svg"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "institution": "Institut Universitaire Technologique",
+      "degree": "DUT en Génie Informatique",
+      "startDate": "2019/10",
+      "endDate": "2021/08",
+      "description": [
+        "Specialized in Natural Language Processing (NLP) and Computer Vision.",
+        "Relevant coursework included: Deep Learning, Machine Learning, NLP, Computer Vision, and Reinforcement Learning.",
+        "GPA: 3.9/4.0"
+      ],
+      "relevantSkills": [
+        {
+          "id": 1,
+          "name": "Angular",
+          "logoPath": "/angular.svg"
+        },
+        {
+          "id": 3,
+          "name": "Taiwindcss",
+          "logoPath": "/tailwind.svg"
+        }
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "id": 1,
+      "name": "Initiation Java",
+      "provider": "EPFL",
+      "dateEarned": "2024-10-01",
+      "link": "https://test.com"
     },
     {
       "id": 2,
-      "name": "React"
+      "name": "Initiation Java POO",
+      "provider": "EPFL",
+      "dateEarned": "2024-10-01",
+      "link": "https://test.com"
     },
     {
       "id": 3,
-      "name": "JavaScript"
+      "name": "React Native",
+      "provider": "Dyma",
+      "dateEarned": "2025-03-01",
+      "link": "https://test.com"
+    }
+  ],
+  "skills": [
+    {
+      "id": 0,
+      "name": "HTML5",
+      "logoPath": "/html5.svg"
+    },
+    {
+      "id": 1,
+      "name": "CSS3",
+      "logoPath": "/css3.svg"
+    },
+    {
+      "id": 2,
+      "name": "Sass",
+      "logoPath": "/sass.svg"
+    },
+    {
+      "id": 3,
+      "name": "Tailwindcss",
+      "logoPath": "/tailwindcss.svg"
     },
     {
       "id": 4,
-      "name": "TypeScript"
+      "name": "Primeng",
+      "logoPath": "/primeng.svg"
     },
     {
       "id": 5,
-      "name": "Node.js"
+      "name": "JavaScript",
+      "logoPath": "/js.svg"
     },
     {
       "id": 6,
-      "name": "Python"
+      "name": "TypeScript",
+      "logoPath": "/ts.svg"
     },
     {
       "id": 7,
-      "name": "Java"
+      "name": "Angular",
+      "logoPath": "/angular.svg"
     },
     {
       "id": 8,
-      "name": "HTML"
+      "name": "Java",
+      "logoPath": "/java.svg"
     },
     {
       "id": 9,
-      "name": "CSS"
+      "name": "SpringBoot",
+      "logoPath": "/springboot.svg"
+    },
+    {
+      "id": 10,
+      "name": "Directus",
+      "logoPath": "/directus.svg"
+    },
+    {
+      "id": 11,
+      "name": "Strapi",
+      "logoPath": "/strapi.svg"
+    },
+    {
+      "id": 12,
+      "name": "Flutter",
+      "logoPath": "/flutter.svg"
+    },
+    {
+      "id": 13,
+      "name": "Docker",
+      "logoPath": "/docker.svg"
+    },
+    {
+      "id": 14,
+      "name": "Git",
+      "logoPath": "/git.svg"
     }
   ],
   "testimonies": [
@@ -131,9 +248,10 @@
       "id": 4,
       "name": "Samy John",
       "role": "Software Developer",
-      "profileUrl":"/assets/profile.png",
+      "profileUrl": "/assets/profile.png",
       "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti pariatur quia praesentium suscipit, amet soluta quod tenetur corporis repellat, ut, hic cum facere necessitatibus perspiciatis aperiam vero aliquam minus at!"
-    },{
+    },
+    {
       "id": 5,
       "name": "Moe Doen",
       "role": "CEO",
@@ -144,16 +262,17 @@
       "id": 6,
       "name": "Samy John",
       "role": "Software Developer",
-      "profileUrl":"/assets/profile.png",
+      "profileUrl": "/assets/profile.png",
       "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti pariatur quia praesentium suscipit, amet soluta quod tenetur corporis repellat, ut, hic cum facere necessitatibus perspiciatis aperiam vero aliquam minus at!"
     },
     {
       "id": 7,
       "name": "Samy John",
       "role": "Software Developer",
-      "profileUrl":"/assets/profile.png",
+      "profileUrl": "/assets/profile.png",
       "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti pariatur quia praesentium suscipit, amet soluta quod tenetur corporis repellat, ut, hic cum facere necessitatibus perspiciatis aperiam vero aliquam minus at!"
-    },{
+    },
+    {
       "id": 8,
       "name": "Moe Doen",
       "role": "CEO",
@@ -164,7 +283,7 @@
       "id": 9,
       "name": "Samy John",
       "role": "Software Developer",
-      "profileUrl":"/assets/profile.png",
+      "profileUrl": "/assets/profile.png",
       "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti pariatur quia praesentium suscipit, ut, hic cum facere necessitatibus perspiciatis aperiam vero aliquam minus at!"
     }
   ]

@@ -13,9 +13,18 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(),
     provideAnimationsAsync(),
     providePrimeNG({
-        theme: {
-            preset: Aura
+      ripple: true,
+      csp: {
+          nonce: '...'
+      },
+      theme: {
+        preset: Aura,
+        options: {
+          prefix: 'p',
+          darkModeSelector: 'system',
+          cssLayer: false
         }
+      }
     })
   ]
 };

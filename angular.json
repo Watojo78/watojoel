@@ -34,7 +34,7 @@
             ],
             "styles": [
               "src/styles/styles.scss",
-              "~@flaticon/flaticon-uicons/css/all/all.css"
+              "node_modules/@flaticon/flaticon-uicons/css/all/all.css"
             ],
             "scripts": []
           },

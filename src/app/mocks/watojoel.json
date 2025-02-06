@@ -23,6 +23,33 @@
       }
     }
   ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "Portfolio Website",
+      "description": "This is my personal portfolio website, built with Angular.",
+      "technologies": [
+        1,
+        4,
+        8,
+        9
+      ],
+      "imageUrl": "path/to/image1.jpg",
+      "githubUrl": "https://github.com/watojoel/portfolio"
+    },
+    {
+      "id": 2,
+      "name": "E-commerce App",
+      "description": "A simple e-commerce application built with React.",
+      "technologies": [
+        2,
+        3,
+        5
+      ],
+      "imageUrl": "path/to/image2.jpg",
+      "githubUrl": "https://github.com/watojoel/e-commerce-app"
+    }
+  ],
   "work-experiences": [
     {
       "id": 0,
@@ -118,69 +145,81 @@
       "link": "https://test.com"
     }
   ],
-  "projects": [
+  "skills": [
+    {
+      "id": 0,
+      "name": "HTML5",
+      "logoPath": "/html5.svg"
+    },
     {
       "id": 1,
-      "name": "Portfolio Website",
-      "description": "This is my personal portfolio website, built with Angular.",
-      "technologies": [
-        1,
-        4,
-        8,
-        9
-      ],
-      "imageUrl": "path/to/image1.jpg",
-      "githubUrl": "https://github.com/watojoel/portfolio"
+      "name": "CSS3",
+      "logoPath": "/css3.svg"
     },
     {
       "id": 2,
-      "name": "E-commerce App",
-      "description": "A simple e-commerce application built with React.",
-      "technologies": [
-        2,
-        3,
-        5
-      ],
-      "imageUrl": "path/to/image2.jpg",
-      "githubUrl": "https://github.com/watojoel/e-commerce-app"
-    }
-  ],
-  "techStack": [
-    {
-      "id": 1,
-      "name": "Angular"
-    },
-    {
-      "id": 2,
-      "name": "React"
+      "name": "Sass",
+      "logoPath": "/sass.svg"
     },
     {
       "id": 3,
-      "name": "JavaScript"
+      "name": "Tailwindcss",
+      "logoPath": "/tailwindcss.svg"
     },
     {
       "id": 4,
-      "name": "TypeScript"
+      "name": "Primeng",
+      "logoPath": "/primeng.svg"
     },
     {
       "id": 5,
-      "name": "Node.js"
+      "name": "JavaScript",
+      "logoPath": "/js.svg"
     },
     {
       "id": 6,
-      "name": "Python"
+      "name": "TypeScript",
+      "logoPath": "/ts.svg"
     },
     {
       "id": 7,
-      "name": "Java"
+      "name": "Angular",
+      "logoPath": "/angular.svg"
     },
     {
       "id": 8,
-      "name": "HTML"
+      "name": "Java",
+      "logoPath": "/java.svg"
     },
     {
       "id": 9,
-      "name": "CSS"
+      "name": "SpringBoot",
+      "logoPath": "/springboot.svg"
+    },
+    {
+      "id": 10,
+      "name": "Directus",
+      "logoPath": "/directus.svg"
+    },
+    {
+      "id": 11,
+      "name": "Strapi",
+      "logoPath": "/strapi.svg"
+    },
+    {
+      "id": 12,
+      "name": "Flutter",
+      "logoPath": "/flutter.svg"
+    },
+    {
+      "id": 13,
+      "name": "Docker",
+      "logoPath": "/docker.svg"
+    },
+    {
+      "id": 14,
+      "name": "Git",
+      "logoPath": "/git.svg"
     }
   ],
   "testimonies": [

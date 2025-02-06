@@ -1,33 +1,6 @@
 [
   {
     "method": "GET",
-    "path": "/projects",
-    "handler": "/projects"
-  },
-  {
-    "method": "GET",
-    "path": "/projects/:id",
-    "handler": "/projects"
-  },
-  {
-    "method": "POST",
-    "path": "/projects",
-    "handler": "/projects"
-  },
-  {
-    "method": "PUT",
-    "path": "/projects/:id",
-    "handler": "/projects"
-  },
-  {
-    "method": "DELETE",
-    "path": "/projects/:id",
-    "handler": "/projects"
-  },
-
-
-  {
-    "method": "GET",
     "path": "/about",
     "handler": "/about"
   },
@@ -55,30 +28,56 @@
 
   {
     "method": "GET",
-    "path": "/testimonies",
-    "handler": "/testimonies"
+    "path": "/projects",
+    "handler": "/projects"
   },
   {
     "method": "GET",
-    "path": "/testimonies/:id",
-    "handler": "/testimonies"
+    "path": "/projects/:id",
+    "handler": "/projects"
   },
   {
     "method": "POST",
-    "path": "/testimonies",
-    "handler": "/testimonies"
+    "path": "/projects",
+    "handler": "/projects"
   },
   {
     "method": "PUT",
-    "path": "/testimonies/:id",
-    "handler": "/testimonies"
+    "path": "/projects/:id",
+    "handler": "/projects"
   },
   {
     "method": "DELETE",
-    "path": "/testimonies/:id",
-    "handler": "/testimonies"
+    "path": "/projects/:id",
+    "handler": "/projects"
   },
 
+
+  {
+    "method": "GET",
+    "path": "/work-experiences",
+    "handler": "/work-experiences"
+  },
+  {
+    "method": "GET",
+    "path": "/work-experiences/:id",
+    "handler": "/work-experiences"
+  },
+  {
+    "method": "POST",
+    "path": "/work-experiences",
+    "handler": "/work-experiences"
+  },
+  {
+    "method": "PUT",
+    "path": "/work-experiences/:id",
+    "handler": "/work-experiences"
+  },
+  {
+    "method": "DELETE",
+    "path": "/work-experiences/:id",
+    "handler": "/work-experiences"
+  },
 
   {
     "method": "GET",
@@ -109,33 +108,6 @@
 
   {
     "method": "GET",
-    "path": "/work-experiences",
-    "handler": "/work-experiences"
-  },
-  {
-    "method": "GET",
-    "path": "/work-experiences/:id",
-    "handler": "/work-experiences"
-  },
-  {
-    "method": "POST",
-    "path": "/work-experiences",
-    "handler": "/work-experiences"
-  },
-  {
-    "method": "PUT",
-    "path": "/work-experiences/:id",
-    "handler": "/work-experiences"
-  },
-  {
-    "method": "DELETE",
-    "path": "/work-experiences/:id",
-    "handler": "/work-experiences"
-  },
-
-
-  {
-    "method": "GET",
     "path": "/certifications",
     "handler": "/certifications"
   },
@@ -159,31 +131,58 @@
     "path": "/certifications/:id",
     "handler": "/certifications"
   },
-
+  
 
   {
     "method": "GET",
-    "path": "/techstack",
-    "handler": "/techStack"
+    "path": "/skills",
+    "handler": "/skills"
   },
   {
     "method": "GET",
-    "path": "/techstack/:id",
-    "handler": "/techstack"
+    "path": "/skills/:id",
+    "handler": "/skills"
   },
   {
     "method": "POST",
-    "path": "/techstack",
-    "handler": "/techstack"
+    "path": "/skills",
+    "handler": "/skills"
   },
   {
     "method": "PUT",
-    "path": "/techstack/:id",
-    "handler": "/techstack"
+    "path": "/skills/:id",
+    "handler": "/skills"
   },
   {
     "method": "DELETE",
-    "path": "/techstack/:id",
-    "handler": "/techstack"
+    "path": "/skills/:id",
+    "handler": "/skills"
+  },
+
+
+  {
+    "method": "GET",
+    "path": "/testimonies",
+    "handler": "/testimonies"
+  },
+  {
+    "method": "GET",
+    "path": "/testimonies/:id",
+    "handler": "/testimonies"
+  },
+  {
+    "method": "POST",
+    "path": "/testimonies",
+    "handler": "/testimonies"
+  },
+  {
+    "method": "PUT",
+    "path": "/testimonies/:id",
+    "handler": "/testimonies"
+  },
+  {
+    "method": "DELETE",
+    "path": "/testimonies/:id",
+    "handler": "/testimonies"
   }
 ]

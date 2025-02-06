@@ -15,7 +15,7 @@ import { CommonModule } from '@angular/common';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CertificatesComponent implements OnInit {
-  certs$: Observable<Certification[]>;
+  certs$: Observable<Certification[]>
   private certsSubject = new BehaviorSubject<Certification[]>([])
   mockCerts: Certification[] = certificatesMockData;
 

@@ -6,8 +6,7 @@
     flex-direction: column;
   }
 
-  &-header,
-  &-container {
+  &-header {
     display: flex;
   }
 
@@ -27,29 +26,12 @@
       border-radius: 8px;
     }
   }
-
-  &-container {
-    gap: 2rem;
-    width: 100%;
-    align-items: flex-start;
-    justify-content: center;
-  }
-
 }
 
 .xps-container,
 .skills-container {
   width: 100%;
   border-radius: 28px;
-}
-
-.skills {
-  &-container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1.4rem;
-  }
 }
 
 .font-white{

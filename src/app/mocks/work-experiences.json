@@ -1,0 +1,18 @@
+[
+  {
+    "id": 0,
+    "company":"AfroMetaverse",
+    "title":"Angular Developer",
+    "startDate":"2023/11",
+    "endDate":"2024/05",
+    "description":[""]
+  },
+  {
+    "id": 1,
+    "company":"IUT Douala",
+    "title":"Angular Developer",
+    "startDate":"2023/11",
+    "endDate":"2024/05",
+    "description":[""]
+  }
+]

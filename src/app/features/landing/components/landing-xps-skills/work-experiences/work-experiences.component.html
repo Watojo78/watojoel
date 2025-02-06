@@ -1,0 +1,31 @@
+<div class="works-wrapper">
+  <p-timeline [value]="(works$ | async) || []" align="left" styleClass="customized-timeline">
+    <ng-template #marker let-work>
+      <span class="flex w-8 h-8 items-center justify-center rounded-full z-10 bg-white">
+        <!--<i [class]="event.icon"></i>-->
+        <img src="../../../../../../assets/icons/briefcase.svg" alt="" class="w-5">
+      </span>
+    </ng-template>
+    <ng-template #content let-work>
+      <div class="work-content">
+        <div class="flex items-start justify-between w-full">
+          <div>
+            <h4 class="content-degree">{{work.title}}</h4>
+            <p class="font-semibold">{{work.company}}</p>
+          </div>
+          <div class="content-period">
+            <p>{{work.startDate}}</p>
+            <span>-</span>
+            <p>{{work.endDate}}</p>
+          </div>
+        </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ipsam minus. Nobis ipsum pariatur qui !</p>
+        <div class="flex items-center justify-start gap-3 mt-4 mb-4">
+          <span class="rounded-full bg-white pb-2 pt-2 pl-3 pr-3">Angular</span>
+          <span class="rounded-full bg-white pb-2 pt-2 pl-3 pr-3">Tailwind</span>
+          <span class="rounded-full bg-white pb-2 pt-2 pl-3 pr-3">Directus</span>
+        </div>
+      </div>
+    </ng-template>
+  </p-timeline>
+</div>

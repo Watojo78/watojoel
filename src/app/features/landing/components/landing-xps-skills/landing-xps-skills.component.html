@@ -1,74 +1,105 @@
 <div class="xps-skills-wrapper">
-    <div class="xps-skills-header">
-        <h3>
-            <img src="../../../../../assets/common/icons/dev.svg" alt="" height="28">
-            <span>XPs & Technologies</span>
-        </h3>
+  <div class="xps-skills-header">
+    <h3>
+      <img src="../../../../../assets/common/icons/dev.svg" alt="" height="28">
+      <span>Expertise & Technologies</span>
+    </h3>
+  </div>
+  <div class="xps-skills-container">
+    <div class="xps-container flex flex-col w-full">
+      <p-tabs value="1" scrollable>
+        <p-tablist>
+          <p-tab value="0">
+            <span pRipple class="flex items-center gap-2 bg-slate-200 pt-3 pb-3 pl-5 pr-5">
+              <img src="../../../../../assets/icons/briefcase.svg" alt="briefcase" height="21">
+              <span>Expérience pro</span>
+            </span>
+          </p-tab>
+          <p-tab value="1">
+            <span pRipple class="flex items-center gap-2 bg-slate-200 pt-3 pb-3 pl-5 pr-5">
+              <img src="../../../../../assets/icons/graduation-cap dt.svg" alt="graduation" height="21">
+              <span>Education</span>
+            </span>
+          </p-tab>
+          <p-tab value="2">
+            <span pRipple class="flex items-center gap-2 bg-slate-200 pt-3 pb-3 pl-5 pr-5">
+              <img src="../../../../../assets/icons/diploma.svg" alt="briefcase" height="21">
+              <span>Certifications</span>
+            </span>
+          </p-tab>
+        </p-tablist>
+        <p-tabpanels>
+          <p-tabpanel value="0">
+            <div class="flex items-center justify-center w-full bg-gray-100 pt-8 pb-8 pl-7 pr-7 rounded-3xl">
+              <work-experiences></work-experiences>
+            </div>
+          </p-tabpanel>
+          <p-tabpanel value="1">
+            <div class="flex items-center justify-center w-full bg-gray-100 pt-8 pb-8 pl-7 pr-7 rounded-3xl">
+              <educations></educations>
+            </div>
+          </p-tabpanel>
+          <p-tabpanel value="2">
+            <div class="flex items-center justify-center w-full bg-gray-100 pt-8 pb-8 pl-7 pr-7 rounded-3xl">
+              <certificates></certificates>
+            </div>
+          </p-tabpanel>
+        </p-tabpanels>
+      </p-tabs>
     </div>
-    <div class="xps-skills-container">
-        <div class="xps-container">
-        </div>
-        <div class="skills-container">
-            <div class="skill-card">
-                <img src="../../../../../assets/icons/techstack/angular.svg" loading="lazy" alt="">
-                <span>Angular</span>
-            </div>
-            <div class="skill-card">
-                <img src="../../../../../assets/icons/techstack/NgRx.svg" loading="lazy" alt="">
-                <span>NgRx</span>
-            </div>
-            <div class="skill-card">
-                <img src="../../../../../assets/icons/techstack/html5.svg" loading="lazy" alt="">
-                <span>HTML5</span>
-            </div>
-            <div class="skill-card">
-                <img src="../../../../../assets/icons/techstack/css3.svg" loading="lazy" alt="">
-                <span>CSS3</span>
-            </div>
-            <div class="skill-card">
-                <img src="../../../../../assets/icons/techstack/material.svg" loading="lazy" alt="">
-                <span>Material</span>
-            </div>
-            <div class="skill-card">
-                <img src="../../../../../assets/icons/techstack/primeng_f.svg" loading="lazy" alt="">
-                <span>Primeng</span>
-            </div>
-            <div class="skill-card">
-                <img src="../../../../../assets/icons/techstack/sass.svg" loading="lazy" alt="">
-                <span>Sass</span>
-            </div>
-            <div class="skill-card">
-                <img src="../../../../../assets/icons/techstack/ts.svg" loading="lazy" alt="">
-                <span>TypeScript</span>
-            </div>
-            <div class="skill-card">
-                <img src="../../../../../assets/icons/techstack/docker.svg" loading="lazy" alt="">
-                <span>Docker</span>
-            </div>
-            <div class="skill-card">
-                <img src="../../../../../assets/icons/techstack/strapi.svg" loading="lazy" alt="">
-                <span>Strapi</span>
-            </div>
-            <div class="skill-card">
-                <img src="../../../../../assets/icons/techstack/directus.svg" loading="lazy" alt="">
-                <span>Directus</span>
-            </div>
-            <div class="skill-card">
-                <img src="../../../../../assets/icons/techstack/supabase.svg" loading="lazy" alt="">
-                <span>Supabase</span>
-            </div>
-            <div class="skill-card">
-                <img src="../../../../../assets/icons/techstack/flutter.svg" loading="lazy" alt="">
-                <span>Flutter</span>
-            </div>
-            <div class="skill-card">
-                <img src="../../../../../assets/icons/techstack/ionic.svg" loading="lazy" alt="">
-                <span>Ionic</span>
-            </div>
-            <div class="skill-card">
-                <img src="../../../../../assets/icons/techstack/git.svg" loading="lazy" alt="">
-                <span>Git</span>
-            </div>
-        </div>
-    </div> 
+    <div class="skills-container">
+      <div class="skill-card">
+        <img src="../../../../../assets/icons/techstack/angular.svg" loading="lazy" alt="">
+        <span>Angular</span>
+      </div>
+      <div class="skill-card">
+        <img src="../../../../../assets/icons/techstack/html5.svg" loading="lazy" alt="">
+        <span>HTML5</span>
+      </div>
+      <div class="skill-card">
+        <img src="../../../../../assets/icons/techstack/css3.svg" loading="lazy" alt="">
+        <span>CSS3</span>
+      </div>
+      <div class="skill-card">
+        <img src="../../../../../assets/icons/techstack/tailwindcss.svg" loading="lazy" alt="">
+        <span>Tailwincss</span>
+      </div>
+      <div class="skill-card">
+        <img src="../../../../../assets/icons/techstack/primeng_f.svg" loading="lazy" alt="">
+        <span>Primeng</span>
+      </div>
+      <div class="skill-card">
+        <img src="../../../../../assets/icons/techstack/sass.svg" loading="lazy" alt="">
+        <span>Sass</span>
+      </div>
+      <div class="skill-card">
+        <img src="../../../../../assets/icons/techstack/ts.svg" loading="lazy" alt="">
+        <span>TypeScript</span>
+      </div>
+      <div class="skill-card">
+        <img src="../../../../../assets/icons/techstack/docker.svg" loading="lazy" alt="">
+        <span>Docker</span>
+      </div>
+      <div class="skill-card">
+        <img src="../../../../../assets/icons/techstack/spring-3.svg" loading="lazy" alt="">
+        <span>SpringBoot</span>
+      </div>
+      <div class="skill-card">
+        <img src="../../../../../assets/icons/techstack/strapi.svg" loading="lazy" alt="">
+        <span>Strapi</span>
+      </div>
+      <div class="skill-card">
+        <img src="../../../../../assets/icons/techstack/directus.svg" loading="lazy" alt="">
+        <span>Directus</span>
+      </div>
+      <div class="skill-card">
+        <img src="../../../../../assets/icons/techstack/flutter.svg" loading="lazy" alt="">
+        <span>Flutter</span>
+      </div>
+      <div class="skill-card">
+        <img src="../../../../../assets/icons/techstack/git.svg" loading="lazy" alt="">
+        <span>Git</span>
+      </div>
+    </div>
+  </div>
 </div>

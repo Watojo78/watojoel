@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "institution": "Institut Universitaire de Technologie",
+    "degree": "Licence en Génie Logiciel",
+    "startDate": "2021/11",
+    "endDate": "2022/08",
+    "description": [
+      "Specialized in Natural Language Processing (NLP) and Computer Vision.",
+      "Relevant coursework included: Deep Learning, Machine Learning, NLP, Computer Vision, and Reinforcement Learning.",
+      "GPA: 3.9/4.0"
+    ],
+    "relevantSkills": [
+      {
+        "id": 1,
+        "name": "Angular",
+        "logoPath": "/angular.svg"
+      },
+      {
+        "id": 3,
+        "name": "Taiwindcss",
+        "logoPath": "/tailwind.svg"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "institution": "Institut Universitaire de Technologie",
+    "degree": "DUT en Génie Informatique",
+    "startDate": "2019/10",
+    "endDate": "2021/08",
+    "description": [
+      "Specialized in Natural Language Processing (NLP) and Computer Vision.",
+      "Relevant coursework included: Deep Learning, Machine Learning, NLP, Computer Vision, and Reinforcement Learning.",
+      "GPA: 3.9/4.0"
+    ],
+    "relevantSkills": [
+      {
+        "id": 1,
+        "name": "Angular",
+        "logoPath": "/angular.svg"
+      },
+      {
+        "id": 3,
+        "name": "Taiwindcss",
+        "logoPath": "/tailwind.svg"
+      }
+    ]
+  }
+]

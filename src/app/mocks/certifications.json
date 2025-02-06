@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Initiation Java",
+    "provider": "EPFL",
+    "dateEarned": "2024-10-01",
+    "link": "https://test.com"
+  },
+  {
+    "id": 2,
+    "name": "Initiation Java POO",
+    "provider": "EPFL",
+    "dateEarned": "2024-10-01",
+    "link": "https://test.com"
+  },
+  {
+    "id": 3,
+    "name": "React Native",
+    "provider": "Dyma",
+    "dateEarned": "2025-03-01",
+    "link": "https://test.com"
+  }
+]

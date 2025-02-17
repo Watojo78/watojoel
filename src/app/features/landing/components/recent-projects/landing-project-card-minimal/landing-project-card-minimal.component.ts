@@ -1,5 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
+import { Project } from '../../../../../models/project.model';
 
 @Component({
   selector: 'landing-project-card-minimal',
@@ -9,4 +10,6 @@ import { ButtonModule } from 'primeng/button';
   styleUrl: './landing-project-card-minimal.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class LandingProjectCardMinimalComponent { }
+export class LandingProjectCardMinimalComponent {
+  @Input() project!: Project;
+}

@@ -1,10 +1,11 @@
+import { NgOptimizedImage } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'landing-hero',
-  imports: [RouterLink, ButtonModule],
+  imports: [RouterLink, NgOptimizedImage, ButtonModule],
   standalone: true,
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',

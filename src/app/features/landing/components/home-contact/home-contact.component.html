@@ -25,25 +25,25 @@
         </div>
         <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onFormSubmit()">
             <p-floatlabel variant="in">
-                <input  
-                    type="text" 
+                <input
+                    type="text"
                     pInputText
                     formControlName="username"
                     required>
                 <label for="username">Nom</label>
             </p-floatlabel>
             <p-floatlabel variant="in">
-                <input 
-                    matInput 
-                    type="email" 
+                <input
+                    matInput
+                    type="email"
                     pInputText
                     formControlName="email"
                     required>
                 <label for="email">Adresse Mail</label>
             </p-floatlabel>
             <p-floatlabel variant="in">
-                <textarea 
-                    matInput 
+                <textarea
+                    matInput
                     pTextarea
                     formControlName="message"
                     required>
@@ -51,11 +51,11 @@
                 <label for="message">Message</label>
             </p-floatlabel>
             <div class="sendinfos-wrapper">
-                <p-button 
-                    type="submit" 
-                    severity="primary" 
+                <p-button
+                    type="submit"
+                    severity="primary"
                     class="send">
-                    <span>Envoyer le Message</span>
+                    <span>Laisser un commentaire</span>
                     <i class="fi fi-sr-paper-plane"></i>
                 </p-button>
             </div>

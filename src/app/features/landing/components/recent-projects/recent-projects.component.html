@@ -1,19 +1,15 @@
 <div class="recent-projects-wrapper">
     <div class="recent-projects-header">
-         <h3>
-             <img src="../../../../../assets/common/icons/trophy-star-alt.svg" alt="" height="28">
-             <span>Projets récents</span>
-         </h3>
-         <a routerLink='/projects'>
-             <p-button 
-                [rounded]="true"
-                severity="secondary">
-                 <span>Voir plus</span>
-                 <i class="fi fi-sr-arrow-up-right-from-square"></i>
-             </p-button>
-         </a>
+      <img src="../../../../../assets/icons/briefcase.svg" alt="recent projects" height="56">
+      <h3>Projets Récents</h3>
     </div>
-    <div class="recent-projects-grid">
-        <landing-project-card-minimal></landing-project-card-minimal>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      @for(column of (chunkedProjects$ | async) || []; track $index){
+        <div class="flex flex-col gap-4">
+          @for (project of column; track $index) {
+            <landing-project-card-minimal [project]="project" />
+          }
+        </div>
+      }
     </div>
  </div>

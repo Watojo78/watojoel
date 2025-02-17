@@ -25,31 +25,260 @@
   ],
   "projects": [
     {
-      "id": 1,
-      "name": "Portfolio Website",
+      "id": 0,
+      "title": "My Portfolio",
       "description": "This is my personal portfolio website, built with Angular.",
-      "technologies": [
-        1,
-        4,
-        8,
-        9
+      "thumbnailPath": "/portfolio_thumbnail.png",
+      "githubUrl": "https://github.com/Watojoel78/watojoel",
+      "projectUrl": "https://watojoel.vercel.app",
+      "previewUrl": "https://watojoel-dev.vercel.app",
+      "techstack": [
+        {
+          "id": 3,
+          "name": "Tailwindcss",
+          "logoPath": "/tailwindcss.svg"
+        },
+        {
+          "id": 4,
+          "name": "Primeng",
+          "logoPath": "/primeng.svg"
+        },
+        {
+          "id": 6,
+          "name": "TypeScript",
+          "logoPath": "/ts.svg"
+        },
+        {
+          "id": 7,
+          "name": "Angular",
+          "logoPath": "/angular.svg"
+        },
+        {
+          "id": 10,
+          "name": "Directus",
+          "logoPath": "/directus.svg"
+        },
+        {
+          "id": 14,
+          "name": "Git",
+          "logoPath": "/git.svg"
+        },
+        {
+          "id": 15,
+          "name": "Postgresql",
+          "logoPath": "/postgresql.svg"
+        }
       ],
-      "imageUrl": "path/to/image1.jpg",
-      "githubUrl": "https://github.com/watojoel/portfolio"
+      "role": "Lead Fullstack developer",
+      "highlights": [
+        "Showcases my skills and projects.",
+        "Built with Angular for a modern and responsive design.",
+        "Continuously updated with my latest work."
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Movoo Movie Clone",
+      "description": "Developed a clone of the Movoo movie app.",
+      "thumbnailPath": "/movoo@homepage_thumbnail.png",
+      "projectUrl": "https://movoo-clone.vercel.app/",
+      "githubUrl": "https://github.com/Watojoel78/watojoel/movoo-clone",
+      "previewUrl": "https://movoo-clone.vercel.app/",
+      "techstack": [
+        {
+          "id": 3,
+          "name": "Tailwindcss",
+          "logoPath": "/tailwindcss.svg"
+        },
+        {
+          "id": 4,
+          "name": "Primeng",
+          "logoPath": "/primeng.svg"
+        },
+        {
+          "id": 6,
+          "name": "TypeScript",
+          "logoPath": "/ts.svg"
+        },
+        {
+          "id": 7,
+          "name": "Angular",
+          "logoPath": "/angular.svg"
+        },
+        {
+          "id": 14,
+          "name": "Git",
+          "logoPath": "/git.svg"
+        },
+        {
+          "id": 16,
+          "name": "TMDB Rest API",
+          "logoPath": "/"
+        },
+        {
+          "id": 17,
+          "name": "Material",
+          "logoPath": "/material.svg"
+        }
+      ],
+      "role": "Front-End Developer",
+      "highlights": [
+        "Implemented movie search functionality.",
+        "Created a user-friendly interface for browsing movies.",
+        "Integrated with a movie database API to fetch movie data.",
+        "Responsive design for various screen sizes."
+      ]
     },
     {
       "id": 2,
-      "name": "E-commerce App",
-      "description": "A simple e-commerce application built with React.",
-      "technologies": [
-        2,
-        3,
-        5
+      "title": "FastRN",
+      "description": "Created a web application to simplify and streamline plastic collection for households.",
+      "thumbnailPath": "/fastrn_thumbnail.png",
+      "githubUrl": "",
+      "projectUrl": "https://fastrn-cc478.web.app/",
+      "previewUrl": "https://fastrn-cc478.web.app/",
+      "techstack": [
+        {
+          "id": 6,
+          "name": "TypeScript",
+          "logoPath": "/ts.svg"
+        },
+        {
+          "id": 7,
+          "name": "Angular",
+          "logoPath": "/angular.svg"
+        },
+        {
+          "id": 10,
+          "name": "Directus",
+          "logoPath": "/directus.svg"
+        },
+        {
+          "id": 14,
+          "name": "Git",
+          "logoPath": "/git.svg"
+        },
+        {
+          "id": 17,
+          "name": "Material",
+          "logoPath": "/material.svg"
+        }
       ],
-      "imageUrl": "path/to/image2.jpg",
-      "githubUrl": "https://github.com/watojoel/e-commerce-app"
+      "role": "Front-End Developer",
+      "highlights": [
+        "Increased recycling rates in the community.",
+        "Provided a user-friendly platform for scheduling pickups.",
+        "Enabled efficient routing for collectors."
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Around",
+      "description": "Developed a dashboard application to help clients easily find services near their location.",
+      "thumbnailPath": "/around@dashboard_thumbnail.png",
+      "githubUrl": "https://github.com/Watojoel78/around",
+      "projectUrl": "https://theapparound.com/",
+      "previewUrl": "https://theapparound.com/",
+      "techstack": [
+        {
+          "id": 2,
+          "name": "Sass",
+          "logoPath": "/sass.svg"
+        },
+        {
+          "id": 3,
+          "name": "Tailwindcss",
+          "logoPath": "/tailwindcss.svg"
+        },
+        {
+          "id": 4,
+          "name": "Primeng",
+          "logoPath": "/primeng.svg"
+        },
+        {
+          "id": 6,
+          "name": "TypeScript",
+          "logoPath": "/ts.svg"
+        },
+        {
+          "id": 7,
+          "name": "Angular",
+          "logoPath": "/angular.svg"
+        },
+        {
+          "id": 10,
+          "name": "Directus",
+          "logoPath": "/directus.svg"
+        },
+        {
+          "id": 14,
+          "name": "Git",
+          "logoPath": "/git.svg"
+        }
+      ],
+      "role": "Full-Stack Developer",
+      "highlights": [
+        "Improved service accessibility for clients.",
+        "Provided real-time location information.",
+        "Enabled easy search and filtering of services."
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Simple CRUD Library App",
+      "description": "Developed a simple library store application for managing books.",
+      "thumbnailPath": "/elibrary_thumbnail.png",
+      "projectUrl": "https://elib.vercel.app",
+      "githubUrl": "https://github.com/your-username/elib",
+      "techstack": [
+        {
+          "id": 2,
+          "name": "Sass",
+          "logoPath": "/sass.svg"
+        },
+        {
+          "id": 3,
+          "name": "Tailwindcss",
+          "logoPath": "/tailwindcss.svg"
+        },
+        {
+          "id": 4,
+          "name": "Primeng",
+          "logoPath": "/primeng.svg"
+        },
+        {
+          "id": 6,
+          "name": "TypeScript",
+          "logoPath": "/ts.svg"
+        },
+        {
+          "id": 7,
+          "name": "Angular",
+          "logoPath": "/angular.svg"
+        },
+        {
+          "id": 10,
+          "name": "Directus",
+          "logoPath": "/directus.svg"
+        },
+        {
+          "id": 14,
+          "name": "Git",
+          "logoPath": "/git.svg"
+        }
+      ],
+      "previewUrl": "https://elib.vercel.app",
+      "role": "FullStack Developer",
+      "highlights": [
+        "Implemented all CRUD operations for managing books.",
+        "Created a user-friendly interface for adding, editing, and deleting books.",
+        "Utilized local storage (or database) to persist book data.",
+        "Focused on clean and maintainable code."
+      ],
+      "outcome": "Successfully built a functional CRUD application, demonstrating my understanding of core web development concepts."
     }
-  ],
+  ]
+  ,
   "work-experiences": [
     {
       "id": 0,

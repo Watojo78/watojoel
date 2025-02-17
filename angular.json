@@ -29,7 +29,9 @@
               "src/favicon.ico",
               "src/assets",
               {
-                "glob": "*.json", "input": "src/app/mocks", "output": "assets"
+                "glob": "*.json",
+                "input": "src/app/mocks",
+                "output": "assets"
               }
             ],
             "styles": [

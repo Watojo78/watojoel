@@ -70,12 +70,6 @@ ol {
   padding-inline-start: 0;
 }
 
-.fa {
-  &-brands {
-    font-size: 20px;
-  }
-}
-
 i{
   display: flex;
   align-items: center;
@@ -138,9 +132,16 @@ i{
   }
 }
 
-.cta-one{
+.header-new-tab, .fake-menu, .cta-one{
   .p-button{
     aspect-ratio: 1;
+
+  }
+}
+
+.header-new-tab, .fake-menu{
+  .p-button{
+    padding: .35rem !important;
   }
 }
 

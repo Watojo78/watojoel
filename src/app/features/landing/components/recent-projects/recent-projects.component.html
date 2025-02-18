@@ -1,7 +1,10 @@
 <div class="recent-projects-wrapper">
     <div class="recent-projects-header">
-      <img src="../../../../../assets/icons/briefcase.svg" alt="recent projects" height="56">
+      <div class="flex items-center justify-center bg-slate-100 rounded-2xl p-4">
+        <img src="../../../../../assets/icons/briefcase.svg" alt="recent-projects" height="42">
+      </div>
       <h3>Projets Récents</h3>
+      <p class="text-center pl-10 pr-10">Ces projets démontrent mon expertise dans la création de conceptions axées sur l'utilisateur et de visuels percutants.</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       @for(column of (chunkedProjects$ | async) || []; track $index){

@@ -2,11 +2,7 @@
 @use "primeicons/primeicons.css" as primeicons;
 @use '../assets/fonts/gilroy/gilroy.scss' as gilroy;
 @use '../assets/fonts/montserrat/montserrat.scss' as montserrat;
-@use '../assets/fonts/samsung/samsung-sharp-sans.scss' as samsungsharpsans;
-@use '../assets/fonts/Mogilte/moglite.scss' as moglite;
 @use '../assets/fonts/Gloock/gloock.scss' as gloock;
-@use '../assets/fonts/lcmogi/lcmogi.scss' as lcmogi;
-@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-chubby/css/uicons-solid-chubby.css');
 //tailwind utils and components
 @tailwind components;
 @tailwind utilities;

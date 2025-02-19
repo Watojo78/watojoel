@@ -10,7 +10,7 @@
       @for(column of (chunkedProjects$ | async) || []; track $index){
         <div class="flex flex-col gap-4">
           @for (project of column; track $index) {
-            <landing-project-card-minimal [project]="project" />
+            <landing-project-card-minimal [project]="project"/>
           }
         </div>
       }

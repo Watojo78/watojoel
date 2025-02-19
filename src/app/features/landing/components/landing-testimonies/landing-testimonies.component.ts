@@ -1,113 +1,70 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component, OnDestroy, OnInit } from '@angular/core';
 import { LandingTestimonyCardComponent } from "./landing-testimony-card/landing-testimony-card.component";
 import { TestimoniesService } from '../../../../services/testimonies.service';
 import { Testimony } from '../../../../models/testimony.model';
+import testimoniesMockData from '../../../../mocks/testimonies.json'
+import { BehaviorSubject, catchError, map, Observable, of, Subject, tap } from 'rxjs';
 
 @Component({
   selector: 'landing-testimonies',
-  imports: [LandingTestimonyCardComponent],
+  imports: [CommonModule, LandingTestimonyCardComponent],
   standalone: true,
   templateUrl: './landing-testimonies.component.html',
   styleUrl: './landing-testimonies.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class LandingTestimoniesComponent implements OnInit {
-  testimonies!: Testimony[];
-  mockTestimonies!: Testimony[];
+export class LandingTestimoniesComponent implements OnInit, OnDestroy {
+  testimonies$: Observable<Testimony[]>
+  mockTestimonies: Testimony[] = testimoniesMockData
+  chunckedTestimonies$: Observable<Testimony[][]>
+  private testimoniesSubject = new BehaviorSubject<Testimony[]>([])
+  chunkedTestimoniesSubject = new BehaviorSubject<Testimony[][]>([])
+  private destroy$ = new Subject<void>()
 
-  constructor(private testimonyService: TestimoniesService) {}
+  constructor(private testimonyService: TestimoniesService) {
+    this.testimonies$ = this.testimoniesSubject.asObservable()
+    this.chunckedTestimonies$ = this.chunkedTestimoniesSubject.asObservable();
+  }
 
   ngOnInit(): void {
-    this.mockTestimonies = [
-      {
-        "id": 1,
-        "name": "John Doe",
-        "role": "Client",
-        "profileUrl": "/assets/profile.png",
-        "testimonial": "Watojoel did an excellent job on my website. Highly recommended!"
-      },
-      {
-        "id": 2,
-        "name": "Jane Doe",
-        "role": "Colleague",
-        "profileUrl": "/assets/profile.png",
-        "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti pariatur quia praesentium suscipit, amet soluta quod tenetur corporis repellat, ut, hic cum facere necessitatibus perspiciatis aperiam vero aliquam minus at!"
-      },
-      {
-        "id": 3,
-        "name": "Moe Doen",
-        "role": "CEO",
-        "profileUrl": "/assets/profile.png",
-        "testimonial": "Watojoel is a skilled dedicated and professionnal developer. It was a pleasure working with them."
-      },
-      {
-        "id": 4,
-        "name": "Samy John",
-        "role": "Software Developer",
-        "profileUrl": "/assets/profile.png",
-        "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti pariatur quia praesentium suscipit, amet soluta quod tenetur corporis repellat, ut, hic cum facere necessitatibus perspiciatis aperiam vero aliquam minus at!"
-      },
-      {
-        "id": 5,
-        "name": "Moe Doen",
-        "role": "CEO",
-        "profileUrl": "/assets/profile.png",
-        "testimonial": "Watojoel is a skilled dedicated and professionnal developer. It was a pleasure working with them."
-      },
-      {
-        "id": 6,
-        "name": "Samy John",
-        "role": "Software Developer",
-        "profileUrl": "/assets/profile.png",
-        "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti pariatur quia praesentium suscipit, amet soluta quod tenetur corporis repellat, ut, hic cum facere necessitatibus perspiciatis aperiam vero aliquam minus at!"
-      },
-      {
-        "id": 7,
-        "name": "Samy John",
-        "role": "Software Developer",
-        "profileUrl": "/assets/profile.png",
-        "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti pariatur quia praesentium suscipit, amet soluta quod tenetur corporis repellat, ut, hic cum facere necessitatibus perspiciatis aperiam vero aliquam minus at!"
-      },
-      {
-        "id": 8,
-        "name": "Moe Doen",
-        "role": "CEO",
-        "profileUrl": "/assets/profile.png",
-        "testimonial": "Watojoel is a skilled dedicated and professionnal developer. It was a pleasure working with them."
-      },
-      {
-        "id": 9,
-        "name": "Samy John",
-        "role": "Software Developer",
-        "profileUrl": "/assets/profile.png",
-        "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti pariatur quia praesentium suscipit, ut, hic cum facere necessitatibus perspiciatis aperiam vero aliquam minus at!"
+    this.loadTestimonies();
+  }
+
+  private loadTestimonies(){
+    this.testimonyService.getTestimonies().pipe(
+      tap((res: Testimony[]) => {
+        this.testimoniesSubject.next(res)
+        console.log("Testimonies loaded successfully !!")
+      }),
+      catchError((err) =>{
+        console.error("An error occured while loading testimonies => ", err);
+        this.testimoniesSubject.next(this.mockTestimonies);
+        return of(this.mockTestimonies)
+      })
+    ).subscribe();
+
+    this.chunckedTestimonies$ = this.testimonies$.pipe(
+      map((testimonies) => this.chunkArray(testimonies, 3))
+    );
+  }
+
+  private chunkArray<T>(arr: T[], numColumns: number): T[][] { // numColumns is now a parameter
+    const numTestimonies = arr.length;  // Use arr.length
+    const chunkedTestimonies = [];
+    for (let i = 0; i < numColumns; i++) {
+      const column = [];
+      for (let j = i; j < numTestimonies; j += numColumns) {
+        column.push(arr[j]);
       }
-    ]
-    this.testimonyList();
+      chunkedTestimonies.push(column);
+    }
+    return chunkedTestimonies;
   }
 
-  private testimonyList() {
-    this.testimonyService.getTestimonies().subscribe({
-      next: (res: any[]) => {
-        this.testimonies = res;
-        console.log("voici les témoignages: >> ", this.testimonies);
-      },
-      error: (err) => {
-        this.testimonies = this.mockTestimonies;
-        console.log('Une erreur est survenue lors de chargement des témoignages', err);
-      },
-    })
+  ngOnDestroy(): void {
+    this.destroy$.next();
+    this.destroy$.complete();
   }
 
-  getColumns(): number {
-    return window.innerWidth >= 992 ? 3 : 1; // Adjust breakpoint as needed
-  }
-
-  getChunkedTestimonies(): Testimony[][] {
-    const columns = this.getColumns();
-    const chunks: Testimony[][] = Array.from({ length: columns }, () => []);
-    this.testimonies.forEach((testimony, index) => chunks[index % columns].push(testimony));
-    console.log("voici les chunks >>> ", chunks);
-    return chunks;
-  }
 }

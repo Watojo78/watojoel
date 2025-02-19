@@ -1,34 +1,40 @@
-<div class="hero-wrapper">
-    <div class="hero-text">
-        <h2 class="hero-title">Développeur Web</h2>
-        <h2 class="hero-headline">Construction d'applications web modernes & dynamiques.</h2>
-        <p class="hero-welcome">
-            Bienvenue dans mon portfolio ! Je m'appelle Wafo Joël et je prend plaisir à la création d'interfaces fluides, UI conviviales et d'UX agréables. Explorez mes projets pour voir comment je donne vie à des idées grâce à un code épuré et un design innovant."
-        </p>
-        <div class="hero-cta">
-            <a routerLink="/contact" class="cta-contact">
-                <p-button
-                    [rounded]="true"
-                    severity="success">
-                    <i class="fi fi-sr-hand-wave"></i>
-                    <span>Me contacter</span>
-                </p-button>
-            </a>
-            <a routerLink="/" class="cta-cv">
-                <p-button
-                    [rounded]="true"
-                    icon="pi pi-arrow-down"
-                    severity="success"/>
-                <span>Projets récents</span>
-            </a>
-        </div>
+<div class="hero-wrapper relative overflow-hidden">
+  <img
+    ngSrc="../../../../../assets/images/hero-pattern.svg"
+    lazy
+    width="1440"
+    height="462"
+    priority="true"
+    alt="hero-pattern.svg">
+  <div class="absolute pl-14 pr-14">
+    <div class="hero-content">
+      <h4 class="hero-title flex items-center justify-center">
+        <img src="../../../../../assets/icons/terminal.svg" alt="terminal.svg" height="49">
+        <span>Ingénieur</span>
+        <span>Logiciel</span>
+      </h4>
+      <h3 class="hero-headline text-center">Construction d'Applications Modernes & dynamiques.</h3>
+      <p class="hero-welcome text-center">
+        Bienvenue dans mon portfolio ! Je m'appelle Wafo Joël et je prend plaisir à la création d'applis fluides, UI
+        conviviales et d'UX agréables.<br>Explorez mes meilleurs projets pour voir comment je donne vie à des idées grâce à un code
+        épuré et un design innovant."
+      </p>
+      <div class="hero-cta">
+        <a routerLink="/" class="cta-cv">
+          <p-button [rounded]="true" severity="success">
+            <span class="cv pt-1 pb-1 pl-4 pr-4">Mon CV</span>
+          </p-button>
+        </a>
+        <a routerLink="/contact" class="cta-contact">
+          <p-button [rounded]="true" severity="secondary">
+            <div class="flex items-center justify-center gap-2 pt-1 pb-1 pl-4 pr-4">
+              <i class="fi fi-sr-hand-wave"></i>
+              <span class="contact">Me contacter</span>
+            </div>
+          </p-button>
+        </a>
+      </div>
+      <img src="../../../../../assets/images/hero-arrow2.svg" alt="hero-arrow.svg" height="100">
     </div>
-    <div class="hero-thumb">
-        <img
-          ngSrc="../../../../../assets/images/fulllstackportfolio.png"
-          alt="fulllstackportfolio hero"
-          height="560"
-          width="560"
-          priority>
-    </div>
+  </div>
 </div>

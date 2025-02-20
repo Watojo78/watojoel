@@ -1,3 +1,4 @@
+<p-toast position="bottom-right"/>
 <div id="contact" class="contact-wrapper">
     <div class="contact-header">
         <h3>
@@ -27,18 +28,17 @@
         <div class="contact-form-illus">
             <img src="../../../../../assets/images/male-postman_w1000.png" alt="postman-front" class="postman-front">
         </div>
-        <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onFormSubmit()">
+        <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
             <p-floatlabel variant="in">
                 <input
                     type="text"
                     pInputText
-                    formControlName="username"
+                    formControlName="name"
                     required>
                 <label for="username">Nom</label>
             </p-floatlabel>
             <p-floatlabel variant="in">
                 <input
-                    matInput
                     type="email"
                     pInputText
                     formControlName="email"
@@ -47,7 +47,6 @@
             </p-floatlabel>
             <p-floatlabel variant="in">
                 <textarea
-                    matInput
                     pTextarea
                     formControlName="message"
                     required>
@@ -57,9 +56,9 @@
             <div class="sendinfos-wrapper">
                 <p-button
                     type="submit"
-                    severity="primary"
+                    severity="contrast"
                     class="send">
-                    <span>Laisser un commentaire</span>
+                    <span>Envoyer un message</span>
                     <i class="fi fi-sr-paper-plane"></i>
                 </p-button>
             </div>

@@ -277,28 +277,23 @@
       ],
       "outcome": "Successfully built a functional CRUD application, demonstrating my understanding of core web development concepts."
     }
-  ]
-  ,
+  ],
   "work-experiences": [
     {
       "id": 0,
-      "company": "AfroMetaverse",
-      "title": "Angular Developer",
-      "startDate": "2023/11",
-      "endDate": "2024/05",
-      "description": [
-        ""
-      ]
+      "company":"AfroMetaverse",
+      "title":"Angular Developer",
+      "startDate":"2023/11",
+      "endDate":"2024/11",
+      "description":[""]
     },
     {
       "id": 1,
-      "company": "Institut Universitaire de Technologie",
-      "title": "Angular Developer",
-      "startDate": "2023/11",
-      "endDate": "2024/05",
-      "description": [
-        ""
-      ]
+      "company":"IUT Douala",
+      "title":"Angular Developer",
+      "startDate":"2021/11",
+      "endDate":"2022/07",
+      "description":[""]
     }
   ],
   "educations": [

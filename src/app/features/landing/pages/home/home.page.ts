@@ -9,12 +9,14 @@ import { HomeContactComponent } from "../../components/home-contact/home-contact
   imports: [HeroComponent, RecentProjectsComponent, LandingXpsSkillsComponent, LandingTestimoniesComponent, HomeContactComponent],
   standalone: true,
   templateUrl: './home.page.html',
-  styleUrl: './home.page.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomePage implements OnInit {
 
   ngOnInit(): void { }
-  options = { autoHide: true, scrollbarMinSize: 100 };
+  options = {
+    autoHide: true,
+    scrollbarMinSize: 100
+  }
 
 }

@@ -5,7 +5,7 @@
           <span>Témoignages récents</span>
       </h3>
   </div>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+  <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
     @for (column of (chunckedTestimonies$ | async) || []; track $index) {
       <div class="gap-4 flex flex-col">
         @for (testimony of column; track $index) {

@@ -1,34 +1,41 @@
 <p-toast position="bottom-right"/>
-<div id="contact" class="contact-wrapper">
-    <div class="contact-header">
-        <h3>
-            <i class="fi fi-sr-attribution-pencil"></i>
+<div id="contact" class="flex flex-col gap-8 w-full">
+    <div class="flex items-center justify-center">
+        <h3 class="flex items-center gap-4 text-center text-[28px]">
+            <i class="hidden md:block fi fi-sr-attribution-pencil"></i>
             <span>Prêt à insuffler vie à votre projet web ? Contactez-moi !</span>
             <img
               src="../../../../../assets/icons/face-smile-upside-down.svg"
               alt="face-smile-upside-down.svg"
-              height="28"/>
+              height="28"
+              class="hidden md:block"/>
         </h3>
     </div>
-    <div class="contact-nfos">
+    <div class="contact-nfos flex flex-col md:flex-row items-center justify-center gap-4">
         <a class="email" href="mailto:+wtjoel27@gmail.com">
             <i class="fi fi-sr-envelope"></i>
             <span>joel.wafo&#64;outlook.com</span>
         </a>
         <a class="phone" href="tel:+237658718423">
             <i class="fi fi-sr-mobile-button"></i>
-            <span>(00237) 658718423</span>
+            <span>+237 658718423</span>
         </a>
         <a class="phone-alt" href="tel:+237651113950">
             <i class="fi fi-sr-mobile-button"></i>
-            <span>(00237) 651113950</span>
+            <span>+237 651113950</span>
         </a>
     </div>
-    <div class="contact-form-wrapper">
-        <div class="contact-form-illus">
-            <img src="../../../../../assets/images/male-postman_w1000.png" alt="postman-front" class="postman-front">
+    <div class="contact-form-wrapper relative gap-4 min-h-[425px] flex flex-col xl:flex-row">
+        <div class="contact-form-illus flex justify-center items-center overflow-hidden w-full min-h-[425px] max-h-[425px] rounded-[28px]">
+            <img
+              src="../../../../../assets/images/male-postman_w1000.png"
+              alt="postman-front"
+              class="mt-[28rem]">
         </div>
-        <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <form
+          class="contact-form flex flex-col w-full gap-4 md:gap-1 items-center justify-between"
+          [formGroup]="contactForm"
+          (ngSubmit)="onSubmit()">
             <p-floatlabel variant="in">
                 <input
                     type="text"
@@ -53,7 +60,7 @@
                 </textarea>
                 <label for="message">Message</label>
             </p-floatlabel>
-            <div class="sendinfos-wrapper">
+            <div class="sendinfos-wrapper w-full">
                 <p-button
                     type="submit"
                     severity="contrast"

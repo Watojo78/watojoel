@@ -1,40 +1,46 @@
-<div class="hero-wrapper relative overflow-hidden">
+<div class="hero-wrapper relative flex justify-center items-center overflow-x-hidden overflow-y-scroll rounded-[28px] min-h-[462px] px-4 md:px-0 py-8 md:py-0">
   <img
-    ngSrc="../../../../../assets/images/hero-pattern.svg"
     lazy
     width="1440"
     height="462"
     priority="true"
-    alt="hero-pattern.svg">
-  <div class="absolute pl-14 pr-14">
-    <div class="hero-content">
-      <h4 class="hero-title flex items-center justify-center">
-        <img src="../../../../../assets/icons/terminal.svg" alt="terminal.svg" height="49">
-        <span>Ingénieur</span>
-        <span>Logiciel</span>
+    alt="hero-pattern.svg"
+    ngSrc="../../../../../assets/images/hero-pattern.svg">
+  <div class="absolute top-7 sm:top-[unset] px-4 sm:px-8 md:px-14">
+    <div class="hero-content flex flex-col items-center justify-center">
+      <h4 class="hero-title flex flex-col md:flex-row items-center justify-center gap-[.4rem] text-xl md:text-2xl">
+        <img
+          class="h-12"
+          src="../../../../../assets/icons/terminal.svg"
+          alt="terminal.svg">
+        <span class="text-[28px] md:text-[35px] font-['Gilroy-Regular']">Ingénieur Logiciel</span>
       </h4>
-      <h3 class="hero-headline text-center">Construction d'Applications Modernes & dynamiques.</h3>
-      <p class="hero-welcome text-center">
+      <h3 class="hero-headline text-center text-[35px] font-['Gilroy-Bold'] sm:font-['Gilroy-Heavy']">Construction d'Applis Modernes & dynamiques.</h3>
+      <p class="hero-welcome text-center text-[17px]">
         Bienvenue dans mon portfolio ! Je m'appelle Wafo Joël et je prend plaisir à la création d'applis fluides, UI
-        conviviales et d'UX agréables.<br>Explorez mes meilleurs projets pour voir comment je donne vie à des idées grâce à un code
+        conviviales et d'UX agréables. Explorez mes meilleurs projets pour voir comment je donne vie à des idées grâce à un code
         épuré et un design innovant."
       </p>
-      <div class="hero-cta">
-        <a href="https://drive.google.com/file/d/1aKai-oC0sTsBwZWrE1D0BXO67JLrVdER/view?usp=sharing" target="_blank" class="cta-cv">
+      <div class="hero-cta flex flex-col sm:flex-row justify-center items-center gap-4 py-4">
+        <a
+          href="https://drive.google.com/file/d/1aKai-oC0sTsBwZWrE1D0BXO67JLrVdER/view?usp=sharing"
+          target="_blank"
+          class="cta-cv flex items-center justify-center gap-1">
           <p-button [rounded]="true" severity="success">
-            <span class="cv pt-1 pb-1 pl-4 pr-4">Mon CV</span>
+            <span class="cv pt-1 pb-1 pl-4 pr-4 text-[15px]">Mon CV</span>
           </p-button>
         </a>
-        <a routerLink="/contact" class="cta-contact">
+        <a
+          routerLink="/contact"
+          class="cta-contact">
           <p-button [rounded]="true" severity="secondary">
             <div class="flex items-center justify-center gap-2 pt-1 pb-1 pl-4 pr-4">
               <i class="fi fi-sr-hand-wave"></i>
-              <span class="contact">Me contacter</span>
+              <span class="contact text-[15px]">Me Contacter</span>
             </div>
           </p-button>
         </a>
       </div>
-      <img src="../../../../../assets/images/hero-arrow2.svg" alt="hero-arrow.svg" height="100">
     </div>
   </div>
 </div>

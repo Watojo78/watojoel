@@ -8,8 +8,11 @@
 @tailwind utilities;
 
 * { font-family: "Gilroy-Medium", Inter; }
-body::-webkit-scrollbar { display: none; }
-a { text-decoration: none; }
+*::-webkit-scrollbar { display: none; }
+a {
+  color: black;
+  text-decoration: none;
+}
 
 html,
 body {
@@ -114,6 +117,13 @@ i{
   width: 100%;
 }
 
+.p-tablist {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  position: relative;
+}
+
 .lang, .cta-one{
   .p-button{
     backdrop-filter: blur(4px) !important;
@@ -122,6 +132,9 @@ i{
 
 .lang{
   .p-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ffffff40 !important;
     padding: .35rem !important;
     border-radius: 10px !important;
@@ -153,4 +166,8 @@ i{
 
 .p-toggleswitch{
   display: flex !important;
+}
+
+.p-timeline-left .p-timeline-event-opposite {
+  display: none;
 }

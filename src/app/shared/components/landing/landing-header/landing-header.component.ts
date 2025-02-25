@@ -4,11 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { ToggleSwitch } from 'primeng/toggleswitch';
-import { Select } from 'primeng/select';
+import { MenuModule } from 'primeng/menu';
+import { MenuItem } from 'primeng/api/menuitem';
 
 @Component({
   selector: 'landing-header',
-  imports: [CommonModule, ButtonModule, RouterLink, ToggleSwitch, FormsModule],
+  imports: [CommonModule, ButtonModule, MenuModule, RouterLink, ToggleSwitch, FormsModule],
   standalone: true,
   templateUrl: './landing-header.component.html',
   styleUrl: './landing-header.component.scss',
@@ -17,6 +18,15 @@ import { Select } from 'primeng/select';
 export class LandingHeaderComponent {
   checked: boolean = false;
   isFrench: boolean = true; // Default language is French
+  items: MenuItem[] | undefined;
+
+  ngOnInit() {
+      this.items = [
+          { label: 'Accueil'},
+          { label: 'Projets'},
+          { label: 'Blog'}
+      ];
+  }
 
   switchLanguage() {
     this.isFrench = !this.isFrench;

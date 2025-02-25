@@ -39,10 +39,12 @@
     <p-menu
       #menu
       [model]="items"
-      [popup]="true"></p-menu>
+      [popup]="true"/>
     <p-button
+      severity="secondary"
       (click)="menu.toggle($event)"
-      icon="pi pi-ellipsis-v"
-      class="p-button-rounded p-button-secondary"></p-button>
+      class="menu-action">
+      <i class="fi fi-br-bars-staggered"></i>
+    </p-button>
   </div>
 </div>

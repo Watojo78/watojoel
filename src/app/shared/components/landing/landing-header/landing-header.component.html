@@ -1,24 +1,30 @@
-<div class="header-wrapper">
+<div class="header-wrapper flex items-center justify-between sticky top-0 pt-4 pb-4 px-4 md:px-16 lg:px-28">
   <a routerLink="/home" class="header-logo">
-    <img src="../../../../../assets/common/logo/logo.png" alt="wtjoel_logo" height="28">
+    <img
+      src="../../../../../assets/common/logo/logo.png"
+      alt="wtjoel_logo"
+      height="28">
   </a>
-  <div class="header-nav">
-    <a routerLink="/home" class="nav-sub home">
+  <div class="header-nav flex items-center justify-between gap-4">
+    <a routerLink="/home" class="hidden md:block hover:text-gray-700">
       <span>Accueil</span>
     </a>
-    <a routerLink="/projects" class="nav-sub">
+    <a routerLink="/projects" class="hidden md:block hover:text-gray-700">
       <span>Projets</span>
     </a>
-    <div class="lang"><p-button
-      [rounded]="true"
-      severity="secondary"
-      (click)="switchLanguage()">  <img
-        [src]="isFrench ? '../../../../../assets/icons/frrect.svg' : '../../../../../assets/icons/engrect.svg'"
-        [alt]="isFrench ? 'french' : 'english'"
-        height="15">
-    </p-button>
+    <div class="lang hidden md:block">
+      <p-button
+        [rounded]="true"
+        severity="secondary"
+        (click)="switchLanguage()">
+        <img
+          [src]="isFrench ? '../../../../../assets/icons/frrect.svg' : '../../../../../assets/icons/engrect.svg'"
+          [alt]="isFrench ? 'french' : 'english'"
+          height="15"
+          class="h-4">
+      </p-button>
     </div>
-    <div class="bright">
+    <div class="bright hidden md:block">
       <p-toggleswitch [(ngModel)]="checked">
         <ng-template #handle let-checked="checked">
           <img
@@ -28,5 +34,18 @@
         </ng-template>
       </p-toggleswitch>
     </div>
+  </div>
+  <div class="md:hidden flex items-center justify-center">
+    <p-menu
+      #menu
+      [model]="items"
+      [popup]="true"/>
+    <p-button
+      text="true"
+      severity="secondary"
+      (click)="menu.toggle($event)"
+      class="menu-action">
+      <i class="fi fi-br-bars-staggered"></i>
+    </p-button>
   </div>
 </div>

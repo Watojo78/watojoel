@@ -1,18 +1,22 @@
-<div class="xps-skills-wrapper">
-  <div class="xps-skills-header">
-    <h3>
-      <img src="../../../../../assets/common/icons/dev.svg" alt="" height="28">
+<div class="xps-skills-wrapper flex flex-col gap-8 w-full">
+  <div class="xps-skills-header flex w-full items-center justify-between">
+    <h3 class="flex items-center gap-4 text-[28px]">
+      <img
+        class="rounded-lg"
+        src="../../../../../assets/common/icons/dev.svg"
+        alt="dev.svg"
+        height="28">
       <span>Expertise & Technologies</span>
     </h3>
   </div>
-  <div class="xps-skills-container flex w-full items-start justify-center gap-5">
-    <div class="xps-container flex flex-col w-full">
-      <p-tabs value="1" scrollable>
+  <div class="xps-skills-container flex flex-col xl:flex-row w-full items-start justify-center gap-5 md:gap-8">
+    <div class="xps-container flex flex-col w-full rounded-[28px]">
+      <p-tabs value="1">
         <p-tablist>
           <p-tab value="0">
             <span pRipple class="flex items-center gap-2 bg-slate-200 pt-3 pb-3 pl-5 pr-5">
               <img src="../../../../../assets/icons/briefcase.svg" alt="briefcase" height="21">
-              <span>Expérience pro</span>
+              <span>Expérience Professionnelle</span>
             </span>
           </p-tab>
           <p-tab value="1">
@@ -47,13 +51,14 @@
         </p-tabpanels>
       </p-tabs>
     </div>
-    <div class="skills-container grid w-full grid-cols-5 gap-5">
-      @for (skill of (skills$ | async) || []; track $index) {
-        <div class="skill-card">
+    <div class="skills-container grid w-full grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5 rounded-[28px]">
+      @for (skill of (skills$ | async) || []; track skill.id) {
+        <div class="skill-card flex flex-col items-center justify-center rounded-2xl p-4 gap-2 text-[15px] bg-gray-100 transition-all duration-300 hover:bg-transparent hover:cursor-pointer">
           <img
-            [src]="['../../../../../assets/icons/techstack'+skill.logoPath]"
             [alt]="skill.name"
-            loading="lazy">
+            loading="lazy"
+            class="rounded-lg h-7"
+            [src]="['../../../../../assets/icons/techstack'+skill.logoPath]">
           <span>{{skill.name}}</span>
         </div>
       }

@@ -6,7 +6,7 @@
       <h3>Projets Récents</h3>
       <p class="text-center pl-10 pr-10">Ces projets démontrent mon expertise dans la création de conceptions axées sur l'utilisateur et de visuels percutants.</p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 xl:grid-cols-3 gap-8">
       @for(column of (chunkedProjects$ | async) || []; track $index){
         <div class="flex flex-col gap-4">
           @for (project of column; track $index) {

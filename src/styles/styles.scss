@@ -7,9 +7,18 @@
 @tailwind components;
 @tailwind utilities;
 
-* { font-family: "Gilroy-Medium", Inter; }
-body::-webkit-scrollbar { display: none; }
-a { text-decoration: none; }
+* {
+  font-family: "Gilroy-Medium", Inter;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
 
 html,
 body {
@@ -36,11 +45,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
   margin: 0;
   padding: 0;
+  font-weight: 600;
   margin-block-start: 0;
-  margin-block-end: 0;
 }
 
 h3 {
@@ -66,13 +74,13 @@ ol {
   padding-inline-start: 0;
 }
 
-i{
+i {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.simplebar-scrollbar:before{
+.simplebar-scrollbar:before {
   background-color: rgb(0, 128, 0) !important;
 }
 
@@ -80,69 +88,86 @@ i{
   border-radius: 50px !important;
   padding: unset !important;
 
-  span{
+  span {
     font-family: 'Gilroy-Bold', Inter;
     font-weight: 400 !important;
   }
 
-  &s, &list-tab-list, &{
+  &s,
+  &list-tab-list,
+  & {
     gap: 1rem;
     border: unset !important;
   }
 
-  &panels{
+  &panels {
     padding: unset !important;
   }
 
-  &list-active-bar{
+  &list-active-bar {
     display: none !important;
   }
 
-  &list-viewport{
+  &list-viewport {
     display: flex;
     align-items: center;
     height: 2.8rem !important;
   }
 }
 
-.p-ripple{
+.p-ripple {
   height: max-content;
   border-radius: 50px !important;
 }
 
-.p-button{
+.p-button {
   width: 100%;
 }
 
-.lang, .cta-one{
-  .p-button{
+.p-tablist {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  position: relative;
+}
+
+.lang,
+.cta-one {
+  .p-button {
     backdrop-filter: blur(4px) !important;
   }
 }
 
-.lang{
-  .p-button{
+.lang {
+  .p-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ffffff40 !important;
     padding: .35rem !important;
     border-radius: 10px !important;
   }
 }
 
-.header-new-tab, .fake-menu, .cta-one{
-  .p-button{
+.header-new-tab,
+.fake-menu,
+.cta-one,
+.menu-action {
+  .p-button {
     aspect-ratio: 1;
 
   }
 }
 
-.header-new-tab, .fake-menu{
-  .p-button{
+.header-new-tab,
+.fake-menu {
+  .p-button {
     padding: .35rem !important;
   }
 }
 
-.sendinfos-wrapper{
-  .p-button{
+.sendinfos-wrapper {
+  .p-button {
     border-radius: 14px !important;
   }
 }
@@ -151,6 +176,26 @@ i{
   flex: unset !important;
 }
 
-.p-toggleswitch{
+.p-toggleswitch {
   display: flex !important;
+}
+
+.p-timeline-left .p-timeline-event-opposite {
+  display: none;
+}
+
+.p-menu {
+  background-color: rgba(255, 255, 255, .8) !important;
+  border: unset !important;
+  border-radius: 16px !important;
+  min-width: 12.5rem;
+  backdrop-filter: blur(4px) !important;
+}
+
+.p-menu-item-link {
+  padding: .56rem 1rem !important;
+}
+
+.p-menu-item-content {
+  border-radius: 10px !important;
 }

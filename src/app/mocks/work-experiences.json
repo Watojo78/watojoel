@@ -2,7 +2,7 @@
   {
     "id": 0,
     "company":"AfroMetaverse",
-    "title":"Angular Developer",
+    "title":"Frontend Developer",
     "startDate":"2023/11",
     "endDate":"2024/11",
     "description":[""]
@@ -10,9 +10,17 @@
   {
     "id": 1,
     "company":"IUT Douala",
-    "title":"Angular Developer",
+    "title":"Frontend Developer",
     "startDate":"2021/11",
     "endDate":"2022/07",
+    "description":[""]
+  },
+  {
+    "id": 2,
+    "company":"CAMTEL DRL",
+    "title":"Web Developer",
+    "startDate":"2021/03",
+    "endDate":"2021/07",
     "description":[""]
   }
 ]

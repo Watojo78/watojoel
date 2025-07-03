@@ -1,15 +1,14 @@
-import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { ToggleSwitch } from 'primeng/toggleswitch';
 import { MenuModule } from 'primeng/menu';
-import { MenuItem } from 'primeng/api/menuitem';
+import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'landing-header',
-  imports: [CommonModule, ButtonModule, MenuModule, RouterLink, ToggleSwitch, FormsModule],
+  imports: [ButtonModule, MenuModule, RouterLink, ToggleSwitch, FormsModule],
   standalone: true,
   templateUrl: './landing-header.component.html',
   styleUrl: './landing-header.component.scss',

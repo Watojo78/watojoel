@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "start:mock": "ng serve --configuration mock",
-    "start:json-server": "json-server --watch app/mocks/watojoel.json --routes app/mocks/routes.json --middlewares app/mocks/middleware.ts"
+    "start:json-server": "json-server --watch src/app/mocks/watojoel.json --routes src/app/mocks/routes.json"
   },
   "private": true,
   "dependencies": {

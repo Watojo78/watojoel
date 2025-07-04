@@ -12,6 +12,7 @@ import { MessageService } from 'primeng/api';
 
 @Component({
   selector: 'home-contact',
+  standalone: true,
   imports: [FloatLabelModule, TextareaModule, ButtonModule, InputTextModule, ToastModule, ReactiveFormsModule],
   providers: [MessageService],
   templateUrl: './home-contact.component.html',

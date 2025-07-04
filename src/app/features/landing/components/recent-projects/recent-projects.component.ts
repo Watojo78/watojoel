@@ -8,6 +8,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { chunkArray } from '../../../../shared/utils/array.util';
 @Component({
   selector: 'landing-recent-projects',
+  standalone: true,
   imports: [LandingProjectCardMinimalComponent, ButtonModule],
   templateUrl: './recent-projects.component.html',
   styleUrl: './recent-projects.component.scss',

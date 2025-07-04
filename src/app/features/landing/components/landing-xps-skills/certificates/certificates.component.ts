@@ -6,6 +6,7 @@ import { CertificationsService } from '../../../../../services/certifications.se
 
 @Component({
   selector: 'certificates',
+  standalone: true,
   imports: [TimelineModule],
   templateUrl: './certificates.component.html',
   styleUrls: ['./certificates.component.scss'],

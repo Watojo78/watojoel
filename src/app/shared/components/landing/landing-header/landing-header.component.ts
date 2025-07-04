@@ -9,7 +9,6 @@ import { MenuItem } from 'primeng/api';
 @Component({
   selector: 'landing-header',
   imports: [ButtonModule, MenuModule, RouterLink, ToggleSwitch, FormsModule],
-  standalone: true,
   templateUrl: './landing-header.component.html',
   styleUrl: './landing-header.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

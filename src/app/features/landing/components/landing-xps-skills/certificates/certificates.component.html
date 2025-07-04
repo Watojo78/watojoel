@@ -1,5 +1,5 @@
 <div class="certs-wrapper">
-  <p-timeline [value]="(certs$ | async) || []" align="left" styleClass="customized-timeline">
+  <p-timeline [value]="certifications()" align="left" styleClass="customized-timeline">
     <ng-template #marker let-cert>
       <span class="flex w-8 h-8 items-center justify-center rounded-full z-10 bg-white">
         <!--<i [class]="event.icon"></i>-->

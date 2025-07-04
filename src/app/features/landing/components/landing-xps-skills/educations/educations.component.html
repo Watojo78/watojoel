@@ -1,6 +1,6 @@
 <div class="educations-wrapper">
   <p-timeline
-    [value]="(educations$ | async) || []"
+    [value]="educations()"
     align="left"
     styleClass="customized-timeline">
     <ng-template #marker let-education>

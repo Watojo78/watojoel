@@ -52,7 +52,7 @@
       </p-tabs>
     </div>
     <div class="skills-container grid w-full grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5 rounded-[28px]">
-      @for (skill of (skills$ | async) || []; track skill.id) {
+      @for (skill of skills(); track skill.id) {
         <div class="skill-card flex flex-col items-center justify-center rounded-2xl p-4 gap-2 text-[15px] bg-gray-100 transition-all duration-300 hover:bg-transparent hover:cursor-pointer">
           <img
             [alt]="skill.name"

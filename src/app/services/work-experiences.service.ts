@@ -2,9 +2,9 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
-import { environment_dev } from '../../environments/environment.development';
 import { WorkExperience } from '../models/work-experience.model';
-const apiBasePath = environment.production ? environment.PROD_API_BASEPATH : environment_dev.LOCAL_API_BASEPATH;
+
+const apiBasePath = environment.API_BASEPATH;
 
 @Injectable({
   providedIn: 'root'
@@ -22,6 +22,7 @@ export class WorkExperiencesService {
    */
   getWorks(): Observable<WorkExperience[]> {
     const url = `${apiBasePath}/work-experiences`;
+    console.log('Fetching work experiences from:', url);
     return this.#http.get<WorkExperience[]>(url);
   }
 

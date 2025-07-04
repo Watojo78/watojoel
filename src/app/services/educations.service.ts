@@ -2,8 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
-import { environment_dev } from '../../environments/environment.development';
-const apiBasePath = environment.production ? environment.PROD_API_BASEPATH : environment_dev.LOCAL_API_BASEPATH;
+
+const apiBasePath = environment.API_BASEPATH;
 
 @Injectable({
   providedIn: 'root'

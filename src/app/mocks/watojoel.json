@@ -284,16 +284,6 @@
       "logoPath": "/directus.svg"
     },
     {
-      "id": 11,
-      "name": "Strapi",
-      "logoPath": "/strapi.svg"
-    },
-    {
-      "id": 12,
-      "name": "Flutter",
-      "logoPath": "/flutter.svg"
-    },
-    {
       "id": 13,
       "name": "Docker",
       "logoPath": "/docker.svg"

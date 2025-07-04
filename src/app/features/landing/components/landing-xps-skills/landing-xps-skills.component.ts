@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, computed, inject, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, inject, OnInit } from '@angular/core';
 import { EducationsComponent } from './educations/educations.component';
 import { WorkExperiencesComponent } from "./work-experiences/work-experiences.component";
 import { CertificatesComponent } from "./certificates/certificates.component";
@@ -21,4 +21,9 @@ export class LandingXpsSkillsComponent {
   readonly #skills = toSignal(this.#skillService.getSkills(), { initialValue: mockData });
   readonly loading = computed(() => this.#skills().length === 0);
   readonly skills = computed(() => this.#skills());
+  constructor() {
+    effect(() => {
+      console.log('Skills loaded:', this.#skills());
+    });
+  }
 }

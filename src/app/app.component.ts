@@ -6,12 +6,11 @@ import { Router, Event, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'watojoel',
-  standalone: true,
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'watojoel';
 
   constructor(private primeng: PrimeNG, private router: Router) { }

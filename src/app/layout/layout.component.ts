@@ -1,18 +1,17 @@
 import { ChangeDetectionStrategy, Component, type OnInit } from '@angular/core';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { Subscription, filter } from 'rxjs';
-import { AdminComponent } from "./admin/admin.component";
 import { LandingComponent } from "./landing/landing.component";
 import { EmptyComponent } from "./empty/empty.component";
 
 @Component({
   selector: 'watojoel-layout',
-  imports: [AdminComponent, LandingComponent, EmptyComponent],
+  imports: [LandingComponent, EmptyComponent],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class LayoutComponent implements OnInit {
+export class LayoutComponent {
 
   layout: string = 'landing'; // Set landing as default
   currentChildrenPath: string = '';

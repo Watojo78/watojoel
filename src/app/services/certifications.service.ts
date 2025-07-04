@@ -1,35 +1,36 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from '../../environments/environment';
+import { environment_dev } from '../../environments/environment.development';
+const apiBasePath = environment.production ? environment.PROD_API_BASEPATH : environment_dev.LOCAL_API_BASEPATH;
 
 @Injectable({
   providedIn: 'root'
 })
 export class CertificationsService {
-  //private apiUrlProd = 'https://api.pro.isbndb.com';
-  private apiUrlMock = "http://localhost:3000/certifications";
+  /**
+   * Injects the HttpClient service for making HTTP requests.
+   * @private
+   */
+  readonly #http = inject(HttpClient);
 
-  constructor(private http: HttpClient) { }
-
+  /**
+   * Retrieves all certifications.
+   * @returns An Observable containing the list of certifications.
+   */
   getCertifications(): Observable<any> {
-    return this.http.get(this.apiUrlMock)
+    const url = `${apiBasePath}/certifications`;
+    return this.#http.get(url);
   }
 
-  newCertification(certification_data: any): Observable<any> {
-    return this.http.post(this.apiUrlMock, certification_data);
-  }
-
-  updateCertification(certification_data: any): Observable<any> {
-    return this.http.put(this.apiUrlMock, certification_data);
-  }
-
+  /**
+   * Retrieves a specific certification by its ID.
+   * @param certificationId - The ID of the certification to retrieve.
+   * @returns An Observable containing the certification details.
+   */
   getCertification(certificationId : any): Observable<any> {
-    const url = this.apiUrlMock + `/${certificationId}`;
-    return this.http.get(url);
-  }
-
-  deleteCertification(certificationId : any): Observable<any> {
-    const url = this.apiUrlMock + `/${certificationId}`;
-    return this.http.delete<any>(url);
+    const url = `${apiBasePath}/${certificationId}`;
+    return this.#http.get(url);
   }
 }

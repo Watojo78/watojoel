@@ -6,7 +6,6 @@ import { ButtonModule } from 'primeng/button';
 @Component({
   selector: 'landing-hero',
   imports: [RouterLink, NgOptimizedImage, ButtonModule],
-  standalone: true,
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

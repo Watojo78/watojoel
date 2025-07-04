@@ -7,7 +7,6 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'landing-testimony-card',
   imports: [DividerModule, RatingModule, FormsModule],
-  standalone: true,
   templateUrl: './landing-testimony-card.component.html',
   styleUrl: './landing-testimony-card.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

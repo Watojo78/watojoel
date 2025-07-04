@@ -131,7 +131,7 @@
     "path": "/certifications/:id",
     "handler": "/certifications"
   },
-  
+
 
   {
     "method": "GET",

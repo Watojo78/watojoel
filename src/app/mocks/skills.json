@@ -1,77 +1,77 @@
 [
-  {
-    "id": 0,
-    "name": "HTML5",
-    "logoPath": "/html5.svg"
-  },
-  {
-    "id": 1,
-    "name": "CSS3",
-    "logoPath": "/css3.svg"
-  },
-  {
-    "id": 2,
-    "name": "Sass",
-    "logoPath": "/sass.svg"
-  },
-  {
-    "id": 3,
-    "name": "Tailwindcss",
-    "logoPath": "/tailwindcss.svg"
-  },
-  {
-    "id": 4,
-    "name": "Primeng",
-    "logoPath": "/primeng.svg"
-  },
-  {
-    "id": 5,
-    "name": "JavaScript",
-    "logoPath": "/js.svg"
-  },
-  {
-    "id": 6,
-    "name": "TypeScript",
-    "logoPath": "/ts.svg"
-  },
-  {
-    "id": 7,
-    "name": "Angular",
-    "logoPath": "/angular.svg"
-  },
-  {
-    "id": 8,
-    "name": "Java",
-    "logoPath": "/java.svg"
-  },
-  {
-    "id": 9,
-    "name": "SpringBoot",
-    "logoPath": "/springboot.svg"
-  },
-  {
-    "id": 10,
-    "name": "Directus",
-    "logoPath": "/directus.svg"
-  },
-  {
-    "id": 11,
-    "name": "Strapi",
-    "logoPath": "/strapi.svg"
-  },
-  {
-    "id": 12,
-    "name": "Flutter",
-    "logoPath": "/flutter.svg"
-  },
-  {
-    "id": 13,
-    "name": "Docker",
-    "logoPath": "/docker.svg"
-  },
-  {
-    "id": 14,
-    "name": "Git",
-    "logoPath": "/git.svg"
-  }
-]
+    {
+      "id": 0,
+      "name": "HTML5",
+      "logoPath": "/html5.svg"
+    },
+    {
+      "id": 1,
+      "name": "CSS3",
+      "logoPath": "/css3.svg"
+    },
+    {
+      "id": 2,
+      "name": "Sass",
+      "logoPath": "/sass.svg"
+    },
+    {
+      "id": 3,
+      "name": "Tailwindcss",
+      "logoPath": "/tailwindcss.svg"
+    },
+    {
+      "id": 4,
+      "name": "Primeng",
+      "logoPath": "/primeng.svg"
+    },
+    {
+      "id": 5,
+      "name": "JavaScript",
+      "logoPath": "/js.svg"
+    },
+    {
+      "id": 6,
+      "name": "TypeScript",
+      "logoPath": "/ts.svg"
+    },
+    {
+      "id": 7,
+      "name": "Angular",
+      "logoPath": "/angular.svg"
+    },
+    {
+      "id": 8,
+      "name": "Java",
+      "logoPath": "/java.svg"
+    },
+    {
+      "id": 9,
+      "name": "SpringBoot",
+      "logoPath": "/springboot.svg"
+    },
+    {
+      "id": 10,
+      "name": "Directus",
+      "logoPath": "/directus.svg"
+    },
+    {
+      "id": 11,
+      "name": "Strapi",
+      "logoPath": "/strapi.svg"
+    },
+    {
+      "id": 12,
+      "name": "Flutter",
+      "logoPath": "/flutter.svg"
+    },
+    {
+      "id": 13,
+      "name": "Docker",
+      "logoPath": "/docker.svg"
+    },
+    {
+      "id": 14,
+      "name": "Git",
+      "logoPath": "/git.svg"
+    }
+  ]

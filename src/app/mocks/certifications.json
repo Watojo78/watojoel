@@ -4,20 +4,13 @@
     "name": "Initiation Java",
     "provider": "EPFL",
     "dateEarned": "2024-10-01",
-    "link": "https://test.com"
-  },
-  {
-    "id": 2,
-    "name": "Initiation Java POO",
-    "provider": "EPFL",
-    "dateEarned": "2024-10-01",
-    "link": "https://test.com"
+    "link": "https://coursera.com"
   },
   {
     "id": 3,
-    "name": "React Native",
-    "provider": "Dyma",
+    "name": "Angular",
+    "provider": "Udemy",
     "dateEarned": "2025-03-01",
-    "link": "https://test.com"
+    "link": "https://udemy.com"
   }
 ]

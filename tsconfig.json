@@ -3,9 +3,6 @@
   "compileOnSave": false,
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
-    "types": [
-      "node"
-    ],
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "resolveJsonModule": true,

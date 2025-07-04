@@ -6,7 +6,7 @@ import { ChangeDetectionStrategy, Component, type OnInit } from '@angular/core';
   styleUrl: './projects.page.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ProjectsPage implements OnInit {
+export class ProjectsPage {
 
   ngOnInit(): void { }
 

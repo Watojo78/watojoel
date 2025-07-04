@@ -13,13 +13,12 @@ import { MessageService } from 'primeng/api';
 @Component({
   selector: 'home-contact',
   imports: [FloatLabelModule, TextareaModule, ButtonModule, InputTextModule, ToastModule, ReactiveFormsModule],
-  standalone: true,
   providers: [MessageService],
   templateUrl: './home-contact.component.html',
   styleUrl: './home-contact.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomeContactComponent implements OnInit {
+export class HomeContactComponent {
 
   contactForm!: FormGroup;
   submitted = false;

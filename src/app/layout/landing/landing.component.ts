@@ -7,12 +7,11 @@ import { SimplebarAngularModule } from 'simplebar-angular';
 @Component({
   selector: 'landing',
   imports: [RouterOutlet, LandingHeaderComponent, LandingFooterComponent, SimplebarAngularModule],
-  standalone: true,
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class LandingComponent { 
+export class LandingComponent {
 
   options = { autoHide: true, scrollbarMinSize: 100 };
 

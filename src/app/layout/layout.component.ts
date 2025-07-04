@@ -11,7 +11,7 @@ import { EmptyComponent } from "./empty/empty.component";
   styleUrl: './layout.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class LayoutComponent implements OnInit {
+export class LayoutComponent {
 
   layout: string = 'landing'; // Set landing as default
   currentChildrenPath: string = '';

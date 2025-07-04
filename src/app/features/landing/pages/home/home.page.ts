@@ -7,11 +7,10 @@ import { HomeContactComponent } from "../../components/home-contact/home-contact
 
 @Component({
   imports: [HeroComponent, RecentProjectsComponent, LandingXpsSkillsComponent, LandingTestimoniesComponent, HomeContactComponent],
-  standalone: true,
   templateUrl: './home.page.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomePage implements OnInit {
+export class HomePage {
 
   ngOnInit(): void { }
   options = {

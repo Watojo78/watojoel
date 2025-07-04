@@ -1,35 +1,37 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from '../../environments/environment';
+import { environment_dev } from '../../environments/environment.development';
+import { Skill } from '../models/skill.model';
+const apiBasePath = environment.production ? environment.PROD_API_BASEPATH : environment_dev.LOCAL_API_BASEPATH;
 
 @Injectable({
   providedIn: 'root'
 })
 export class SkillsService {
-  //private apiUrlProd = 'https://api.pro.isbndb.com';
-  private apiUrlMock = "http://localhost:3000/skills";
+  /**
+   * Injects the HttpClient service for making HTTP requests.
+   * @private
+   */
+  readonly #http = inject(HttpClient);
 
-  constructor(private http: HttpClient) { }
-
-  getSkills(): Observable<any> {
-    return this.http.get(this.apiUrlMock)
+  /**
+   * Retrieves all skills.
+   * @returns An Observable containing the list of skills.
+   */
+  getSkills(): Observable<Skill[]> {
+    const url = `${apiBasePath}/skills`;
+    return this.#http.get<Skill[]>(url);
   }
 
-  newSkill(skill_data: any): Observable<any> {
-    return this.http.post(this.apiUrlMock, skill_data);
-  }
-
-  updateSkill(skill_data: any): Observable<any> {
-    return this.http.put(this.apiUrlMock, skill_data);
-  }
-
-  getSkill(skillId : any): Observable<any> {
-    const url = this.apiUrlMock + `/${skillId}`;
-    return this.http.get(url);
-  }
-
-  deleteSkill(skillId : any): Observable<any> {
-    const url = this.apiUrlMock + `/${skillId}`;
-    return this.http.delete<any>(url);
+  /**
+   * Retrieves a specific skill by its ID.
+   * @param skillId - The ID of the skill to retrieve.
+   * @returns An Observable containing the skill details.
+   */
+  getSkill(skillId: number): Observable<Skill> {
+    const url = `${apiBasePath}//${skillId}`;
+    return this.#http.get<Skill>(url);
   }
 }

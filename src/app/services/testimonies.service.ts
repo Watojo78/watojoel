@@ -1,35 +1,37 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from '../../environments/environment';
+import { environment_dev } from '../../environments/environment.development';
+import { Testimony } from '../models/testimony.model';
+const apiBasePath = environment.production ? environment.PROD_API_BASEPATH : environment_dev.LOCAL_API_BASEPATH;
 
 @Injectable({
   providedIn: 'root'
 })
 export class TestimoniesService {
-  private apiUrlProd = 'https://api.pro.isbndb.com';
-  private apiUrlMock = "http://localhost:3000/testimonies";
+  /**
+   * Injects the HttpClient service for making HTTP requests.
+   * @private
+   */
+  readonly #http = inject(HttpClient);
 
-  constructor(private http: HttpClient) { }
-
-  getTestimonies(): Observable<any> {
-    return this.http.get(this.apiUrlMock)
+  /**
+   * Retrieves all testimonies.
+   * @returns An Observable containing the list of testimonies.
+   */
+  getTestimonies(): Observable<Testimony[]> {
+    const url = `${apiBasePath}/testimonies`;
+    return this.#http.get<Testimony[]>(url);
   }
 
-  newTestimony(testimony_data: any): Observable<any> {
-    return this.http.post(this.apiUrlMock, testimony_data);
-  }
-
-  updateTestimony(testimony_data: any): Observable<any> {
-    return this.http.put(this.apiUrlMock, testimony_data);
-  }
-
-  getTestimony(testimonyId : any): Observable<any> {
-    const url = this.apiUrlMock + `/${testimonyId}`;
-    return this.http.get(url);
-  }
-
-  deleteTestimony(testimonyId : any): Observable<any> {
-    const url = this.apiUrlMock + `/${testimonyId}`;
-    return this.http.delete<any>(url);
+  /**
+   * Retrieves a specific testimony by its ID.
+   * @param id - The ID of the testimony to retrieve.
+   * @returns An Observable containing the testimony details.
+   */
+  getTestimony(id : number): Observable<Testimony> {
+    const url = `${apiBasePath}/${id}`;
+    return this.#http.get<Testimony>(url);
   }
 }

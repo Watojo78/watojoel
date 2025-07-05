@@ -11,7 +11,6 @@ import { toSignal } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'landing-xps-skills',
-  standalone: true,
   imports: [EducationsComponent, WorkExperiencesComponent, CertificatesComponent, TabsModule, ButtonModule, RippleModule ],
   templateUrl: './landing-xps-skills.component.html',
   styleUrl: './landing-xps-skills.component.scss',

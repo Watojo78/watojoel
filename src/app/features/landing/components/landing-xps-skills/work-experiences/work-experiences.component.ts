@@ -7,7 +7,6 @@ import { toSignal } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'work-experiences',
-  standalone: true,
   imports: [TimelineModule],
   templateUrl: './work-experiences.component.html',
   styleUrl: './work-experiences.component.scss',

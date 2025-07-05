@@ -7,7 +7,6 @@ import { chunkArray } from '../../../../shared/utils/array.util';
 
 @Component({
   selector: 'landing-testimonies',
-  standalone: true,
   imports: [LandingTestimonyCardComponent],
   templateUrl: './landing-testimonies.component.html',
   styleUrl: './landing-testimonies.component.scss',

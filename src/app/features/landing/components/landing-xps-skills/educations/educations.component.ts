@@ -6,7 +6,6 @@ import mockData from '../../../../../mocks/educations.json';
 
 @Component({
   selector: 'educations',
-  standalone: true,
   imports: [TimelineModule],
   templateUrl: './educations.component.html',
   styleUrl: './educations.component.scss',

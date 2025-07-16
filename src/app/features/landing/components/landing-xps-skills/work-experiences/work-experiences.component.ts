@@ -1,4 +1,3 @@
-import { WorkExperience } from '../../../../../models/work-experience.model';
 import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { TimelineModule } from 'primeng/timeline';
 import { WorkExperiencesService } from '../../../../../services/work-experiences.service';

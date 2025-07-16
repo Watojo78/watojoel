@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, computed, effect, inject, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, inject } from '@angular/core';
 import { EducationsComponent } from './educations/educations.component';
 import { WorkExperiencesComponent } from "./work-experiences/work-experiences.component";
 import { CertificatesComponent } from "./certificates/certificates.component";

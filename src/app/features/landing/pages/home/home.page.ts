@@ -15,5 +15,4 @@ export class HomePage {
     autoHide: true,
     scrollbarMinSize: 100
   }
-
 }

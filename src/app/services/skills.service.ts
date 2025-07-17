@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
 import { Skill } from '../models/skill.model';
 
-const apiBasePath = environment.API_BASEPATH;
+const apiBasePath = environment.apiUrl;
 
 @Injectable({
   providedIn: 'root'

@@ -1,77 +1,135 @@
 [
-    {
-      "id": 0,
-      "name": "HTML5",
-      "logoPath": "/html5.svg"
-    },
-    {
-      "id": 1,
-      "name": "CSS3",
-      "logoPath": "/css3.svg"
-    },
-    {
-      "id": 2,
-      "name": "Sass",
-      "logoPath": "/sass.svg"
-    },
-    {
-      "id": 3,
-      "name": "Tailwindcss",
-      "logoPath": "/tailwindcss.svg"
-    },
-    {
-      "id": 4,
-      "name": "Primeng",
-      "logoPath": "/primeng.svg"
-    },
-    {
-      "id": 5,
-      "name": "JavaScript",
-      "logoPath": "/js.svg"
-    },
-    {
-      "id": 6,
-      "name": "TypeScript",
-      "logoPath": "/ts.svg"
-    },
-    {
-      "id": 7,
-      "name": "Angular",
-      "logoPath": "/angular.svg"
-    },
-    {
-      "id": 8,
-      "name": "Java",
-      "logoPath": "/java.svg"
-    },
-    {
-      "id": 9,
-      "name": "SpringBoot",
-      "logoPath": "/springboot.svg"
-    },
-    {
-      "id": 10,
-      "name": "Directus",
-      "logoPath": "/directus.svg"
-    },
-    {
-      "id": 11,
-      "name": "Strapi",
-      "logoPath": "/strapi.svg"
-    },
-    {
-      "id": 12,
-      "name": "Flutter",
-      "logoPath": "/flutter.svg"
-    },
-    {
-      "id": 13,
-      "name": "Docker",
-      "logoPath": "/docker.svg"
-    },
-    {
-      "id": 14,
-      "name": "Git",
-      "logoPath": "/git.svg"
-    }
-  ]
+  {
+    "id": 1,
+    "status": "published",
+    "name": "HTML5",
+    "logo_path": "605a947b-8c5e-4178-9cfb-8471aec04285",
+    "category": "Frontend"
+  },
+  {
+    "id": 2,
+    "status": "published",
+    "name": "CSS3",
+    "logo_path": "fcd1af5a-31d0-4610-8138-ba7aac056dcb",
+    "category": "Frontend"
+  },
+  {
+    "id": 3,
+    "status": "published",
+    "name": "Sass",
+    "logo_path": "00f94314-8bba-4918-b921-36e37a6e03a9",
+    "category": "Frontend"
+  },
+  {
+    "id": 4,
+    "status": "published",
+    "name": "Tailwindcss",
+    "logo_path": "88ff4172-e3dd-4755-961d-304a2e9d4a8d",
+    "category": "Frontend"
+  },
+  {
+    "id": 5,
+    "status": "published",
+    "name": "Primeng",
+    "logo_path": "1ba884d7-eb36-4181-b27e-0ae100cc5752",
+    "category": "Frontend"
+  },
+  {
+    "id": 6,
+    "status": "published",
+    "name": "Javascript",
+    "logo_path": "5e1fbb07-f394-40a7-8aed-9da5725ea92c",
+    "category": "Frontend"
+  },
+  {
+    "id": 7,
+    "status": "published",
+    "name": "Typescript",
+    "logo_path": "cad343a6-fe21-4539-8f6f-142160352cf4",
+    "category": "Frontend"
+  },
+  {
+    "id": 8,
+    "status": "published",
+    "name": "Java",
+    "logo_path": "db7fbe86-00c1-4c7c-bdb5-3a6fb856c9b2",
+    "category": "Backend"
+  },
+  {
+    "id": 9,
+    "status": "published",
+    "name": "Springboot",
+    "logo_path": "f5002a11-5060-4355-afc3-6ce79c55d058",
+    "category": "Backend"
+  },
+  {
+    "id": 10,
+    "status": "published",
+    "name": "Directus",
+    "logo_path": "c254be40-13db-4390-a933-c0119cd4a343",
+    "category": "Backend"
+  },
+  {
+    "id": 11,
+    "status": "published",
+    "name": "Strapi",
+    "logo_path": "9f9c056a-a990-4072-89bf-e515f24bef06",
+    "category": "Backend"
+  },
+  {
+    "id": 12,
+    "status": "published",
+    "name": "Flutter",
+    "logo_path": "3f1dd28b-e0e8-461e-9970-6ca1238e3626",
+    "category": "Flutter"
+  },
+  {
+    "id": 13,
+    "status": "published",
+    "name": "Docker",
+    "logo_path": "6d424c41-6150-4858-89f6-dfb315bf6c45",
+    "category": "DevOps"
+  },
+  {
+    "id": 14,
+    "status": "published",
+    "name": "Git",
+    "logo_path": "e8480bfb-d2c8-4e95-9d10-ac1f809fea9c",
+    "category": "CI/CD"
+  },
+  {
+    "id": 15,
+    "status": "published",
+    "name": "Angular",
+    "logo_path": "4ae36243-3793-4ba7-bee8-ba327aeff7ac",
+    "category": "Frontend"
+  },
+  {
+    "id": 16,
+    "status": "published",
+    "name": "Material",
+    "logo_path": "f99085a3-ae68-4fd9-9308-e2b0fe7685df",
+    "category": "Frontend"
+  },
+  {
+    "id": 17,
+    "status": "published",
+    "name": "PHP",
+    "logo_path": "94bcfebc-de25-431e-b14c-7fc8299ca70c",
+    "category": "Backend"
+  },
+  {
+    "id": 18,
+    "status": "published",
+    "name": "MySQL",
+    "logo_path": "52f54141-83d6-4203-86a5-679871602785",
+    "category": "Backend"
+  },
+  {
+    "id": 19,
+    "status": "published",
+    "name": "PostgreSQL",
+    "logo_path": "b1a525cc-0e9c-42cd-80ec-ae5ae62273b0",
+    "category": "Backend"
+  }
+]

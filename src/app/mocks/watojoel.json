@@ -1,5 +1,5 @@
 {
-  "about": [
+  "abouts": [
     {
       "id": 1,
       "fullname": "Joel Wafo Tokam",
@@ -29,44 +29,44 @@
       "title": "My Portfolio",
       "description": "This is my personal portfolio website, built with Angular.",
       "thumbnailPath": "/portfolio_thumbnail.png",
-      "githubUrl": "https://github.com/Watojo78/watojoel",
+      "repository_url": "https://github.com/Watojo78/watojoel",
       "projectUrl": "https://joelwafotokam.dev",
       "previewUrl": "https://watojoel-dev.vercel.app",
       "techstack": [
         {
           "id": 3,
           "name": "Tailwindcss",
-          "logoPath": "/tailwindcss.svg"
+          "logo_path": "/tailwindcss.svg"
         },
         {
           "id": 4,
           "name": "Primeng",
-          "logoPath": "/primeng.svg"
+          "logo_path": "/primeng.svg"
         },
         {
           "id": 6,
           "name": "TypeScript",
-          "logoPath": "/ts.svg"
+          "logo_path": "/ts.svg"
         },
         {
           "id": 7,
           "name": "Angular",
-          "logoPath": "/angular.svg"
+          "logo_path": "/angular.svg"
         },
         {
           "id": 10,
           "name": "Directus",
-          "logoPath": "/directus.svg"
+          "logo_path": "/directus.svg"
         },
         {
           "id": 14,
           "name": "Git",
-          "logoPath": "/git.svg"
+          "logo_path": "/git.svg"
         },
         {
           "id": 15,
           "name": "Postgresql",
-          "logoPath": "/postgresql.svg"
+          "logo_path": "/postgresql.svg"
         }
       ],
       "role": "Lead Fullstack developer",
@@ -82,43 +82,43 @@
       "description": "Developed a clone of the Movoo movie app.",
       "thumbnailPath": "/movoo@homepage_thumbnail.png",
       "projectUrl": "https://movoo-clone.vercel.app/",
-      "githubUrl": "https://github.com/Watojo78/watojoel/movoo-clone",
+      "repository_url": "https://github.com/Watojo78/watojoel/movoo-clone",
       "previewUrl": "https://movoo-clone.vercel.app/",
       "techstack": [
         {
           "id": 3,
           "name": "Tailwindcss",
-          "logoPath": "/tailwindcss.svg"
+          "logo_path": "/tailwindcss.svg"
         },
         {
           "id": 4,
           "name": "Primeng",
-          "logoPath": "/primeng.svg"
+          "logo_path": "/primeng.svg"
         },
         {
           "id": 6,
           "name": "TypeScript",
-          "logoPath": "/ts.svg"
+          "logo_path": "/ts.svg"
         },
         {
           "id": 7,
           "name": "Angular",
-          "logoPath": "/angular.svg"
+          "logo_path": "/angular.svg"
         },
         {
           "id": 14,
           "name": "Git",
-          "logoPath": "/git.svg"
+          "logo_path": "/git.svg"
         },
         {
           "id": 16,
           "name": "TMDB Rest API",
-          "logoPath": "/"
+          "logo_path": "/"
         },
         {
           "id": 17,
           "name": "Material",
-          "logoPath": "/material.svg"
+          "logo_path": "/material.svg"
         }
       ],
       "role": "Angular Developer",
@@ -130,7 +130,7 @@
       ]
     }
   ],
-  "work-experiences": [
+  "work_experiences": [
     {
       "id": 0,
       "company":"AfroMetaverse",
@@ -172,12 +172,12 @@
         {
           "id": 1,
           "name": "Angular",
-          "logoPath": "/angular.svg"
+          "logo_path": "/angular.svg"
         },
         {
           "id": 8,
           "name": "SpringBoot",
-          "logoPath": "/springboot.svg"
+          "logo_path": "/springboot.svg"
         }
       ]
     },
@@ -196,17 +196,17 @@
         {
           "id": 0,
           "name": "HTML5",
-          "logoPath": "/html5.svg"
+          "logo_path": "/html5.svg"
         },
         {
           "id": 1,
           "name": "CSS3",
-          "logoPath": "/css3.svg"
+          "logo_path": "/css3.svg"
         },
         {
           "id": 8,
           "name": "Java",
-          "logoPath": "/java.svg"
+          "logo_path": "/java.svg"
         }
       ]
     }
@@ -231,67 +231,67 @@
     {
       "id": 0,
       "name": "HTML5",
-      "logoPath": "/html5.svg"
+      "logo_path": "/html5.svg"
     },
     {
       "id": 1,
       "name": "CSS3",
-      "logoPath": "/css3.svg"
+      "logo_path": "/css3.svg"
     },
     {
       "id": 2,
       "name": "Sass",
-      "logoPath": "/sass.svg"
+      "logo_path": "/sass.svg"
     },
     {
       "id": 3,
       "name": "Tailwindcss",
-      "logoPath": "/tailwindcss.svg"
+      "logo_path": "/tailwindcss.svg"
     },
     {
       "id": 4,
       "name": "Primeng",
-      "logoPath": "/primeng.svg"
+      "logo_path": "/primeng.svg"
     },
     {
       "id": 5,
       "name": "JavaScript",
-      "logoPath": "/js.svg"
+      "logo_path": "/js.svg"
     },
     {
       "id": 6,
       "name": "TypeScript",
-      "logoPath": "/ts.svg"
+      "logo_path": "/ts.svg"
     },
     {
       "id": 7,
       "name": "Angular",
-      "logoPath": "/angular.svg"
+      "logo_path": "/angular.svg"
     },
     {
       "id": 8,
       "name": "Java",
-      "logoPath": "/java.svg"
+      "logo_path": "/java.svg"
     },
     {
       "id": 9,
       "name": "SpringBoot",
-      "logoPath": "/springboot.svg"
+      "logo_path": "/springboot.svg"
     },
     {
       "id": 10,
       "name": "Directus",
-      "logoPath": "/directus.svg"
+      "logo_path": "/directus.svg"
     },
     {
       "id": 13,
       "name": "Docker",
-      "logoPath": "/docker.svg"
+      "logo_path": "/docker.svg"
     },
     {
       "id": 14,
       "name": "Git",
-      "logoPath": "/git.svg"
+      "logo_path": "/git.svg"
     }
   ],
   "testimonies": [

@@ -14,5 +14,4 @@ import { environment } from '../../../../../../environments/environment';
 })
 export class LandingTestimonyCardComponent {
   @Input() testimony!: Testimony;
-  readonly assetsUrl = environment.assetsUrl;
 }

@@ -1,8 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
 import { Skill } from '../models/skill.model';
+import { ApiResponse } from '../models/api-response.model';
 
 const apiBasePath = environment.apiUrl;
 
@@ -22,16 +23,8 @@ export class SkillsService {
    */
   getSkills(): Observable<Skill[]> {
     const url = `${apiBasePath}/skills`;
-    return this.#http.get<Skill[]>(url);
-  }
-
-  /**
-   * Retrieves a specific skill by its ID.
-   * @param skillId - The ID of the skill to retrieve.
-   * @returns An Observable containing the skill details.
-   */
-  getSkill(skillId: number): Observable<Skill> {
-    const url = `${apiBasePath}//${skillId}`;
-    return this.#http.get<Skill>(url);
+    return this.#http.get<ApiResponse<Skill[]>>(url).pipe(
+      map(response => response.data)
+    );
   }
 }

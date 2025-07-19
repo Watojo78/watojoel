@@ -1,7 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
+import { Education } from '../models/education.model';
+import { ApiResponse } from '../models/api-response.model';
 
 const apiBasePath = environment.apiUrl;
 
@@ -19,9 +21,11 @@ export class EducationsService {
    * Retrieves all educations.
    * @returns An Observable containing the list of educations.
    */
-  getEducations(): Observable<any> {
+  getEducations(): Observable<Education[]> {
     const url = `${apiBasePath}/educations`;
-    return this.#http.get(url);
+    return this.#http.get<ApiResponse<Education[]>>(url).pipe(
+      map(response => response.data)
+    );
   }
 
   /**
@@ -29,8 +33,10 @@ export class EducationsService {
    * @param id - The ID of the education to retrieve.
    * @returns An Observable containing the education details.
    */
-  getEducation(id : number): Observable<any> {
+  getEducation(id : number): Observable<Education> {
     const url = `${apiBasePath}/${id}`;
-    return this.#http.get(url);
+    return this.#http.get<ApiResponse<Education>>(url).pipe(
+      map(response => response.data)
+    );
   }
 }

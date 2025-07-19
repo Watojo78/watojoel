@@ -1,8 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
 import { Project } from '../models/project.model';
+import { ApiResponse } from '../models/api-response.model';
 
 const apiBasePath = environment.apiUrl;
 
@@ -23,7 +24,9 @@ export class ProjectsService {
   getProjects(): Observable<Project[]> {
     const url = `${apiBasePath}/projects`;
     console.log('Fetching projects from:', url);
-    return this.#http.get<Project[]>(url);
+    return this.#http.get<ApiResponse<Project[]>>(url).pipe(
+      map(response => response.data)
+    );
   }
 
   /**
@@ -33,6 +36,8 @@ export class ProjectsService {
    */
   getProject(projectId : number): Observable<Project> {
     const url = `${apiBasePath}/${projectId}`;
-    return this.#http.get<Project>(url);
+    return this.#http.get<ApiResponse<Project>>(url).pipe(
+      map(response => response.data)
+    );
   }
 }

@@ -3,7 +3,7 @@ import { DividerModule } from 'primeng/divider';
 import { RatingModule } from 'primeng/rating';
 import { Testimony } from '../../../../../models/testimony.model';
 import { FormsModule } from '@angular/forms';
-import { environment } from '../../../../../../environments/environment.development';
+import { environment } from '../../../../../../environments/environment';
 
 @Component({
   selector: 'landing-testimony-card',

@@ -1,8 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
 import { Testimony } from '../models/testimony.model';
+import { ApiResponse } from '../models/api-response.model';
 
 const apiBasePath = environment.apiUrl;
 
@@ -22,7 +23,9 @@ export class TestimoniesService {
    */
   getTestimonies(): Observable<Testimony[]> {
     const url = `${apiBasePath}/testimonies`;
-    return this.#http.get<Testimony[]>(url);
+    return this.#http.get<ApiResponse<Testimony[]>>(url).pipe(
+      map(response => response.data)
+    );
   }
 
   /**
@@ -32,6 +35,8 @@ export class TestimoniesService {
    */
   getTestimony(id : number): Observable<Testimony> {
     const url = `${apiBasePath}/${id}`;
-    return this.#http.get<Testimony>(url);
+    return this.#http.get<ApiResponse<Testimony>>(url).pipe(
+      map(response => response.data)
+    );
   }
 }

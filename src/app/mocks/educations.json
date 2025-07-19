@@ -14,12 +14,12 @@
         {
           "id": 1,
           "name": "Angular",
-          "logoPath": "/angular.svg"
+          "logo_path": "/angular.svg"
         },
         {
           "id": 8,
           "name": "SpringBoot",
-          "logoPath": "/springboot.svg"
+          "logo_path": "/springboot.svg"
         }
       ]
     },
@@ -38,17 +38,17 @@
         {
           "id": 0,
           "name": "HTML5",
-          "logoPath": "/html5.svg"
+          "logo_path": "/html5.svg"
         },
         {
           "id": 1,
           "name": "CSS3",
-          "logoPath": "/css3.svg"
+          "logo_path": "/css3.svg"
         },
         {
           "id": 8,
           "name": "Java",
-          "logoPath": "/java.svg"
+          "logo_path": "/java.svg"
         }
       ]
     }

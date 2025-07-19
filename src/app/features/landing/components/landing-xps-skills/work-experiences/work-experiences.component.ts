@@ -1,4 +1,3 @@
-import { WorkExperience } from '../../../../../models/work-experience.model';
 import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { TimelineModule } from 'primeng/timeline';
 import { WorkExperiencesService } from '../../../../../services/work-experiences.service';
@@ -17,4 +16,7 @@ export class WorkExperiencesComponent {
   readonly #works = toSignal(this.#workService.getWorks(),{initialValue: mockData});
   readonly loading = computed(() => this.#works().length === 0);
   readonly works = computed(() => this.#works());
+  constructor() {
+    console.log('WorkExperiencesComponent: Works loaded', this.#works());
+  }
 }

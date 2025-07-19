@@ -1,10 +1,11 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
-import { environment_dev } from '../../environments/environment.development';
 import { Testimony } from '../models/testimony.model';
-const apiBasePath = environment.production ? environment.PROD_API_BASEPATH : environment_dev.LOCAL_API_BASEPATH;
+import { ApiResponse } from '../models/api-response.model';
+
+const apiBasePath = environment.apiUrl;
 
 @Injectable({
   providedIn: 'root'
@@ -22,7 +23,9 @@ export class TestimoniesService {
    */
   getTestimonies(): Observable<Testimony[]> {
     const url = `${apiBasePath}/testimonies`;
-    return this.#http.get<Testimony[]>(url);
+    return this.#http.get<ApiResponse<Testimony[]>>(url).pipe(
+      map(response => response.data)
+    );
   }
 
   /**
@@ -32,6 +35,8 @@ export class TestimoniesService {
    */
   getTestimony(id : number): Observable<Testimony> {
     const url = `${apiBasePath}/${id}`;
-    return this.#http.get<Testimony>(url);
+    return this.#http.get<ApiResponse<Testimony>>(url).pipe(
+      map(response => response.data)
+    );
   }
 }

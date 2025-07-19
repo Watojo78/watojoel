@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { LandingTestimonyCardComponent } from "./landing-testimony-card/landing-testimony-card.component";
-import { TestimoniesService } from '../../../../services/testimonies.service'; 
+import { TestimoniesService } from '../../../../services/testimonies.service';
 import mockData from '../../../../mocks/testimonies.json'
 import { toSignal } from '@angular/core/rxjs-interop';
 import { chunkArray } from '../../../../shared/utils/array.util';

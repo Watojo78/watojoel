@@ -32,7 +32,7 @@
         <img src="../../../../../../assets/common/icons/house-blank2.svg" alt="web-home">
         <div class="nav-bar-url overflow-hidden">
           <img src="../../../../../../assets/common/icons/padlock-check@br.svg" alt="mobile-lock-check">
-          <p class="overflow-hidden">{{project.projectUrl}}</p>
+          <p class="overflow-hidden">{{project.project_url}}</p>
         </div>
         <div class="fake-menu">
           <p-button [rounded]="true" severity="secondary">
@@ -42,22 +42,22 @@
       </div>
       <div class="container-content">
         <div class="content-thumb">
-          <img [src]="['../../../../../../assets/images' + project.thumbnailPath]" alt="around-login">
+          <img [src]="['https://api.joelwafotokam.dev/assets/' + project.thumbnail_path]" alt="around-login">
         </div>
         <div class="content-absolute">
           <div class="absolute-cta">
-            <a [href]="[project.projectUrl]" class="cta-one">
+            <a [href]="[project.project_url]" class="cta-one">
               <p-button [rounded]="true" severity="contrast">
                 <img src="../../../../../../assets/icons/play.svg" alt="play.svg" height="20">
               </p-button>
             </a>
-            <a [href]="[project.previewUrl]" target="_blank" class="cta-two">
+            <a [href]="[project.repository_url]" target="_blank" class="cta-two">
               <p-button [rounded]="true" severity="secondary">
                 <img src="../../../../../../assets/common/icons/arrow-up-right-from-square.svg" alt="" height="21">
                 <span>Aperçu</span>
               </p-button>
             </a>
-            <a [href]="[project.githubUrl]" target="_blank" class="cta-three">
+            <a [href]="[project.repository_url]" target="_blank" class="cta-three">
               <p-button [rounded]="true" severity="secondary">
                 <img src="../../../../../../assets/common/icons/github.svg" alt="" height="21">
                 <span>Source</span>
@@ -70,7 +70,7 @@
   </div>
   <div class="resume flex flex-col gap-4 pt-4 pb-4">
     <h4>{{project.title}}</h4>
-    <p>{{project.description}}</p>
+    <p>{{project.summary}}</p>
     <div class="resume-techstack flex items-center justify-start gap-2 flex-wrap">
       @for (skill of project.techstack; track $index) {
       <span class="text-white text-sm bg-black rounded-full pt-1 pb-1 pl-4 pr-4">{{skill.name}}</span>

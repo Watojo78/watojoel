@@ -1,30 +1,38 @@
 [
-    {
-      "id": 1,
-      "name": "Brayan Tiwa",
-      "role": "Flutter Developer",
-      "profileUrl": "/assets/profile.png",
-      "testimonial": "Watojoel did an excellent job on his app project. Highly recommended!"
-    },
-    {
-      "id": 2,
-      "name": "Beatrice",
-      "role": "DSI",
-      "profileUrl": "/assets/profile.png",
-      "testimonial": "Joel Wafo Tokam is a skilled dedicated and professionnal developer. It was a pleasure working with him."
-    },
-    {
-      "id": 3,
-      "name": "Didier",
-      "role": "DSI",
-      "profileUrl": "/assets/profile.png",
-      "testimonial": "Joel did perfectly well on his project. I highly recommend him for any web development task."
-    },
-    {
-      "id": 4,
-      "name": "Marcel Avaika",
-      "role": "Full-Stack Developer",
-      "profileUrl": "/assets/profile.png",
-      "testimonial": "Joel is a great developer. He is very dedicated and always delivers on time."
-    }
-  ]
+  {
+    "id": 1,
+    "status": "published",
+    "date_created": "2025-07-18T02:13:49.875Z",
+    "date_updated": "2025-07-19T20:29:55.774Z",
+    "author_name": "Brayan Tiwa",
+    "quote": "Watojoel did an excellent job on his app project. Highly recommended!",
+    "author_position": "Développeur Flutter",
+    "company_name": "Phoenix",
+    "rating": 5,
+    "author_profile": "0bc9a8af-71b5-474e-b6bf-e1e041df935f"
+  },
+  {
+    "id": 2,
+    "status": "published",
+    "date_created": "2025-07-18T02:15:12.775Z",
+    "date_updated": "2025-07-19T20:30:16.407Z",
+    "author_name": "Béatrice",
+    "quote": "Joel Wafo Tokam is a skilled dedicated and professionnal developer. It was a pleasure working with him.",
+    "author_position": "DSI",
+    "company_name": "Camtel Direction Régionale",
+    "rating": 5,
+    "author_profile": "0bc9a8af-71b5-474e-b6bf-e1e041df935f"
+  },
+  {
+    "id": 3,
+    "status": "published",
+    "date_created": "2025-07-18T02:16:13.812Z",
+    "date_updated": "2025-07-19T20:30:26.190Z",
+    "author_name": "Didier",
+    "quote": "Joel did perfectly well on his project. I highly recommend him for any web development task.",
+    "author_position": "DSI",
+    "company_name": "Camtel Direction Régionale",
+    "rating": 5,
+    "author_profile": "0bc9a8af-71b5-474e-b6bf-e1e041df935f"
+  }
+]

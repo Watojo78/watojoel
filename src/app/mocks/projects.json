@@ -1,107 +1,28 @@
 [
-    {
-      "id": 0,
-      "title": "My Portfolio",
-      "description": "This is my personal portfolio website, built with Angular.",
-      "thumbnailPath": "/portfolio_thumbnail.png",
-      "githubUrl": "https://github.com/Watojo78/watojoel",
-      "projectUrl": "https://joelwafotokam.dev",
-      "previewUrl": "https://watojoel-dev.vercel.app",
-      "techstack": [
-        {
-          "id": 3,
-          "name": "Tailwindcss",
-          "logoPath": "/tailwindcss.svg"
-        },
-        {
-          "id": 4,
-          "name": "Primeng",
-          "logoPath": "/primeng.svg"
-        },
-        {
-          "id": 6,
-          "name": "TypeScript",
-          "logoPath": "/ts.svg"
-        },
-        {
-          "id": 7,
-          "name": "Angular",
-          "logoPath": "/angular.svg"
-        },
-        {
-          "id": 10,
-          "name": "Directus",
-          "logoPath": "/directus.svg"
-        },
-        {
-          "id": 14,
-          "name": "Git",
-          "logoPath": "/git.svg"
-        },
-        {
-          "id": 15,
-          "name": "Postgresql",
-          "logoPath": "/postgresql.svg"
-        }
-      ],
-      "role": "Lead Fullstack developer",
-      "highlights": [
-        "Showcases my skills and projects.",
-        "Built with Angular for a modern and responsive design.",
-        "Continuously updated with my latest work."
-      ]
-    },
-    {
-      "id": 1,
-      "title": "Movoo Movie Clone",
-      "description": "Developed a clone of the Movoo movie app.",
-      "thumbnailPath": "/movoo@homepage_thumbnail.png",
-      "projectUrl": "https://movoo-clone.vercel.app/",
-      "githubUrl": "https://github.com/Watojo78/watojoel/movoo-clone",
-      "previewUrl": "https://movoo-clone.vercel.app/",
-      "techstack": [
-        {
-          "id": 3,
-          "name": "Tailwindcss",
-          "logoPath": "/tailwindcss.svg"
-        },
-        {
-          "id": 4,
-          "name": "Primeng",
-          "logoPath": "/primeng.svg"
-        },
-        {
-          "id": 6,
-          "name": "TypeScript",
-          "logoPath": "/ts.svg"
-        },
-        {
-          "id": 7,
-          "name": "Angular",
-          "logoPath": "/angular.svg"
-        },
-        {
-          "id": 14,
-          "name": "Git",
-          "logoPath": "/git.svg"
-        },
-        {
-          "id": 16,
-          "name": "TMDB Rest API",
-          "logoPath": "/"
-        },
-        {
-          "id": 17,
-          "name": "Material",
-          "logoPath": "/material.svg"
-        }
-      ],
-      "role": "Angular Developer",
-      "highlights": [
-        "Implemented movie search functionality.",
-        "Created a user-friendly interface for browsing movies.",
-        "Integrated with a movie database API to fetch movie data.",
-        "Responsive design for various screen sizes."
-      ]
-    }
-  ]
+  {
+    "id": 1,
+    "status": "published",
+    "date_created": "2025-07-18T02:23:13.616Z",
+    "date_updated": "2025-07-19T19:50:38.937Z",
+    "title": "Mon Portfolio",
+    "summary": "Ceci est mon site Web de portfolio personnel, construit avec Angular.",
+    "desc": "<p>Ceci est mon site Web de portfolio personnel, construit avec Angular.</p>",
+    "repository_url": "https://github.com/Watojo78/watojoel",
+    "project_url": "https://www.joelwafotokam.dev/",
+    "thumbnail_path": "0ccbc979-9a04-45bd-a4b9-5decc3e377f8",
+    "techstack": []
+  },
+  {
+    "id": 2,
+    "status": "published",
+    "date_created": "2025-07-18T02:28:06.243Z",
+    "date_updated": "2025-07-19T19:51:13.899Z",
+    "title": "Movoo Clone",
+    "summary": "Developed a clone of the Movoo movie app.",
+    "desc": "<div>\n<div>Developed a clone of the Movoo movie app.</div>\n</div>",
+    "repository_url": "https://github.com/Watojo78/watojoel/movoo-clone",
+    "project_url": "https://movoo-clone.vercel.app/",
+    "thumbnail_path": "1039aecb-f0d5-493a-8706-2e76addf0552",
+    "techstack": []
+  }
+]

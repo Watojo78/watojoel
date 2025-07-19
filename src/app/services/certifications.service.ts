@@ -1,9 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
-import { environment_dev } from '../../environments/environment.development';
-const apiBasePath = environment.production ? environment.PROD_API_BASEPATH : environment_dev.LOCAL_API_BASEPATH;
+import { Certification } from '../models/certification.model';
+const apiBasePath = environment.apiUrl;
+import { ApiResponse } from '../models/api-response.model';
 
 @Injectable({
   providedIn: 'root'
@@ -19,9 +20,11 @@ export class CertificationsService {
    * Retrieves all certifications.
    * @returns An Observable containing the list of certifications.
    */
-  getCertifications(): Observable<any> {
+  getCertifications(): Observable<Certification[]> {
     const url = `${apiBasePath}/certifications`;
-    return this.#http.get(url);
+    return this.#http.get<ApiResponse<Certification[]>>(url).pipe(
+      map(response => response.data)
+    );
   }
 
   /**
@@ -29,8 +32,10 @@ export class CertificationsService {
    * @param certificationId - The ID of the certification to retrieve.
    * @returns An Observable containing the certification details.
    */
-  getCertification(certificationId : any): Observable<any> {
+  getCertification(certificationId : number): Observable<Certification> {
     const url = `${apiBasePath}/${certificationId}`;
-    return this.#http.get(url);
+    return this.#http.get<ApiResponse<Certification>>(url).pipe(
+      map(response => response.data)
+    );
   }
 }

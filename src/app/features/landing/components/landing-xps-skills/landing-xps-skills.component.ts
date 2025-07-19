@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, computed, inject, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { EducationsComponent } from './educations/educations.component';
 import { WorkExperiencesComponent } from "./work-experiences/work-experiences.component";
 import { CertificatesComponent } from "./certificates/certificates.component";
@@ -18,7 +18,8 @@ import { toSignal } from '@angular/core/rxjs-interop';
 })
 export class LandingXpsSkillsComponent {
   readonly #skillService = inject(SkillsService);
-  readonly #skills = toSignal(this.#skillService.getSkills(), { initialValue: mockData });
+  readonly #mockSkills = mockData;
+  readonly #skills = toSignal(this.#skillService.getSkills(), { initialValue: this.#mockSkills });
   readonly loading = computed(() => this.#skills().length === 0);
   readonly skills = computed(() => this.#skills());
 }

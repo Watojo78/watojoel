@@ -1,5 +1,5 @@
 import { Project } from '../../../../models/project.model';
-import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, inject } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { LandingProjectCardMinimalComponent } from './landing-project-card-minimal/landing-project-card-minimal.component';
 import projectMockData from '../../../../mocks/projects.json';
@@ -19,5 +19,10 @@ export class RecentProjectsComponent {
   readonly #projects = toSignal(this.#projectService.getProjects(), { initialValue: this.#mockProjects });
   readonly loading = computed(() => this.#projects().length === 0);
   readonly chunkedProjects = computed(() => chunkArray(this.#projects(), 3));
+  constructor() {
+    effect(() => {
+      console.log('RecentProjectsComponent: Projects updated', this.#projects());
+    });
+  }
 
 }

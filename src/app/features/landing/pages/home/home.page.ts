@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, type OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { HeroComponent } from "../../components/hero/hero.component";
 import { RecentProjectsComponent } from "../../components/recent-projects/recent-projects.component";
 import { LandingXpsSkillsComponent } from "../../components/landing-xps-skills/landing-xps-skills.component";
@@ -11,11 +11,8 @@ import { HomeContactComponent } from "../../components/home-contact/home-contact
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomePage {
-
-  ngOnInit(): void { }
   options = {
     autoHide: true,
     scrollbarMinSize: 100
   }
-
 }

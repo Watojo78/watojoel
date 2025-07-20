@@ -3,10 +3,11 @@ import { TimelineModule } from 'primeng/timeline';
 import { WorkExperiencesService } from '../../../../../services/work-experiences.service';
 import mockData from '../../../../../mocks/work-experiences.json';
 import { toSignal } from '@angular/core/rxjs-interop';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'work-experiences',
-  imports: [TimelineModule],
+  imports: [TimelineModule, CommonModule],
   templateUrl: './work-experiences.component.html',
   styleUrl: './work-experiences.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

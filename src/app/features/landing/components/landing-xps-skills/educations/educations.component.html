@@ -20,9 +20,9 @@
             <p class="font-semibold">{{education.institution}}</p>
           </div>
           <div class="content-period">
-            <p>{{education.startDate}}</p>
+            <p>{{education.start_date | date:'yyyy/MM'}}</p>
             <span>-</span>
-            <p>{{education.endDate}}</p>
+            <p>{{education.end_date | date:'yyyy/MM'}}</p>
           </div>
         </div>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ipsam minus. Nobis ipsum pariatur qui !</p>

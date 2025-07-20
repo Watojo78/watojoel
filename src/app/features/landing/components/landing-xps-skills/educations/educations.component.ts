@@ -1,12 +1,13 @@
-import { ChangeDetectionStrategy, Component, computed, inject, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { TimelineModule } from 'primeng/timeline';
 import { EducationsService } from '../../../../../services/educations.service';
 import { toSignal } from '@angular/core/rxjs-interop';
 import mockData from '../../../../../mocks/educations.json';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'educations',
-  imports: [TimelineModule],
+  imports: [TimelineModule, CommonModule],
   templateUrl: './educations.component.html',
   styleUrl: './educations.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

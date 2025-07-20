@@ -1,16 +1,11 @@
 [
   {
     "id": 1,
-    "name": "Initiation Java",
-    "provider": "EPFL",
-    "dateEarned": "2024-10-01",
-    "link": "https://coursera.com"
-  },
-  {
-    "id": 3,
-    "name": "Angular",
-    "provider": "Udemy",
-    "dateEarned": "2025-03-01",
-    "link": "https://udemy.com"
+    "status": "published",
+    "date_created": "2025-07-18T02:39:01.188Z",
+    "name": "Initiation Programmation en Java",
+    "issuing_organization": "École Polytechnique Fédérale de Lausanne",
+    "issue_date": "2024-11-09",
+    "credential_url": "https://coursera.org/share/9e46a0832bf463d0f933fdb334180b68"
   }
 ]

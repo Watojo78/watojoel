@@ -1,7 +1,12 @@
 export interface Certification {
-  id: number
-  name: string
-  provider: string // e.g., AWS, Google, Microsoft
-  dateEarned?: string // Optional: Date the certification was earned
-  link?: string // Optional: Link to verification or badge
+  id: number,
+  status: string,
+  date_created?: string,
+  date_updated?: string,
+  name: string,
+  issuing_organization: string,
+  issue_date: string,
+  expiration_date?: string,
+  credential_id?: string,
+  credential_url: string
 }

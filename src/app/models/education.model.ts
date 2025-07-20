@@ -1,13 +1,15 @@
-import { Certification } from "./certification.model"
 import { Skill } from "./skill.model"
 
 export interface Education {
   id: number
+  status: string
+  date_created?: string
+  date_updated?: string
+  gpa: string
   institution: string
+  start_date: string
+  end_date: string
   degree: string
-  startDate: string
-  endDate: string
-  description?: string[]; // Optional: Details about coursework, specializations, etc.
-  relevantSkills?: Skill[]; // Optional: Skills gained during education
-  certifications?: Certification[]; // Optional: Certifications related to education
+  field_of_study: string
+  relevant_skills?: Skill[]
 }

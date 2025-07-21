@@ -3,10 +3,11 @@ import { TimelineModule } from 'primeng/timeline';
 import { WorkExperiencesService } from '../../../../../services/work-experiences.service';
 import mockData from '../../../../../mocks/work-experiences.json';
 import { toSignal } from '@angular/core/rxjs-interop';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'work-experiences',
-  imports: [TimelineModule],
+  imports: [TimelineModule, CommonModule],
   templateUrl: './work-experiences.component.html',
   styleUrl: './work-experiences.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -16,7 +17,4 @@ export class WorkExperiencesComponent {
   readonly #works = toSignal(this.#workService.getWorks(),{initialValue: mockData});
   readonly loading = computed(() => this.#works().length === 0);
   readonly works = computed(() => this.#works());
-  constructor() {
-    console.log('WorkExperiencesComponent: Works loaded', this.#works());
-  }
 }

@@ -9,8 +9,21 @@
     "desc": "<p>Ceci est mon site Web de portfolio personnel, construit avec Angular.</p>",
     "repository_url": "https://github.com/Watojo78/watojoel",
     "project_url": "https://www.joelwafotokam.dev/",
-    "thumbnail_path": "0ccbc979-9a04-45bd-a4b9-5decc3e377f8",
-    "techstack": []
+    "thumbnail_url": "0ccbc979-9a04-45bd-a4b9-5decc3e377f8",
+    "techstack": [
+      {
+        "name": "Angular"
+      },
+      {
+        "name": "TypeScript"
+      },
+      {
+        "name": "HTML5"
+      },
+      {
+        "name": "CSS3"
+      }
+    ]
   },
   {
     "id": 2,
@@ -22,7 +35,20 @@
     "desc": "<div>\n<div>Developed a clone of the Movoo movie app.</div>\n</div>",
     "repository_url": "https://github.com/Watojo78/watojoel/movoo-clone",
     "project_url": "https://movoo-clone.vercel.app/",
-    "thumbnail_path": "1039aecb-f0d5-493a-8706-2e76addf0552",
-    "techstack": []
+    "thumbnail_url": "1039aecb-f0d5-493a-8706-2e76addf0552",
+    "techstack": [
+      {
+        "name": "Angular"
+      },
+      {
+        "name": "TypeScript"
+      },
+      {
+        "name": "HTML5"
+      },
+      {
+        "name": "CSS3"
+      }
+    ]
   }
 ]

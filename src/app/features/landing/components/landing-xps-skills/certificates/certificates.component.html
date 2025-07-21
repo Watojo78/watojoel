@@ -13,17 +13,13 @@
             <h4 class="content-degree">
               {{cert.name}}
             </h4>
-            <p class="font-semibold">{{cert.provider}}</p>
+            <p class="font-semibold">{{cert.issuing_organization}}</p>
           </div>
           <div class="content-period flex items-center gap-2">
-            <p>{{cert.dateEarned}}</p>
+            <p>{{cert.issue_date | date:'yyyy/MM'}}</p>
           </div>
         </div>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ipsam minus. Nobis ipsum pariatur qui !</p>
-        <div class="flex items-center justify-start gap-3 mt-4 mb-4">
-          <span class="rounded-full bg-white pb-2 pt-2 pl-3 pr-3">Angular</span>
-          <span class="rounded-full bg-white pb-2 pt-2 pl-3 pr-3">Directus</span>
-        </div>
       </div>
     </ng-template>
   </p-timeline>

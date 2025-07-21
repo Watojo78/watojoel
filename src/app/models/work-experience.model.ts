@@ -1,11 +1,24 @@
-import { Skill } from "./skill.model"
-
+import { RawSkillMinimalItem, SkillMinimal } from "./skill.model"
 export interface WorkExperience {
   id: number
+  status: string
   company: string
   title: string
-  startDate: string // YYYY-MM-DD format is recommended
-  endDate: string | null // Use null for current roles
-  description?: string[] // Array of bullet points for responsibilities/achievements
-  skills?: Skill[] // Optional: Array of relevant skills used in this role
+  start_date: string
+  end_date: string
+  currently_working: boolean
+  description: string
+  environment: SkillMinimal[]
+}
+
+export interface RawWorkExperience {
+  id: number
+  status: string
+  company: string
+  title: string
+  start_date: string
+  end_date: string
+  currently_working: boolean
+  description: string
+  environment: RawSkillMinimalItem[]
 }

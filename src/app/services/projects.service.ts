@@ -26,7 +26,6 @@ export class ProjectsService {
    */
   getProjects(): Observable<Project[]> {
     const url = `${apiBasePath}/projects`;
-    console.log('Fetching projects from:', url);
     return this.#http.get<ApiResponse<RawProject[]>>(url, { params }).pipe(
       // Étape 1 : On extrait le tableau de données brutes
       map(response => response.data),

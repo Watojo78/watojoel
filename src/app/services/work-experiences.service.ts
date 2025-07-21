@@ -1,11 +1,13 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
-import { WorkExperience } from '../models/work-experience.model';
+import { RawWorkExperience, WorkExperience } from '../models/work-experience.model';
 import { ApiResponse } from '../models/api-response.model';
 
 const apiBasePath = environment.apiUrl;
+const params = new HttpParams()
+  .set('fields', '*,environment.skills_id.name'); // On demande uniquement le nom des compétences
 
 @Injectable({
   providedIn: 'root'
@@ -23,9 +25,18 @@ export class WorkExperiencesService {
    */
   getWorks(): Observable<WorkExperience[]> {
     const url = `${apiBasePath}/work_experiences`;
-    console.log('Fetching work experiences from:', url);
-    return this.#http.get<ApiResponse<WorkExperience[]>>(url).pipe(
-      map(response => response.data)
+    return this.#http.get<ApiResponse<RawWorkExperience[]>>(url, { params }).pipe(
+      map(response => response.data),
+      map(rawWorks => rawWorks.map(rawWork => {
+        // Transformation de l'expérience de travail
+        const work: WorkExperience = {
+          ...rawWork, // On copie les champs communs (id, company, etc.)
+          environment: rawWork.environment.map(envItem => ({
+            name: envItem.skills_id.name // On simplifie l'environnement
+          }))
+        };
+        return work;
+      }))
     );
   }
 
@@ -36,8 +47,18 @@ export class WorkExperiencesService {
    */
   getWork(id : number): Observable<WorkExperience> {
     const url = `${apiBasePath}/${id}`;
-    return this.#http.get<ApiResponse<WorkExperience>>(url).pipe(
-      map(response => response.data)
+    return this.#http.get<ApiResponse<RawWorkExperience>>(url, { params }).pipe(
+      map(response => response.data),
+      map(rawWork => {
+        // Transformation de l'expérience de travail
+        const work: WorkExperience = {
+          ...rawWork, // On copie les champs communs (id, company, etc.)
+          environment: rawWork.environment.map(envItem => ({
+            name: envItem.skills_id.name // On simplifie l'environnement
+          }))
+        };
+        return work;
+      })
     );
   }
 }

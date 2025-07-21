@@ -17,7 +17,4 @@ export class WorkExperiencesComponent {
   readonly #works = toSignal(this.#workService.getWorks(),{initialValue: mockData});
   readonly loading = computed(() => this.#works().length === 0);
   readonly works = computed(() => this.#works());
-  constructor() {
-    console.log('WorkExperiencesComponent: Works loaded', this.#works());
-  }
 }

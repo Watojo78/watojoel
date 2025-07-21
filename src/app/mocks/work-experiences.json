@@ -7,7 +7,24 @@
     "start_date": "2023-11-01",
     "end_date": "2024-11-29",
     "currently_working": false,
-    "description": "<ul>\n<li>Pilot&eacute; le d&eacute;veloppement frontend Angular d'un dashboard de gestion multi-entit&eacute;s.</li>\n<li>Optimis&eacute; les performances du dashboard via l'impl&eacute;mentation de strat&eacute;gies de lazy-loading.</li>\n<li>Con&ccedil;u et impl&eacute;ment&eacute; des interfaces utilisateur complexes avec Angular Material, garantissant une UI coh&eacute;rente et responsive.</li>\n<li>Int&eacute;gr&eacute; l'API backend Spring Boot, assurant la pleine fonctionnalit&eacute; des sections du dashboard.</li>\n<li>D&eacute;velopp&eacute; la landing page de l'application mobile associ&eacute;e au projet.</li>\n<li>Collabor&eacute; avec les parties prenantes pour formaliser les besoins utilisateurs et concevoir l'UI du dashboard.</li>\n</ul>"
+    "description": "<ul>\n<li>Pilot&eacute; le d&eacute;veloppement frontend Angular d'un dashboard de gestion multi-entit&eacute;s.</li>\n<li>Optimis&eacute; les performances du dashboard via l'impl&eacute;mentation de strat&eacute;gies de lazy-loading.</li>\n<li>Con&ccedil;u et impl&eacute;ment&eacute; des interfaces utilisateur complexes avec Angular Material, garantissant une UI coh&eacute;rente et responsive.</li>\n<li>Int&eacute;gr&eacute; l'API backend Spring Boot, assurant la pleine fonctionnalit&eacute; des sections du dashboard.</li>\n<li>D&eacute;velopp&eacute; la landing page de l'application mobile associ&eacute;e au projet.</li>\n<li>Collabor&eacute; avec les parties prenantes pour formaliser les besoins utilisateurs et concevoir l'UI du dashboard.</li>\n</ul>",
+    "environment": [
+      {
+        "name": "Material"
+      },
+      {
+        "name": "Angular"
+      },
+      {
+        "name": "Git"
+      },
+      {
+        "name": "Typescript"
+      },
+      {
+        "name": "Springboot"
+      }
+    ]
   },
   {
     "id": 6,
@@ -17,7 +34,24 @@
     "start_date": "2021-11-22",
     "end_date": "2022-07-29",
     "currently_working": false,
-    "description": "<ul>\n<li>Con&ccedil;u et d&eacute;velopp&eacute; une plateforme web Angular multi-utilisateurs (C2B, B2C) pour connecter m&eacute;nages, entreprises de recyclage et collecteurs de d&eacute;chets plastiques.</li>\n<li>Optimis&eacute; les performances de la plateforme via l'impl&eacute;mentation de strat&eacute;gies de lazy loading.</li>\n<li>S&eacute;curis&eacute; la plateforme en int&eacute;grant un syst&egrave;me de contr&ocirc;le d'acc&egrave;s bas&eacute; sur les r&ocirc;les (RBAC).</li>\n<li>G&eacute;r&eacute; l'int&eacute;gration et les interactions avec l'API backend, permettant les op&eacute;rations CRUD pour les entit&eacute;s de la plateforme.</li>\n<li>D&eacute;velopp&eacute; des diagrammes statistiques pour la visualisation des donn&eacute;es de recyclage (quantit&eacute;s, types de d&eacute;chets).</li>\n<li>Con&ccedil;u une interface utilisateur coh&eacute;rente et responsive avec Angular Material et SCSS.</li>\n</ul>"
+    "description": "<ul>\n<li>Con&ccedil;u et d&eacute;velopp&eacute; une plateforme web Angular multi-utilisateurs (C2B, B2C) pour connecter m&eacute;nages, entreprises de recyclage et collecteurs de d&eacute;chets plastiques.</li>\n<li>Optimis&eacute; les performances de la plateforme via l'impl&eacute;mentation de strat&eacute;gies de lazy loading.</li>\n<li>S&eacute;curis&eacute; la plateforme en int&eacute;grant un syst&egrave;me de contr&ocirc;le d'acc&egrave;s bas&eacute; sur les r&ocirc;les (RBAC).</li>\n<li>G&eacute;r&eacute; l'int&eacute;gration et les interactions avec l'API backend, permettant les op&eacute;rations CRUD pour les entit&eacute;s de la plateforme.</li>\n<li>D&eacute;velopp&eacute; des diagrammes statistiques pour la visualisation des donn&eacute;es de recyclage (quantit&eacute;s, types de d&eacute;chets).</li>\n<li>Con&ccedil;u une interface utilisateur coh&eacute;rente et responsive avec Angular Material et SCSS.</li>\n</ul>",
+    "environment": [
+      {
+        "name": "Sass"
+      },
+      {
+        "name": "Angular"
+      },
+      {
+        "name": "Git"
+      },
+      {
+        "name": "Java"
+      },
+      {
+        "name": "Springboot"
+      }
+    ]
   },
   {
     "id": 7,
@@ -27,6 +61,17 @@
     "start_date": "2021-03-23",
     "end_date": "2021-07-01",
     "currently_working": false,
-    "description": "<ul>\n<li>Con&ccedil;u et mod&eacute;lis&eacute; une base de donn&eacute;es PostgreSQL pour la gestion de plus de 50 v&eacute;hicules, am&eacute;liorant l'efficacit&eacute;&nbsp;de 15%.</li>\n<li>&Eacute;labor&eacute; des diagrammes UML (classes, cas d'utilisation) pour une conception logicielle robuste.</li>\n<li>D&eacute;velopp&eacute; une application web CRUD compl&egrave;te pour la gestion des v&eacute;hicules et chauffeurs.</li>\n<li>G&eacute;r&eacute; ce projet de mani&egrave;re autonome, respectant les d&eacute;lais et r&eacute;solvant efficacement les d&eacute;fis techniques.</li>\n</ul>"
+    "description": "<ul>\n<li>Con&ccedil;u et mod&eacute;lis&eacute; une base de donn&eacute;es PostgreSQL pour la gestion de plus de 50 v&eacute;hicules, am&eacute;liorant l'efficacit&eacute;&nbsp;de 15%.</li>\n<li>&Eacute;labor&eacute; des diagrammes UML (classes, cas d'utilisation) pour une conception logicielle robuste.</li>\n<li>D&eacute;velopp&eacute; une application web CRUD compl&egrave;te pour la gestion des v&eacute;hicules et chauffeurs.</li>\n<li>G&eacute;r&eacute; ce projet de mani&egrave;re autonome, respectant les d&eacute;lais et r&eacute;solvant efficacement les d&eacute;fis techniques.</li>\n</ul>",
+    "environment": [
+      {
+        "name": "Git"
+      },
+      {
+        "name": "PHP"
+      },
+      {
+        "name": "MySQL"
+      }
+    ]
   }
 ]

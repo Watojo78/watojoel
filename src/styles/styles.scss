@@ -3,9 +3,6 @@
 @use '../assets/fonts/gilroy/gilroy.scss' as gilroy;
 @use '../assets/fonts/montserrat/montserrat.scss' as montserrat;
 @use '../assets/fonts/Gloock/gloock.scss' as gloock;
-//tailwind utils and components
-@tailwind components;
-@tailwind utilities;
 
 * {
   font-family: "Gilroy-Medium", Inter;

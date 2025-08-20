@@ -35,6 +35,7 @@
               }
             ],
             "styles": [
+              "src/styles/tailwind.css",
               "src/styles/styles.scss",
               "node_modules/@flaticon/flaticon-uicons/css/all/all.css"
             ],

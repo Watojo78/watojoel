@@ -32,7 +32,7 @@
         <img src="../../../../../../assets/common/icons/house-blank2.svg" alt="web-home">
         <div class="nav-bar-url overflow-hidden">
           <img src="../../../../../../assets/common/icons/padlock-check@br.svg" alt="mobile-lock-check">
-          <p class="overflow-hidden">{{project.project_url}}</p>
+          <p class="overflow-hidden">{{project.preview_url}}</p>
         </div>
         <div class="fake-menu">
           <p-button [rounded]="true" severity="secondary">
@@ -46,12 +46,12 @@
         </div>
         <div class="content-absolute">
           <div class="absolute-cta">
-            <a [href]="[project.project_url]" class="cta-one">
+            <a [href]="[project.preview_url]" class="cta-one">
               <p-button [rounded]="true" severity="contrast">
                 <img src="../../../../../../assets/icons/play.svg" alt="play.svg" height="20">
               </p-button>
             </a>
-            <a [href]="[project.repository_url]" target="_blank" class="cta-two">
+            <a [href]="[project.preview_url]" target="_blank" class="cta-two">
               <p-button [rounded]="true" severity="secondary">
                 <img src="../../../../../../assets/common/icons/arrow-up-right-from-square.svg" alt="" height="21">
                 <span>Aperçu</span>

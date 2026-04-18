@@ -1,30 +1,34 @@
 @font-face {
-    font-family: 'Gilroy-Bold';
+    font-family: 'Gilroy-Bold'; /* Même nom partout */
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700; /* 700 = Bold */
     src: local('Gilroy-Bold'), url('./Gilroy-Bold.woff') format('woff');
 }
+
 @font-face {
-    font-family: 'Gilroy-Heavy';
+    font-family: 'Gilroy-Heavy'; /* Même nom partout */
     font-style: normal;
-    font-weight: 400;
+    font-weight: 900; /* 900 = Heavy/Black */
     src: local('Gilroy-Heavy'), url('./Gilroy-Heavy.woff') format('woff');
 }
+
 @font-face {
-    font-family: 'Gilroy-Light';
+    font-family: 'Gilroy-Light'; /* Même nom partout */
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300; /* 300 = Light */
     src: local('Gilroy-Light'), url('./Gilroy-Light.woff') format('woff');
 }
+
 @font-face {
     font-family: 'Gilroy-Medium';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500; /* 500 = Medium */
     src: local('Gilroy-Medium'), url('./Gilroy-Medium.woff') format('woff');
 }
+
 @font-face {
     font-family: 'Gilroy-Regular';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400; /* 400 = Regular */
     src: local('Gilroy-Regular'), url('./Gilroy-Regular.woff') format('woff');
 }

@@ -68,12 +68,12 @@
       </div>
     </div>
   </div>
-  <div class="resume flex flex-col gap-4 pt-4 pb-4">
+  <div class="resume flex flex-col gap-2 pt-4 pb-4">
     <h4>{{project.title}}</h4>
     <p>{{project.summary}}</p>
     <div class="resume-techstack flex items-center justify-start gap-2 flex-wrap">
       @for (skill of project.techstack; track $index) {
-      <span class="text-white text-sm bg-black rounded-full pt-1 pb-1 pl-4 pr-4">{{skill.name}}</span>
+        <span class="text-white text-sm bg-black rounded-full pt-1 pb-1 pl-4 pr-4">{{skill.name}}</span>
       }
     </div>
   </div>

@@ -1,14 +1,13 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { FloatLabelModule } from 'primeng/floatlabel';
 import { TextareaModule } from 'primeng/textarea';
 import { InputTextModule } from 'primeng/inputtext';
 import { ToastModule } from 'primeng/toast';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { ContactService } from '../../../../services/contact.service';
 import { MessageService } from 'primeng/api';
+import { Contact } from '../../../../models/contact.model';
 
 @Component({
   selector: 'home-contact',
@@ -18,59 +17,56 @@ import { MessageService } from 'primeng/api';
   styleUrl: './home-contact.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomeContactComponent {
+export class HomeContactComponent {readonly #fb = inject(FormBuilder);
+  readonly #contactService = inject(ContactService);
 
-  contactForm!: FormGroup;
-  submitted = false;
-  isSuccess: boolean = false;
-  successMessage = '';
-  errorMessage = '';
+  // Injection du service de notification PrimeNG
+  readonly #messageService = inject(MessageService);
 
-  constructor(
-    private http: HttpClient,
-    private router: Router,
-    private messageService: MessageService,
-    private contactService: ContactService,
-    private fb: FormBuilder) { }
+  isSubmitting = false;
 
-  ngOnInit(): void {
-    this.contactForm = this.fb.group({
-      name: ['', [Validators.required, Validators.minLength(3)]],
-      email: ['', [Validators.required, Validators.email]],
-      message: ['', [Validators.required, Validators.minLength(10)]]
-    });
+  contactForm = this.#fb.nonNullable.group({
+    name: ['', [Validators.required, Validators.minLength(2)]],
+    email: ['', [Validators.required, Validators.email]],
+    message: ['', [Validators.required, Validators.minLength(10)]]
+  });
+
+  get f() {
+    return this.contactForm.controls;
   }
 
-  get f() { return this.contactForm.controls; }
+  onSubmit(): void {
+    if (this.contactForm.invalid) {
+      this.contactForm.markAllAsTouched();
+      return;
+    }
 
-  onSubmit() {
+    this.isSubmitting = true;
+    const formData = this.contactForm.getRawValue() as Contact;
 
-    this.submitted = true;
-
-    if (this.contactForm.invalid) return;
-
-    this.contactService.sendMessage(this.contactForm.value).subscribe({
-      next: (res: string) => { // Type the response if possible
-        this.isSuccess = true;
-        console.log('SUCCESS!', res);
-        this.messageService.add({
+    this.#contactService.sendMessage(formData).subscribe({
+      next: () => {
+        // Déclenche le Toast de succès (Vert)
+        this.#messageService.add({
           severity: 'success',
-          summary: 'Success',
-          detail: 'Votre Message a été envoyé avec succès !',
-          life: 3000 });
-        this.contactForm.reset(this.successMessage);
-        this.submitted = false;
+          summary: 'Message envoyé',
+          detail: 'Merci ! Je vous répondrai dans les plus brefs délais.'
+        });
+
+        this.isSubmitting = false;
+        this.contactForm.reset();
       },
-      error: (error) => {
-        console.error('FAILED...', error);
-        this.messageService.add({ // Toast for error
+      error: (err) => {
+        console.error(err);
+        // Déclenche le Toast d'erreur (Rouge)
+        this.#messageService.add({
           severity: 'error',
-          summary: 'Error',
-          detail: 'Error sending message. Please try again later.',
-          life: 3000});
-        this.submitted = false;
+          summary: 'Erreur',
+          detail: 'Impossible d\'envoyer le message. Veuillez réessayer.'
+        });
+
+        this.isSubmitting = false;
       }
     });
   }
-
 }

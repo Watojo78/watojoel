@@ -6,11 +6,12 @@
             <span>Prêt à insuffler vie à votre projet web ? Contactez-moi !</span>
             <img
               src="../../../../../assets/icons/face-smile-upside-down.svg"
-              alt="face-smile-upside-down.svg"
+              alt="face-smile-upside-down"
               height="28"
               class="hidden md:block"/>
         </h3>
     </div>
+
     <div class="contact-nfos flex flex-col md:flex-row items-center justify-center gap-4">
         <a class="email" href="mailto:hello@joelwafotokam.dev">
             <i class="fi fi-sr-envelope"></i>
@@ -21,6 +22,7 @@
             <span>263-881-7021</span>
         </a>
     </div>
+
     <div class="contact-form-wrapper relative gap-4 min-h-[425px] flex flex-col xl:flex-row">
         <div class="contact-form-illus flex justify-center items-center overflow-hidden w-full min-h-[425px] max-h-[425px] rounded-[28px]">
             <img
@@ -28,41 +30,74 @@
               alt="postman-front"
               class="mt-[28rem]">
         </div>
+
         <form
-          class="contact-form flex flex-col w-full gap-4 md:gap-1 items-center justify-between"
+          class="contact-form flex flex-col w-full gap-4 md:gap-4 items-center justify-center"
           [formGroup]="contactForm"
           (ngSubmit)="onSubmit()">
-            <p-floatlabel variant="in">
-                <input
-                    type="text"
-                    pInputText
-                    formControlName="name"
-                    required>
-                <label for="username">Nom</label>
-            </p-floatlabel>
-            <p-floatlabel variant="in">
-                <input
-                    type="email"
-                    pInputText
-                    formControlName="email"
-                    required>
-                <label for="email">Adresse Mail</label>
-            </p-floatlabel>
-            <p-floatlabel variant="in">
-                <textarea
-                    pTextarea
-                    formControlName="message"
-                    required>
-                </textarea>
-                <label for="message">Message</label>
-            </p-floatlabel>
-            <div class="sendinfos-wrapper w-full">
+
+            <div class="w-full flex flex-col gap-1">
+                <p-floatlabel variant="in">
+                    <input
+                        id="name"
+                        type="text"
+                        pInputText
+                        formControlName="name"
+                        class="w-full"
+                        required>
+                    <label for="name">Nom</label>
+                </p-floatlabel>
+                @if (f['name'].invalid && f['name'].touched) {
+                    <small class="text-red-500 pl-2">Le nom est requis (min. 2 caractères).</small>
+                }
+            </div>
+
+            <div class="w-full flex flex-col gap-1">
+                <p-floatlabel variant="in">
+                    <input
+                        id="email"
+                        type="email"
+                        pInputText
+                        formControlName="email"
+                        class="w-full"
+                        required>
+                    <label for="email">Adresse Mail</label>
+                </p-floatlabel>
+                @if (f['email'].invalid && f['email'].touched) {
+                    <small class="text-red-500 pl-2">Veuillez entrer une adresse email valide.</small>
+                }
+            </div>
+
+            <div class="w-full flex flex-col gap-1">
+                <p-floatlabel variant="in">
+                    <textarea
+                        id="message"
+                        pTextarea
+                        formControlName="message"
+                        rows="4"
+                        class="w-full resize-none"
+                        required>
+                    </textarea>
+                    <label for="message">Message</label>
+                </p-floatlabel>
+                @if (f['message'].invalid && f['message'].touched) {
+                    <small class="text-red-500 pl-2">Votre message doit contenir au moins 10 caractères.</small>
+                }
+            </div>
+
+            <div class="sendinfos-wrapper w-full mt-2">
                 <p-button
                     type="submit"
                     severity="contrast"
-                    class="send">
-                    <span>Envoyer un message</span>
-                    <i class="fi fi-sr-paper-plane"></i>
+                    class="send w-full"
+                    styleClass="w-full justify-center flex gap-2"
+                    [disabled]="contactForm.invalid || isSubmitting"
+                    [loading]="isSubmitting">
+
+                    @if (!isSubmitting) {
+                        <span>Envoyer un message</span>
+                        <i class="fi fi-sr-paper-plane mt-1"></i>
+                    }
                 </p-button>
             </div>
         </form>

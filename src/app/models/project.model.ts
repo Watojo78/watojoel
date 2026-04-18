@@ -8,9 +8,8 @@ import { RawSkillMinimalItem, SkillMinimal } from "./skill.model";
 export interface RawProject {
   id: number;
   title: string;
-  desc: string;
   summary: string;
-  project_url: string;
+  preview_url: string;
   repository_url: string;
   thumbnail_path: string;
   techstack: RawSkillMinimalItem[];
@@ -20,9 +19,8 @@ export interface RawProject {
 export interface Project {
   id: number;
   title: string;
-  desc: string;
   summary: string;
-  project_url: string;
+  preview_url: string;
   repository_url: string;
   thumbnail_url: string; // <-- On utilise une URL complète
   techstack: SkillMinimal[]; // <-- Le techstack est simplifié

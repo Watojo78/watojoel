@@ -9,8 +9,17 @@
     <a routerLink="/home" class="hidden md:block hover:text-gray-700">
       <span>Accueil</span>
     </a>
-    <a routerLink="/projects" class="hidden md:block hover:text-gray-700">
+    <a routerLink="/" (click)="scrollTo('projets')" fragment="projets" class="hidden md:block hover:text-gray-700">
       <span>Projets</span>
+    </a>
+    <a routerLink="/" (click)="scrollTo('expertise')" fragment="expertise" class="hidden md:block hover:text-gray-700">
+      <span>Expertise</span>
+    </a>
+    <a routerLink="/" (click)="scrollTo('stack')" fragment="stack" class="hidden md:block hover:text-gray-700">
+      <span>Stack</span>
+    </a>
+    <a routerLink="/" (click)="scrollTo('contact')" fragment="contact" class="hidden md:block hover:text-gray-700">
+      <span>Contact</span>
     </a>
     <div class="lang hidden md:block">
       <p-button

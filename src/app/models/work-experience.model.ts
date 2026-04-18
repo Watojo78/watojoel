@@ -1,4 +1,7 @@
-import { RawSkillMinimalItem, SkillMinimal } from "./skill.model"
+import { RawSkillMinimalItem, SkillMinimal } from "./skill.model"// 1. On crée l'interface pour le Répéteur Directus
+export interface Achievement {
+  description: string;
+}
 export interface WorkExperience {
   id: number
   status: string
@@ -7,7 +10,7 @@ export interface WorkExperience {
   start_date: string
   end_date: string
   currently_working: boolean
-  description: string
+  achievements: Achievement[]
   environment: SkillMinimal[]
 }
 
@@ -19,6 +22,6 @@ export interface RawWorkExperience {
   start_date: string
   end_date: string
   currently_working: boolean
-  description: string
+  achievements: Achievement[]
   environment: RawSkillMinimalItem[]
 }

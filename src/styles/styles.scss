@@ -2,7 +2,9 @@
 @use "primeicons/primeicons.css" as primeicons;
 @use '../assets/fonts/gilroy/gilroy.scss' as gilroy;
 @use '../assets/fonts/montserrat/montserrat.scss' as montserrat;
-@use '../assets/fonts/Gloock/gloock.scss' as gloock;
+
+//Flaticons import
+@use '../styles/flaticon.scss';
 
 * {
   font-family: "Gilroy-Medium", Inter;

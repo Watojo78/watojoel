@@ -13,26 +13,22 @@
           class="h-12"
           src="../../../../../assets/icons/terminal.svg"
           alt="terminal.svg">
-        <span class="text-[28px] md:text-[35px] font-['Gilroy-Regular']">Dévelppeur Web Fullstack</span>
+        <span class="text-[28px] md:text-[35px] font-['Gilroy-Regular']">{{ profile().title }}</span>
       </h4>
       <h3 class="hero-headline text-center text-[35px] font-['Gilroy-Bold'] sm:font-['Gilroy-Heavy']">Construction d'Applis Modernes & dynamiques.</h3>
       <p class="hero-welcome text-center text-[17px]">
-        Bienvenue dans mon portfolio ! Je m'appelle Wafo Joël et je prend plaisir à la création d'applis fluides, UI
-        conviviales et d'UX agréables. Explorez mes meilleurs projets pour voir comment je donne vie à des idées grâce à un code
-        épuré et un design innovant."
+        {{ profile().aboutMe}}
       </p>
       <div class="hero-cta flex flex-col sm:flex-row justify-center items-center gap-4 py-4">
         <a
-          href="https://drive.google.com/file/d/18jdnPh-OphtVAd5rxwEDWfBiX-HUqZ9-/view"
+          [href]="profile().resumeUrl"
           target="_blank"
           class="cta-cv flex items-center justify-center gap-1">
           <p-button [rounded]="true" severity="success">
-            <span class="cv pt-1 pb-1 pl-4 pr-4 text-[15px]">Mon CV</span>
+            <a [href]="profile().resumeUrl" target="_blank" class="cv pt-1 pb-1 pl-4 pr-4 text-[15px]">Mon CV</a>
           </p-button>
         </a>
-        <a
-          routerLink="/contact"
-          class="cta-contact">
+        <a class="cta-contact">
           <p-button [rounded]="true" severity="secondary">
             <div class="flex items-center justify-center gap-2 pt-1 pb-1 pl-4 pr-4">
               <i class="fi fi-sr-hand-wave"></i>

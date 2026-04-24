@@ -5,9 +5,9 @@ import { FloatLabelModule } from 'primeng/floatlabel';
 import { TextareaModule } from 'primeng/textarea';
 import { InputTextModule } from 'primeng/inputtext';
 import { ToastModule } from 'primeng/toast';
-import { ContactService } from '../../../../services/contact.service';
 import { MessageService } from 'primeng/api';
-import { Contact } from '../../../../models/contact.model';
+import { Contact } from '../../../../core/models/contact.model';
+import { ContactService } from '../../../../core/services/contact.service';
 
 @Component({
   selector: 'home-contact',

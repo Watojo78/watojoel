@@ -1,5 +1,5 @@
-<div class="xps-skills-wrapper flex flex-col gap-8 w-full">
-  <div class="xps-skills-header flex w-full items-center justify-between">
+<div class="xps-wrapper flex flex-col gap-8 w-full">
+  <div class="xps-header flex w-full items-center justify-between">
     <h3 class="font-gloock flex items-center gap-4 text-[28px]">
       <img
         class="rounded-lg"
@@ -9,7 +9,7 @@
       <span>Expertise et Parcours</span>
     </h3>
   </div>
-  <div class="xps-skills-container flex flex-col w-full items-start justify-center gap-5 md:gap-8">
+  <div class="xps-container flex flex-col w-full items-start justify-center gap-5 md:gap-8">
     <div class="xps-container flex flex-col w-full rounded-[28px]">
       <p-tabs value="0">
         <p-tablist>
@@ -25,27 +25,16 @@
               <span>Education</span>
             </span>
           </p-tab>
-          <p-tab value="2">
-            <span pRipple class="flex items-center gap-2 bg-slate-200 pt-3 pb-3 pl-5 pr-5">
-              <img src="../../../../../assets/icons/diploma.svg" alt="briefcase" height="21">
-              <span>Certifications</span>
-            </span>
-          </p-tab>
         </p-tablist>
         <p-tabpanels>
           <p-tabpanel value="0">
-            <div class="flex items-center justify-center w-full bg-gray-100 pt-8 pb-8 pl-7 pr-7 rounded-3xl">
-              <work-experiences></work-experiences>
+            <div class="flex items-center justify-start w-full bg-gray-100 pt-8 pb-8 pl-7 pr-7 rounded-3xl">
+              <work-experiences/>
             </div>
           </p-tabpanel>
           <p-tabpanel value="1">
-            <div class="flex items-center justify-center w-full bg-gray-100 pt-8 pb-8 pl-7 pr-7 rounded-3xl">
-              <educations></educations>
-            </div>
-          </p-tabpanel>
-          <p-tabpanel value="2">
-            <div class="flex items-center justify-center w-full bg-gray-100 pt-8 pb-8 pl-7 pr-7 rounded-3xl">
-              <certificates></certificates>
+            <div class="flex items-center justify-start w-full bg-gray-100 pt-8 pb-8 pl-7 pr-7 rounded-3xl">
+              <educations/>
             </div>
           </p-tabpanel>
         </p-tabpanels>

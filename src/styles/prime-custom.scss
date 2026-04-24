@@ -86,16 +86,19 @@
   }
 }
 
-.p-timeline-event-opposite {
-  flex: unset !important;
+.p-timeline {
+  &-event-opposite {
+    flex: unset !important;
+  }
+
+  &-left, &-event-opposite {
+    display: none;
+  }
 }
+
 
 .p-toggleswitch {
   display: flex !important;
-}
-
-.p-timeline-left .p-timeline-event-opposite {
-  display: none;
 }
 
 .p-menu {

@@ -1,127 +1,140 @@
 [
   {
-    "id": 5,
-    "status": "published",
+    "id": 1,
     "company": "AfroMetaverse",
-    "title": "Frontend Developer",
-    "start_date": "2023-11-01",
-    "end_date": "2024-11-29",
-    "currently_working": false,
+    "role": "Développeur Frontend",
+    "isCurrent": false,
+    "startDate": "2023-11-01T12:00:00",
+    "endDate": "2024-11-29T12:00:00",
     "achievements": [
       {
-        "description": "Conçu et développé une plateforme web de gestion de projets de métavers, permettant aux utilisateurs de créer, suivre et collaborer sur des projets de métavers."
+        "description": "Conception d'une architecture de composants modulaires et réutilisables (Angular), réduisant la dette technique et facilitant la maintenance. Optimisation des temps de chargement via des stratégies de Lazy Loading."
       },
       {
-        "description": "Optimisé les performances de la plateforme en implémentant des stratégies de lazy loading et en améliorant l'efficacité du code Angular."
+        "description": "Définition proactive des contrats d'interface avec l'équipe Backend (Spring Boot) pour garantir une intégration fluide et typée des données, et facilitant l'automatisation des échanges de données."
       },
       {
-        "description": "Intégré des fonctionnalités de sécurité robustes, y compris l'authentification et le contrôle d'accès basé sur les rôles (RBAC), pour protéger les données sensibles des utilisateurs."
-      },
-      {
-        "description": "Géré l'intégration avec une API backend pour permettre des opérations CRUD complètes sur les entités de la plateforme, telles que les projets, les tâches et les utilisateurs."
-      },
-      {
-        "description": "Développé des tableaux de bord interactifs pour visualiser les données de projet, y compris les progrès, les ressources utilisées et les statistiques clés."
-      },
-      {
-        "description": "Conçu une interface utilisateur cohérente et responsive en utilisant Angular Material et SCSS, assurant une expérience utilisateur optimale sur tous les appareils."
+        "description": "Mise en place de standards de code stricts pour assurer la cohérence de l'expérience utilisateur sur des interfaces complexes."
       }
     ],
     "environment": [
       {
-        "name": "Material"
+        "name": "Angular",
+        "category": "frontend"
       },
       {
-        "name": "Angular"
+        "name": "TypeScript",
+        "category": "frontend"
       },
       {
-        "name": "Git"
+        "name": "Material Design",
+        "category": "frontend"
       },
       {
-        "name": "Typescript"
+        "name": "SpringBoot",
+        "category": "backend"
       },
       {
-        "name": "Springboot"
+        "name": "PostgreSQL",
+        "category": "databases"
+      },
+      {
+        "name": "Git",
+        "category": "devops"
       }
     ]
   },
   {
-    "id": 6,
-    "status": "published",
+    "id": 2,
     "company": "Institut Universitaire de Technologies",
-    "title": "Développeur Angular",
-    "start_date": "2021-11-22",
-    "end_date": "2022-07-29",
-    "currently_working": false,
+    "role": "Analyste & Développeur Frontend",
+    "isCurrent": false,
+    "startDate": "2021-11-22T12:00:00",
+    "endDate": "2022-07-29T12:00:00",
     "achievements": [
       {
-        "description": "Con&ccedil;u et d&eacute;velopp&eacute; une plateforme web Angular multi-utilisateurs (C2B, B2C) pour connecter m&eacute;nages, entreprises de recyclage et collecteurs de d&eacute;chets plastiques."
+        "description": "Développement d'une plateforme web multi-utilisateurs (B2C/C2B) en pilotant le cycle complet : recueil des exigences, rédaction des spécifications techniques/UML, et intégration API."
       },
       {
-        "description": "Optimis&eacute; les performances de la plateforme via l'impl&eacute;mentation de strat&eacute;gies de lazy loading."
+        "description": "Implémentation de la logique de sécurité côté client (RBAC - Role-Based Access Control) pour gérer les permissions utilisateurs en lien avec le Backend."
       },
       {
-        "description": "S&eacute;curis&eacute; la plateforme en int&eacute;grant un syst&egrave;me de contr&ocirc;le d'acc&egrave;s bas&eacute; sur les r&ocirc;les (RBAC)."
-      },
-      {
-        "description": "G&eacute;r&eacute; l'int&eacute;gration et les interactions avec l'API backend, permettant les op&eacute;rations CRUD pour les entit&eacute;s de la plateforme."
-      },
-      {
-        "description": "D&eacute;velopp&eacute; des diagrammes statistiques pour la visualisation des donn&eacute;es de recyclage (quantit&eacute;s, types de d&eacute;chets)."
-      },
-      {
-        "description": "Con&ccedil;u une interface utilisateur coh&eacute;rente et responsive avec Angular Material et SCSS."
+        "description": "Application des principes Agile pour itérer rapidement sur les fonctionnalités critiques et livrer de la valeur en continu."
       }
     ],
     "environment": [
       {
-        "name": "Sass"
+        "name": "Angular",
+        "category": "frontend"
       },
       {
-        "name": "Angular"
+        "name": "TypeScript",
+        "category": "frontend"
       },
       {
-        "name": "Git"
+        "name": "Material Design",
+        "category": "frontend"
       },
       {
-        "name": "Java"
+        "name": "Sass",
+        "category": "frontend"
       },
       {
-        "name": "Springboot"
+        "name": "Java",
+        "category": "backend"
+      },
+      {
+        "name": "SpringBoot",
+        "category": "backend"
+      },
+      {
+        "name": "PostgreSQL",
+        "category": "databases"
+      },
+      {
+        "name": "Git",
+        "category": "devops"
       }
     ]
   },
   {
-    "id": 7,
-    "status": "published",
-    "company": "Camtel Direction Régionale",
-    "title": "Analyste et Développeur Fullstack",
-    "start_date": "2021-03-23",
-    "end_date": "2021-07-01",
-    "currently_working": false,
+    "id": 3,
+    "company": "Camtel",
+    "role": "Développeur Fullstack",
+    "isCurrent": false,
+    "startDate": "2021-03-23T08:30:00",
+    "endDate": "2021-07-01T18:30:00",
     "achievements": [
       {
-        "description": "Con&ccedil;u et mod&eacute;lis&eacute; une base de donn&eacute;es PostgreSQL pour la gestion de plus de 50 v&eacute;hicules, am&eacute;liorant l'efficacit&eacute;&nbsp;de 15%."
+        "description": "Développement d'un tableau de bord (Dashboard) interactif (HTML, CSS, JS, PHP) de A à Z pour la gestion et le suivi des affectations de la flotte automobile."
       },
       {
-        "description": "&Eacute;labor&eacute; des diagrammes UML (classes, cas d'utilisation) pour une conception logicielle robuste."
+        "description": "Conception d'une architecture relationnelle complexe (UML) gérant des cardinalités avancées pour modéliser finement les véhicules, modèles et profils conducteurs."
       },
       {
-        "description": "D&eacute;velopp&eacute; une application web CRUD compl&egrave;te pour la gestion des v&eacute;hicules et chauffeurs."
-      },
-      {
-        "description": "G&eacute;r&eacute; ce projet de mani&egrave;re autonome, respectant les d&eacute;lais et r&eacute;solvant efficacement les d&eacute;fis techniques."
+        "description": "Implémentation d'un système d'authentification sécurisé et intégration de règles métier strictes garantissant l'intégrité des données lors des transactions."
       }
     ],
     "environment": [
       {
-        "name": "Git"
+        "name": "PHP",
+        "category": "backend"
       },
       {
-        "name": "PHP"
+        "name": "MySQL",
+        "category": "databases"
       },
       {
-        "name": "MySQL"
+        "name": "HTML5",
+        "category": "frontend"
+      },
+      {
+        "name": "CSS3",
+        "category": "frontend"
+      },
+      {
+        "name": "JS",
+        "category": "frontend"
       }
     ]
   }

@@ -1,22 +1,22 @@
 [
   {
-    "id": 1,
-    "status": "published",
-    "gpa": "4.00000",
+    "id": 2,
     "institution": "Institut Universitaire de Technologies",
-    "start_date": "2019-10-14",
-    "end_date": "2022-07-29",
     "degree": "Baccalauréat",
-    "field_of_study": "Génie Logiciel"
+    "fieldOfStudy": "software_engineering",
+    "gpa": null,
+    "isCurrent": null,
+    "startDate": "2019-10-21T12:00:00",
+    "endDate": "2022-07-29T12:00:00"
   },
   {
-    "id": 2,
-    "status": "published",
-    "gpa": "3.20000",
-    "institution": "Institut Universitaire de Technologies",
-    "start_date": "2019-10-14",
-    "end_date": "2021-08-05",
-    "degree": "Diplôme Universitaire de Technologies",
-    "field_of_study": "Génie Informatique"
+    "id": 1,
+    "institution": "Université de Sherbrooke",
+    "degree": "Maîtrise",
+    "fieldOfStudy": "software_engineering",
+    "gpa": null,
+    "isCurrent": null,
+    "startDate": "2025-08-25T12:00:00",
+    "endDate": null
   }
 ]

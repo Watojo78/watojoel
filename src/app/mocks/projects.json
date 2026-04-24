@@ -1,51 +1,73 @@
 [
   {
     "id": 1,
-    "status": "published",
-    "date_created": "2025-07-18T02:23:13.616Z",
-    "date_updated": "2025-07-19T19:50:38.937Z",
     "title": "Mon Portfolio",
-    "summary": "Ceci est mon site Web de portfolio personnel, construit avec Angular.",
-    "repository_url": "https://github.com/Watojo78/watojoel",
-    "preview_url": "https://www.joelwafotokam.dev/",
-    "thumbnail_url": "0ccbc979-9a04-45bd-a4b9-5decc3e377f8",
+    "summary": "Ceci est Mon Univers Personnel (Portfolio) !",
+    "repositoryUrl": "https://github.com/Watojo78/watojoel",
+    "previewUrl": "https://joelwafotokam.dev/home",
+    "thumbnailUrl": "https://brain.joelwafotokam.dev/assets/c21e3c63-4137-4bfe-aabe-d7a206b5b0a4",
     "techstack": [
       {
-        "name": "Angular"
+        "name": "Angular",
+        "category": "frontend"
       },
       {
-        "name": "TypeScript"
+        "name": "TypeScript",
+        "category": "frontend"
       },
       {
-        "name": "HTML5"
+        "name": "Tailwind CSS",
+        "category": "frontend"
       },
       {
-        "name": "CSS3"
+        "name": "Sass",
+        "category": "frontend"
+      },
+      {
+        "name": "Docker",
+        "category": "devops"
+      },
+      {
+        "name": "PostgreSQL",
+        "category": "databases"
+      },
+      {
+        "name": "Directus",
+        "category": "backend"
+      },
+      {
+        "name": "Git",
+        "category": "devops"
       }
     ]
   },
   {
     "id": 2,
-    "status": "published",
-    "date_created": "2025-07-18T02:28:06.243Z",
-    "date_updated": "2025-07-19T19:51:13.899Z",
     "title": "Movoo Clone",
-    "summary": "Developed a clone of the Movoo movie app.",
-    "repository_url": "https://github.com/Watojo78/watojoel/movoo-clone",
-    "preview_url": "https://movoo-clone.vercel.app/",
-    "thumbnail_url": "1039aecb-f0d5-493a-8706-2e76addf0552",
+    "summary": "Application web de films (Exclu, nouveautés, etc.)",
+    "repositoryUrl": "https://github.com/Watojo78/movoo-clone",
+    "previewUrl": "https://movoo-clone.vercel.app/",
+    "thumbnailUrl": "https://brain.joelwafotokam.dev/assets/b837447b-a14c-4f65-9762-0f5d33809c2a",
     "techstack": [
       {
-        "name": "Angular"
+        "name": "Angular",
+        "category": "frontend"
       },
       {
-        "name": "TypeScript"
+        "name": "TypeScript",
+        "category": "frontend"
       },
       {
-        "name": "HTML5"
+        "name": "Material Design",
+        "category": "frontend"
       },
       {
-        "name": "CSS3"
+        "name": "Sass",
+        "category": "frontend"
+      },
+      {
+        "name": "Git",
+        "category": "devops"
       }
     ]
   }

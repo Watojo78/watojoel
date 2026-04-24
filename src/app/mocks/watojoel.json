@@ -1,327 +1,417 @@
 {
-  "abouts": [
-    {
-      "id": 1,
-      "fullname": "Joel Wafo Tokam",
-      "bio": "I am a passionate and skilled web developer with a strong focus on building user-friendly and high-quality applications.",
-      "profilePicture": "path/to/profile.jpg",
-      "contact": {
-        "email": "watojoel@example.com",
-        "linkedin": "https://www.linkedin.com/in/watojoel/",
-        "github": "https://github.com/Watojo78"
+  "profile": {
+    "fullName": "Joel Wafo Tokam",
+    "title": "Développeur Fullstack",
+    "bio": "Construction d'Applis Modernes & dynamiques.",
+    "aboutMe": "\"Bienvenue dans mon portfolio ! Je m'appelle Wafo Joël et je prend plaisir à la création d'applis fluides, UI conviviales et d'UX agréables. Explorez mes meilleurs projets pour voir comment je donne vie à des idées grâce à un code épuré et un design innovant.\"",
+    "contacts": [
+      {
+        "id": "0",
+        "text": "2550 Rue Grenet",
+        "icon": "fi-location",
+        "url": "https://maps.google.com/$1q=2550 Rue Grenet"
+      },
+      {
+        "id": "1",
+        "text": "contact@joelwafotokam.dev",
+        "icon": "fi-envelope",
+        "url": "mailto:contact@joelwafotokam.dev"
+      },
+      {
+        "id": "2",
+        "text": "hello@joelwafotokam.dev",
+        "icon": "fi-envelope",
+        "url": "mailto:hello@joelwafotokam.dev"
+      },
+      {
+        "id": "3",
+        "text": "+1(263)881-7021",
+        "icon": "fi-phone",
+        "url": "tel:+1(263)881-7021"
       }
-    },
-    {
-      "id": 2,
-      "fullname": "Joel Wafo Tokam",
-      "bio": "I am a passionate and skilled mobile developer with a strong focus on building user-friendly and high-quality applications.",
-      "profilePicture": "path/to/profile.jpg",
-      "contact": {
-        "email": "watojoel@example.com",
-        "linkedin": "https://www.linkedin.com/in/watojoel/",
-        "github": "https://github.com/Watojo78"
+    ],
+    "socialLinks": [
+      {
+        "platform": "Github",
+        "icon": "fi-github",
+        "url": "https://github.com/Watojo78"
+      },
+      {
+        "platform": "LinkedIn",
+        "icon": "fi-linkedin",
+        "url": "https://linkedin.com/in/joel-wafo"
+      },
+      {
+        "platform": "Whatsapp",
+        "icon": "fi-whatsapp",
+        "url": "https://wa.me/12638817021"
       }
-    }
-  ],
+    ],
+    "availabilityStatus": true,
+    "resumeUrl": "https://brain.joelwafotokam.dev/assets/a3d01471-2914-4d6b-80f9-f4b40c1bd70c"
+  },
   "projects": [
     {
-      "id": 0,
-      "title": "My Portfolio",
-      "description": "This is my personal portfolio website, built with Angular.",
-      "thumbnailPath": "/portfolio_thumbnail.png",
-      "repository_url": "https://github.com/Watojo78/watojoel",
-      "projectUrl": "https://joelwafotokam.dev",
-      "previewUrl": "https://watojoel-dev.vercel.app",
+      "id": 1,
+      "title": "Mon Portfolio",
+      "summary": "Ceci est Mon Univers Personnel (Portfolio) !",
+      "repositoryUrl": "https://github.com/Watojo78/watojoel",
+      "previewUrl": "https://joelwafotokam.dev/home",
+      "thumbnailUrl": "https://brain.joelwafotokam.dev/assets/c21e3c63-4137-4bfe-aabe-d7a206b5b0a4",
       "techstack": [
         {
-          "id": 3,
-          "name": "Tailwindcss",
-          "logo_path": "/tailwindcss.svg"
-        },
-        {
-          "id": 4,
-          "name": "Primeng",
-          "logo_path": "/primeng.svg"
-        },
-        {
-          "id": 6,
-          "name": "TypeScript",
-          "logo_path": "/ts.svg"
-        },
-        {
-          "id": 7,
           "name": "Angular",
-          "logo_path": "/angular.svg"
+          "category": "frontend"
         },
         {
-          "id": 10,
+          "name": "TypeScript",
+          "category": "frontend"
+        },
+        {
+          "name": "Tailwind CSS",
+          "category": "frontend"
+        },
+        {
+          "name": "Sass",
+          "category": "frontend"
+        },
+        {
+          "name": "Docker",
+          "category": "devops"
+        },
+        {
+          "name": "PostgreSQL",
+          "category": "databases"
+        },
+        {
           "name": "Directus",
-          "logo_path": "/directus.svg"
+          "category": "backend"
         },
         {
-          "id": 14,
           "name": "Git",
-          "logo_path": "/git.svg"
-        },
-        {
-          "id": 15,
-          "name": "Postgresql",
-          "logo_path": "/postgresql.svg"
+          "category": "devops"
         }
-      ],
-      "role": "Lead Fullstack developer",
-      "highlights": [
-        "Showcases my skills and projects.",
-        "Built with Angular for a modern and responsive design.",
-        "Continuously updated with my latest work."
       ]
-    },
-    {
-      "id": 1,
-      "title": "Movoo Movie Clone",
-      "description": "Developed a clone of the Movoo movie app.",
-      "thumbnailPath": "/movoo@homepage_thumbnail.png",
-      "projectUrl": "https://movoo-clone.vercel.app/",
-      "repository_url": "https://github.com/Watojo78/watojoel/movoo-clone",
-      "previewUrl": "https://movoo-clone.vercel.app/",
-      "techstack": [
-        {
-          "id": 3,
-          "name": "Tailwindcss",
-          "logo_path": "/tailwindcss.svg"
-        },
-        {
-          "id": 4,
-          "name": "Primeng",
-          "logo_path": "/primeng.svg"
-        },
-        {
-          "id": 6,
-          "name": "TypeScript",
-          "logo_path": "/ts.svg"
-        },
-        {
-          "id": 7,
-          "name": "Angular",
-          "logo_path": "/angular.svg"
-        },
-        {
-          "id": 14,
-          "name": "Git",
-          "logo_path": "/git.svg"
-        },
-        {
-          "id": 16,
-          "name": "TMDB Rest API",
-          "logo_path": "/"
-        },
-        {
-          "id": 17,
-          "name": "Material",
-          "logo_path": "/material.svg"
-        }
-      ],
-      "role": "Angular Developer",
-      "highlights": [
-        "Implemented movie search functionality.",
-        "Created a user-friendly interface for browsing movies.",
-        "Integrated with a movie database API to fetch movie data.",
-        "Responsive design for various screen sizes."
-      ]
-    }
-  ],
-  "work_experiences": [
-    {
-      "id": 0,
-      "company":"AfroMetaverse",
-      "title":"Angular Developer",
-      "startDate":"2023/11",
-      "endDate":"2024/11",
-      "description":[""]
-    },
-    {
-      "id": 1,
-      "company":"IUT Douala",
-      "title":"Angular Developer",
-      "startDate":"2021/11",
-      "endDate":"2022/07",
-      "description":[""]
     },
     {
       "id": 2,
-      "company":"Camtel DRL",
-      "title":"Fullstack Developer",
-      "startDate":"2021/03",
-      "endDate":"2021/07",
-      "description":[""]
+      "title": "Movoo Clone",
+      "summary": "Application web de films (Exclu, nouveautés, etc.)",
+      "repositoryUrl": "https://github.com/Watojo78/movoo-clone",
+      "previewUrl": "https://movoo-clone.vercel.app/",
+      "thumbnailUrl": "https://brain.joelwafotokam.dev/assets/b837447b-a14c-4f65-9762-0f5d33809c2a",
+      "techstack": [
+        {
+          "name": "Angular",
+          "category": "frontend"
+        },
+        {
+          "name": "TypeScript",
+          "category": "frontend"
+        },
+        {
+          "name": "Material Design",
+          "category": "frontend"
+        },
+        {
+          "name": "Sass",
+          "category": "frontend"
+        },
+        {
+          "name": "Git",
+          "category": "devops"
+        }
+      ]
     }
   ],
   "educations": [
     {
-      "id": 0,
-      "institution": "Institut Universitaire Technologique",
-      "degree": "Licence en Génie Logiciel",
-      "startDate": "2021/11",
-      "endDate": "2022/08",
-      "description": [
-        "Specialized in Natural Language Processing (NLP) and Computer Vision.",
-        "Relevant coursework included: Deep Learning, Machine Learning, NLP, Computer Vision, and Reinforcement Learning.",
-        "GPA: 3.9/4.0"
-      ],
-      "relevantSkills": [
+      "id": 2,
+      "institution": "Institut Universitaire de Technologies",
+      "degree": "Baccalauréat",
+      "fieldOfStudy": "software_engineering",
+      "gpa": null,
+      "isCurrent": null,
+      "startDate": "2019-10-21T12:00:00",
+      "endDate": "2022-07-29T12:00:00"
+    },
+    {
+      "id": 1,
+      "institution": "Université de Sherbrooke",
+      "degree": "Maîtrise",
+      "fieldOfStudy": "software_engineering",
+      "gpa": null,
+      "isCurrent": null,
+      "startDate": "2025-08-25T12:00:00",
+      "endDate": null
+    }
+  ],
+  "work_experiences": [
+    {
+      "id": 1,
+      "company": "AfroMetaverse",
+      "role": "Développeur Frontend",
+      "isCurrent": false,
+      "startDate": "2023-11-01T12:00:00",
+      "endDate": "2024-11-29T12:00:00",
+      "achievements": [
         {
-          "id": 1,
-          "name": "Angular",
-          "logo_path": "/angular.svg"
+          "description": "Conception d'une architecture de composants modulaires et réutilisables (Angular), réduisant la dette technique et facilitant la maintenance. Optimisation des temps de chargement via des stratégies de Lazy Loading."
         },
         {
-          "id": 8,
+          "description": "Définition proactive des contrats d'interface avec l'équipe Backend (Spring Boot) pour garantir une intégration fluide et typée des données, et facilitant l'automatisation des échanges de données."
+        },
+        {
+          "description": "Mise en place de standards de code stricts pour assurer la cohérence de l'expérience utilisateur sur des interfaces complexes."
+        }
+      ],
+      "environment": [
+        {
+          "name": "Angular",
+          "category": "frontend"
+        },
+        {
+          "name": "TypeScript",
+          "category": "frontend"
+        },
+        {
+          "name": "Material Design",
+          "category": "frontend"
+        },
+        {
           "name": "SpringBoot",
-          "logo_path": "/springboot.svg"
+          "category": "backend"
+        },
+        {
+          "name": "PostgreSQL",
+          "category": "databases"
+        },
+        {
+          "name": "Git",
+          "category": "devops"
         }
       ]
     },
     {
-      "id": 1,
-      "institution": "Institut Universitaire Technologique",
-      "degree": "DUT en Génie Informatique",
-      "startDate": "2019/10",
-      "endDate": "2021/08",
-      "description": [
-        "Specialized in Natural Language Processing (NLP) and Computer Vision.",
-        "Relevant coursework included: Deep Learning, Machine Learning, NLP, Computer Vision, and Reinforcement Learning.",
-        "GPA: 3.2/5.0"
+      "id": 2,
+      "company": "Institut Universitaire de Technologies",
+      "role": "Analyste & Développeur Frontend",
+      "isCurrent": false,
+      "startDate": "2021-11-22T12:00:00",
+      "endDate": "2022-07-29T12:00:00",
+      "achievements": [
+        {
+          "description": "Développement d'une plateforme web multi-utilisateurs (B2C/C2B) en pilotant le cycle complet : recueil des exigences, rédaction des spécifications techniques/UML, et intégration API."
+        },
+        {
+          "description": "Implémentation de la logique de sécurité côté client (RBAC - Role-Based Access Control) pour gérer les permissions utilisateurs en lien avec le Backend."
+        },
+        {
+          "description": "Application des principes Agile pour itérer rapidement sur les fonctionnalités critiques et livrer de la valeur en continu."
+        }
       ],
-      "relevantSkills": [
+      "environment": [
         {
-          "id": 0,
-          "name": "HTML5",
-          "logo_path": "/html5.svg"
+          "name": "Angular",
+          "category": "frontend"
         },
         {
-          "id": 1,
-          "name": "CSS3",
-          "logo_path": "/css3.svg"
+          "name": "TypeScript",
+          "category": "frontend"
         },
         {
-          "id": 8,
+          "name": "Material Design",
+          "category": "frontend"
+        },
+        {
+          "name": "Sass",
+          "category": "frontend"
+        },
+        {
           "name": "Java",
-          "logo_path": "/java.svg"
+          "category": "backend"
+        },
+        {
+          "name": "SpringBoot",
+          "category": "backend"
+        },
+        {
+          "name": "PostgreSQL",
+          "category": "databases"
+        },
+        {
+          "name": "Git",
+          "category": "devops"
         }
       ]
-    }
-  ],
-  "certifications": [
-    {
-      "id": 1,
-      "name": "Initiation Java",
-      "provider": "EPFL",
-      "dateEarned": "2024-10-01",
-      "link": "https://coursera.com"
     },
     {
       "id": 3,
-      "name": "Angular",
-      "provider": "Udemy",
-      "dateEarned": "2025-03-01",
-      "link": "https://udemy.com"
+      "company": "Camtel",
+      "role": "Développeur Fullstack",
+      "isCurrent": false,
+      "startDate": "2021-03-23T08:30:00",
+      "endDate": "2021-07-01T18:30:00",
+      "achievements": [
+        {
+          "description": "Développement d'un tableau de bord (Dashboard) interactif (HTML, CSS, JS, PHP) de A à Z pour la gestion et le suivi des affectations de la flotte automobile."
+        },
+        {
+          "description": "Conception d'une architecture relationnelle complexe (UML) gérant des cardinalités avancées pour modéliser finement les véhicules, modèles et profils conducteurs."
+        },
+        {
+          "description": "Implémentation d'un système d'authentification sécurisé et intégration de règles métier strictes garantissant l'intégrité des données lors des transactions."
+        }
+      ],
+      "environment": [
+        {
+          "name": "PHP",
+          "category": "backend"
+        },
+        {
+          "name": "MySQL",
+          "category": "databases"
+        },
+        {
+          "name": "HTML5",
+          "category": "frontend"
+        },
+        {
+          "name": "CSS3",
+          "category": "frontend"
+        },
+        {
+          "name": "JS",
+          "category": "frontend"
+        }
+      ]
     }
   ],
   "skills": [
     {
-      "id": 0,
-      "name": "HTML5",
-      "logo_path": "/html5.svg"
-    },
-    {
       "id": 1,
-      "name": "CSS3",
-      "logo_path": "/css3.svg"
+      "name": "Angular",
+      "category": "frontend",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/a0f087f8-53f4-4df3-9dc0-8d30ed2075ec"
     },
     {
       "id": 2,
-      "name": "Sass",
-      "logo_path": "/sass.svg"
+      "name": "TypeScript",
+      "category": "frontend",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/747c5baa-bfd4-4f2b-ba4c-93fe363f33dc"
     },
     {
       "id": 3,
-      "name": "Tailwindcss",
-      "logo_path": "/tailwindcss.svg"
+      "name": "Tailwind CSS",
+      "category": "frontend",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/94686843-56a2-427f-8cd9-f67ace27e681"
     },
     {
       "id": 4,
-      "name": "Primeng",
-      "logo_path": "/primeng.svg"
+      "name": "Material Design",
+      "category": "frontend",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/f3eeeefe-2234-4209-b0ea-fcda6c504036"
     },
     {
       "id": 5,
-      "name": "JavaScript",
-      "logo_path": "/js.svg"
+      "name": "Sass",
+      "category": "frontend",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/ed3b1093-6d71-4c1b-bd57-1980424e2689"
     },
     {
       "id": 6,
-      "name": "TypeScript",
-      "logo_path": "/ts.svg"
+      "name": "Java",
+      "category": "backend",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/d9a8d772-d44f-4967-a5b7-adfd945415f2"
     },
     {
       "id": 7,
-      "name": "Angular",
-      "logo_path": "/angular.svg"
-    },
-    {
-      "id": 8,
-      "name": "Java",
-      "logo_path": "/java.svg"
+      "name": "SpringBoot",
+      "category": "backend",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/5da969e5-0635-4124-8abd-ba593ee74dd4"
     },
     {
       "id": 9,
-      "name": "SpringBoot",
-      "logo_path": "/springboot.svg"
+      "name": "MySQL",
+      "category": "databases",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/95446047-4464-40d3-816a-8f39bf2dba60"
+    },
+    {
+      "id": 8,
+      "name": "PostgreSQL",
+      "category": "databases",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/c6e04e3f-e240-4c1b-8936-f5d2e2d437a5"
     },
     {
       "id": 10,
-      "name": "Directus",
-      "logo_path": "/directus.svg"
+      "name": "PHP",
+      "category": "backend",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/d5171f63-f8d0-4cfb-b356-6f7572a7d55c"
+    },
+    {
+      "id": 11,
+      "name": "Git",
+      "category": "devops",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/a5a422eb-ffe0-42cb-8d4c-c4c725a83f9f"
+    },
+    {
+      "id": 12,
+      "name": "Docker",
+      "category": "devops",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/010a3685-5b96-4d8b-92cb-0308b77cce26"
     },
     {
       "id": 13,
-      "name": "Docker",
-      "logo_path": "/docker.svg"
+      "name": "Directus",
+      "category": "backend",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/fd8ac726-cd2c-4baf-90d1-e92fb4c69c2b"
     },
     {
       "id": 14,
-      "name": "Git",
-      "logo_path": "/git.svg"
+      "name": "HTML5",
+      "category": "frontend",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/af08969f-d3a5-4fb4-8279-17efd7b38a9d"
+    },
+    {
+      "id": 15,
+      "name": "CSS3",
+      "category": "frontend",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/58a8b479-3941-4879-b89a-18b40bedbc61"
+    },
+    {
+      "id": 16,
+      "name": "JS",
+      "category": "frontend",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/76c4b5a8-73c7-46f8-b363-6dfe97efb922"
     }
   ],
   "testimonies": [
     {
       "id": 1,
-      "name": "Brayan Tiwa",
-      "role": "Flutter Developer",
-      "profileUrl": "/assets/profile.png",
-      "testimonial": "Watojoel did an excellent job on his app project. Highly recommended!"
-    },
-    {
-      "id": 2,
-      "name": "Beatrice",
-      "role": "DSI",
-      "profileUrl": "/assets/profile.png",
-      "testimonial": "Joel Wafo Tokam is a skilled dedicated and professionnal developer. It was a pleasure working with him."
+      "quote": "Joel Wafo a fait un excellent travail pendant son stage avec nous et sur tous les plans. Je le recommande vivement !",
+      "rating": "5.00000",
+      "authorRole": "Directrice Département Informatique",
+      "authorName": "Béatrice N.",
+      "authorCompany": "Camtel",
+      "authorAvatar": "https://brain.joelwafotokam.dev/assets/0861530f-0a6e-49f0-8166-9b8f2bd1a126"
     },
     {
       "id": 3,
-      "name": "Didier",
-      "role": "DSI",
-      "profileUrl": "/assets/profile.png",
-      "testimonial": "Joel did perfectly well on his project. I highly recommend him for any web development task."
+      "quote": "J'ai apprécié encadrer Joël lors de son stage avec nous à Camtel, il est très intelligent et talentueux. Il a démontré une grande précision dans ce qu'il nous a délivré comme produit final. Je le recommande !",
+      "rating": "4.80000",
+      "authorRole": "Directeur Département Télécom",
+      "authorName": "Didier K.",
+      "authorCompany": "Camtel",
+      "authorAvatar": "https://brain.joelwafotokam.dev/assets/748c4c2d-5caa-4400-bf97-109149efc835"
     },
     {
-      "id": 4,
-      "name": "Marcel Avaika",
-      "role": "Full-Stack Developer",
-      "profileUrl": "/assets/profile.png",
-      "testimonial": "Joel is a great developer. He is very dedicated and always delivers on time."
+      "id": 2,
+      "quote": "Joel a produit un tableau de bord nettement meilleur et fidèle aux attentes spécifiées lors de son mandat avec nous en tant que dev Angular. I a toute ma confiance !",
+      "rating": "4.50000",
+      "authorRole": "Software Developer",
+      "authorName": "Brayan T.",
+      "authorCompany": "Phoenix d'Or",
+      "authorAvatar": "https://brain.joelwafotokam.dev/assets/748c4c2d-5caa-4400-bf97-109149efc835"
     }
   ]
 }

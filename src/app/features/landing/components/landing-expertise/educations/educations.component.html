@@ -14,13 +14,13 @@
       <div class="education-content flex flex-col items-start justify-center w-full mb-4 md:mb-6">
         <div class="flex flex-col md:flex-row items-start justify-between w-full">
           <div>
-            <h4 class="content-degree">{{education.degree}}</h4>
+            <h4 class="content-degree">{{education.degree}} en {{education.field}}</h4>
             <p class="font-semibold">{{education.institution}}</p>
             <div class="content-period">
               <span>{{education.startDate | date:'MMM yyyy'}}</span>
               <span> - </span>
               @if(education.isCurrent) {
-                <span>Present</span>
+                <span>Présent</span>
               } @else {
                 <span>{{education.endDate | date:'MMM yyyy'}}</span>
               }

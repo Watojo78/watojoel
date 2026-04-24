@@ -2,7 +2,7 @@ export interface Education {
   id: number
   institution: string
   degree: string
-  fieldOfStudy: string
+  field: string
   gpa: number
   isCurrent: boolean
   startDate: string

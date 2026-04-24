@@ -1,5 +1,7 @@
-<div class="works-wrapper w-full">
-  <p-timeline [value]="works()" align="left">
+<div class="works-wrapper">
+  <p-timeline
+    [value]="works()"
+    align="left">
     <ng-template #marker let-work>
       <span class="flex w-8 h-8 items-center justify-center rounded-full z-10 bg-white">
         <img
@@ -18,7 +20,7 @@
               <span>{{work.startDate | date:'MMM yyyy'}}</span>
               <span> - </span>
               @if(work.isCurrent) {
-                <span>Present</span>
+                <span>Présent</span>
               } @else {
                 <span>{{work.endDate | date:'MMM yyyy'}}</span>
               }

@@ -13,7 +13,7 @@
               <span class="outer-abs-left"></span>
             </span>
             <span class="title-before-inner"></span>
-            <span class="title">{{project.title}}</span>
+            <span class="title">{{project().title}}</span>
             <span class="title-after-inner"></span>
             <span class="title-after-outer">
               <span class="outer-abs-right"></span>
@@ -32,7 +32,7 @@
         <img src="../../../../../../assets/common/icons/house-blank2.svg" alt="web-home">
         <div class="nav-bar-url overflow-hidden">
           <img src="../../../../../../assets/common/icons/padlock-check@br.svg" alt="mobile-lock-check">
-          <p class="overflow-hidden">{{project.preview_url}}</p>
+          <p class="overflow-hidden">{{project().previewUrl}}</p>
         </div>
         <div class="fake-menu">
           <p-button [rounded]="true" severity="secondary">
@@ -42,22 +42,22 @@
       </div>
       <div class="container-content">
         <div class="content-thumb">
-          <img [src]="[project.thumbnail_url]" alt="around-login">
+          <img [src]="[project().thumbnailUrl]" alt="around-login">
         </div>
         <div class="content-absolute">
           <div class="absolute-cta">
-            <a [href]="[project.preview_url]" class="cta-one">
+            <a [href]="[project().previewUrl]" class="cta-one">
               <p-button [rounded]="true" severity="contrast">
                 <img src="../../../../../../assets/icons/play.svg" alt="play.svg" height="20">
               </p-button>
             </a>
-            <a [href]="[project.preview_url]" target="_blank" class="cta-two">
+            <a [href]="[project().previewUrl]" target="_blank" class="cta-two">
               <p-button [rounded]="true" severity="secondary">
                 <img src="../../../../../../assets/common/icons/arrow-up-right-from-square.svg" alt="" height="21">
                 <span>Aperçu</span>
               </p-button>
             </a>
-            <a [href]="[project.repository_url]" target="_blank" class="cta-three">
+            <a [href]="[project().repositoryUrl]" target="_blank" class="cta-three">
               <p-button [rounded]="true" severity="secondary">
                 <img src="../../../../../../assets/common/icons/github.svg" alt="" height="21">
                 <span>Source</span>
@@ -69,10 +69,10 @@
     </div>
   </div>
   <div class="resume flex flex-col gap-2 pt-4 pb-4">
-    <h4>{{project.title}}</h4>
-    <p>{{project.summary}}</p>
+    <h4>{{project().title}}</h4>
+    <p>{{project().summary}}</p>
     <div class="resume-techstack flex items-center justify-start gap-2 flex-wrap">
-      @for (skill of project.techstack; track $index) {
+      @for (skill of project().techstack; track $index) {
         <span class="text-white text-sm bg-black rounded-full pt-1 pb-1 pl-4 pr-4">{{skill.name}}</span>
       }
     </div>

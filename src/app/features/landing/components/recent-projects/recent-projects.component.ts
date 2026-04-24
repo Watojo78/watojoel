@@ -1,11 +1,10 @@
-import { Project } from '../../../../models/project.model';
 import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
+import { PortfolioService } from '../../../../core/services/portfolio.service';
 import { LandingProjectCardMinimalComponent } from './landing-project-card-minimal/landing-project-card-minimal.component';
-import projectMockData from '../../../../mocks/projects.json';
-import { ProjectsService } from '../../../../services/projects.service';
-import { toSignal } from '@angular/core/rxjs-interop';
 import { chunkArray } from '../../../../shared/utils/array.util';
+import projectMockData from '../../../../mocks/projects.json';
+
 @Component({
   selector: 'landing-recent-projects',
   imports: [LandingProjectCardMinimalComponent, ButtonModule],
@@ -14,9 +13,7 @@ import { chunkArray } from '../../../../shared/utils/array.util';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class RecentProjectsComponent {
-  readonly #projectService = inject(ProjectsService);
-  readonly #mockProjects: Project[] = projectMockData;
-  readonly #projects = toSignal(this.#projectService.getProjects(), { initialValue: this.#mockProjects });
-  readonly loading = computed(() => this.#projects().length === 0);
-  readonly chunkedProjects = computed(() => chunkArray(this.#projects(), 3));
+  readonly #portfolioService = inject(PortfolioService);
+  readonly projects = computed(() => this.#portfolioService.portfolio()?.projects ?? projectMockData);
+  readonly chunkedProjects = computed(() => chunkArray(this.projects(), 3));
 }

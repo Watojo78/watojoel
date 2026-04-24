@@ -1,38 +1,29 @@
 [
   {
     "id": 1,
-    "status": "published",
-    "date_created": "2025-07-18T02:13:49.875Z",
-    "date_updated": "2025-07-19T20:29:55.774Z",
-    "author_name": "Brayan Tiwa",
-    "quote": "Watojoel did an excellent job on his app project. Highly recommended!",
-    "author_position": "Développeur Flutter",
-    "company_name": "Phoenix",
-    "rating": 5,
-    "author_profile": "0bc9a8af-71b5-474e-b6bf-e1e041df935f"
-  },
-  {
-    "id": 2,
-    "status": "published",
-    "date_created": "2025-07-18T02:15:12.775Z",
-    "date_updated": "2025-07-19T20:30:16.407Z",
-    "author_name": "Béatrice",
-    "quote": "Joel Wafo Tokam is a skilled dedicated and professionnal developer. It was a pleasure working with him.",
-    "author_position": "DSI",
-    "company_name": "Camtel Direction Régionale",
-    "rating": 5,
-    "author_profile": "0bc9a8af-71b5-474e-b6bf-e1e041df935f"
+    "quote": "Joel Wafo a fait un excellent travail pendant son stage avec nous et sur tous les plans. Je le recommande vivement !",
+    "rating": "5.00000",
+    "authorRole": "Directrice Département Informatique",
+    "authorName": "Béatrice N.",
+    "authorCompany": "Camtel",
+    "authorAvatar": "https://brain.joelwafotokam.dev/assets/0861530f-0a6e-49f0-8166-9b8f2bd1a126"
   },
   {
     "id": 3,
-    "status": "published",
-    "date_created": "2025-07-18T02:16:13.812Z",
-    "date_updated": "2025-07-19T20:30:26.190Z",
-    "author_name": "Didier",
-    "quote": "Joel did perfectly well on his project. I highly recommend him for any web development task.",
-    "author_position": "DSI",
-    "company_name": "Camtel Direction Régionale",
-    "rating": 5,
-    "author_profile": "0bc9a8af-71b5-474e-b6bf-e1e041df935f"
+    "quote": "J'ai apprécié encadrer Joël lors de son stage avec nous à Camtel, il est très intelligent et talentueux. Il a démontré une grande précision dans ce qu'il nous a délivré comme produit final. Je le recommande !",
+    "rating": "4.80000",
+    "authorRole": "Directeur Département Télécom",
+    "authorName": "Didier K.",
+    "authorCompany": "Camtel",
+    "authorAvatar": "https://brain.joelwafotokam.dev/assets/748c4c2d-5caa-4400-bf97-109149efc835"
+  },
+  {
+    "id": 2,
+    "quote": "Joel a produit un tableau de bord nettement meilleur et fidèle aux attentes spécifiées lors de son mandat avec nous en tant que dev Angular. I a toute ma confiance !",
+    "rating": "4.50000",
+    "authorRole": "Software Developer",
+    "authorName": "Brayan T.",
+    "authorCompany": "Phoenix d'Or",
+    "authorAvatar": "https://brain.joelwafotokam.dev/assets/748c4c2d-5caa-4400-bf97-109149efc835"
   }
 ]

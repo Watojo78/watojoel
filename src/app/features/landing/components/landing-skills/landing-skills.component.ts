@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
-import { toSignal } from '@angular/core/rxjs-interop';
-import mockData from '../../../../mocks/skills.json'
-import { SkillsService } from '../../../../services/skills.service';
+import skillsMockData from '../../../../mocks/skills.json'
+import { PortfolioService } from '../../../../core/services/portfolio.service';
 
 @Component({
   selector: 'landing-skills',
@@ -11,9 +10,6 @@ import { SkillsService } from '../../../../services/skills.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LandingSkillsComponent {
-  readonly #skillService = inject(SkillsService);
-  readonly #mockSkills = mockData;
-  readonly #skills = toSignal(this.#skillService.getSkills(), { initialValue: this.#mockSkills });
-  readonly loading = computed(() => this.#skills().length === 0);
-  readonly skills = computed(() => this.#skills());
+  readonly #portfolioService = inject(PortfolioService);
+  readonly skills = computed(() => this.#portfolioService.portfolio()?.skills ?? skillsMockData);
 }

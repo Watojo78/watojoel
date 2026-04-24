@@ -1,9 +1,8 @@
 import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { LandingTestimonyCardComponent } from "./landing-testimony-card/landing-testimony-card.component";
-import { TestimoniesService } from '../../../../services/testimonies.service';
-import mockData from '../../../../mocks/testimonies.json'
-import { toSignal } from '@angular/core/rxjs-interop';
+import testimoniesMockData from '../../../../mocks/testimonies.json'
 import { chunkArray } from '../../../../shared/utils/array.util';
+import { PortfolioService } from '../../../../core/services/portfolio.service';
 
 @Component({
   selector: 'landing-testimonies',
@@ -13,8 +12,7 @@ import { chunkArray } from '../../../../shared/utils/array.util';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LandingTestimoniesComponent{
-  readonly #testimonyService = inject(TestimoniesService);
-  readonly #testimonies = toSignal( this.#testimonyService.getTestimonies(), {initialValue: mockData});
-  readonly loading = computed(() => this.#testimonies().length === 0);
+  readonly #portfolioService = inject(PortfolioService);
+  readonly #testimonies = computed(() => this.#portfolioService.portfolio()?.testimonies ?? testimoniesMockData);
   readonly chunkedTestimonies = computed(() => chunkArray(this.#testimonies(), 3));
 }

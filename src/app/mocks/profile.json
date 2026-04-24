@@ -1,0 +1,51 @@
+{
+  "fullName": "Joel Wafo Tokam",
+  "title": "Développeur Fullstack",
+  "bio": "Construction d'Applis Modernes & dynamiques.",
+  "aboutMe": "\"Bienvenue dans mon portfolio ! Je m'appelle Wafo Joël et je prend plaisir à la création d'applis fluides, UI conviviales et d'UX agréables. Explorez mes meilleurs projets pour voir comment je donne vie à des idées grâce à un code épuré et un design innovant.\"",
+  "contacts": [
+    {
+      "id": "0",
+      "text": "2550 Rue Grenet",
+      "icon": "fi-location",
+      "url": "https://maps.google.com/$1q=2550 Rue Grenet"
+    },
+    {
+      "id": "1",
+      "text": "contact@joelwafotokam.dev",
+      "icon": "fi-envelope",
+      "url": "mailto:contact@joelwafotokam.dev"
+    },
+    {
+      "id": "2",
+      "text": "hello@joelwafotokam.dev",
+      "icon": "fi-envelope",
+      "url": "mailto:hello@joelwafotokam.dev"
+    },
+    {
+      "id": "3",
+      "text": "+1(263)881-7021",
+      "icon": "fi-phone",
+      "url": "tel:+1(263)881-7021"
+    }
+  ],
+  "socialLinks": [
+    {
+      "platform": "Github",
+      "icon": "fi-github",
+      "url": "https://github.com/Watojo78"
+    },
+    {
+      "platform": "LinkedIn",
+      "icon": "fi-linkedin",
+      "url": "https://linkedin.com/in/joel-wafo"
+    },
+    {
+      "platform": "Whatsapp",
+      "icon": "fi-whatsapp",
+      "url": "https://wa.me/12638817021"
+    }
+  ],
+  "availabilityStatus": true,
+  "resumeUrl": "https://brain.joelwafotokam.dev/assets/a3d01471-2914-4d6b-80f9-f4b40c1bd70c"
+}

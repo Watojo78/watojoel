@@ -1,14 +1,14 @@
 <div class="testimony-card rounded-3xl shadow flex flex-grow">
   <div class="testimony-card-message ">
-    <p>{{testimony.quote}}</p>
-    <p-rating [(ngModel)]="testimony.rating" [stars]="5" [readonly]="true" />
+    <p>{{testimony().quote}}</p>
+    <p-rating [(ngModel)]="testimony().rating" [stars]="5" [readonly]="true" />
   </div>
   <p-divider class="my-2" />
   <div class="testimony-card-profile">
     <div class="role-name">
-      <h4 class="title">{{testimony.author_position}}</h4>
-      <span class="fullname">{{testimony.author_name}}</span>
+    <h4 class="title">{{testimony().authorRole}}</h4>
+      <span class="fullname">{{testimony().authorName}}</span>
     </div>
-    <img [src]="'https://brain.joelwafotokam.dev/assets/' + testimony.author_profile" alt="testimony-profile-sample" height="56">
+    <img [src]="testimony().authorAvatar" alt="testimony-profile-sample" height="56">
   </div>
 </div>

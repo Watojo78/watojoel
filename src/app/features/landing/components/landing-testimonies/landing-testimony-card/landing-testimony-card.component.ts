@@ -1,9 +1,8 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { DividerModule } from 'primeng/divider';
 import { RatingModule } from 'primeng/rating';
-import { Testimony } from '../../../../../models/testimony.model';
+import { Testimony } from '../../../../../core/models/testimony.model';
 import { FormsModule } from '@angular/forms';
-import { environment } from '../../../../../../environments/environment';
 
 @Component({
   selector: 'landing-testimony-card',
@@ -13,5 +12,5 @@ import { environment } from '../../../../../../environments/environment';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LandingTestimonyCardComponent {
-  @Input() testimony!: Testimony;
+  testimony = input.required<Testimony>();
 }

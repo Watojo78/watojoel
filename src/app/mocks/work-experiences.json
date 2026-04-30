@@ -17,6 +17,23 @@
         "description": "Mise en place de standards de code stricts pour assurer la cohérence de l'expérience utilisateur sur des interfaces complexes."
       }
     ],
+    "translations": [
+      {
+        "lang": "en-US",
+        "role": "Frontend Developer",
+        "achievements": [
+          {
+            "description": "Design of a modular and reusable component architecture (Angular), reducing technical debt and facilitating maintenance. Optimization of load times via Lazy Loading strategies."
+          },
+          {
+            "description": "Proactive definition of interface contracts with the Backend team (Spring Boot) to guarantee seamless and typed data integration, and facilitate the automation of data exchange."
+          },
+          {
+            "description": "Implementation of strict code standards to ensure consistency of the user experience across complex interfaces."
+          }
+        ]
+      }
+    ],
     "environment": [
       {
         "name": "Angular",
@@ -45,6 +62,64 @@
     ]
   },
   {
+    "id": 3,
+    "company": "Camtel",
+    "role": "Développeur Fullstack",
+    "isCurrent": false,
+    "startDate": "2021-03-23T08:30:00",
+    "endDate": "2021-07-01T18:30:00",
+    "achievements": [
+      {
+        "description": "Développement d'un tableau de bord (Dashboard) interactif (HTML, CSS, JS, PHP) de A à Z pour la gestion et le suivi des affectations de la flotte automobile."
+      },
+      {
+        "description": "Conception d'une architecture relationnelle complexe (UML) gérant des cardinalités avancées pour modéliser finement les véhicules, modèles et profils conducteurs."
+      },
+      {
+        "description": "Implémentation d'un système d'authentification sécurisé et intégration de règles métier strictes garantissant l'intégrité des données lors des transactions."
+      }
+    ],
+    "translations": [
+      {
+        "lang": "en-US",
+        "role": "Fullstack Developer",
+        "achievements": [
+          {
+            "description": "Development of an interactive dashboard (HTML, CSS, JS, PHP) from start to finish for managing and tracking fleet assignments."
+          },
+          {
+            "description": "Design of a complex relational architecture (UML) handling advanced cardinalities to accurately model vehicles, models, and driver profiles."
+          },
+          {
+            "description": "Implementation of a secure authentication system and integration of strict business rules guaranteeing data integrity during transactions."
+          }
+        ]
+      }
+    ],
+    "environment": [
+      {
+        "name": "PHP",
+        "category": "backend"
+      },
+      {
+        "name": "MySQL",
+        "category": "databases"
+      },
+      {
+        "name": "HTML5",
+        "category": "frontend"
+      },
+      {
+        "name": "CSS3",
+        "category": "frontend"
+      },
+      {
+        "name": "JS",
+        "category": "frontend"
+      }
+    ]
+  },
+  {
     "id": 2,
     "company": "Institut Universitaire de Technologies",
     "role": "Analyste & Développeur Frontend",
@@ -60,6 +135,23 @@
       },
       {
         "description": "Application des principes Agile pour itérer rapidement sur les fonctionnalités critiques et livrer de la valeur en continu."
+      }
+    ],
+    "translations": [
+      {
+        "lang": "en-US",
+        "role": "Analyst & Frontend Developer",
+        "achievements": [
+          {
+            "description": "Development of a multi-user web platform (B2C/C2B) by managing the entire lifecycle: requirements gathering, writing technical specifications/UML, and API integration."
+          },
+          {
+            "description": "Implementation of client-side security logic (RBAC - Role-Based Access Control) to manage user permissions in relation to the backend."
+          },
+          {
+            "description": "Application of Agile principles to iterate rapidly on critical features and deliver continuous value."
+          }
+        ]
       }
     ],
     "environment": [
@@ -94,47 +186,6 @@
       {
         "name": "Git",
         "category": "devops"
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "company": "Camtel",
-    "role": "Développeur Fullstack",
-    "isCurrent": false,
-    "startDate": "2021-03-23T08:30:00",
-    "endDate": "2021-07-01T18:30:00",
-    "achievements": [
-      {
-        "description": "Développement d'un tableau de bord (Dashboard) interactif (HTML, CSS, JS, PHP) de A à Z pour la gestion et le suivi des affectations de la flotte automobile."
-      },
-      {
-        "description": "Conception d'une architecture relationnelle complexe (UML) gérant des cardinalités avancées pour modéliser finement les véhicules, modèles et profils conducteurs."
-      },
-      {
-        "description": "Implémentation d'un système d'authentification sécurisé et intégration de règles métier strictes garantissant l'intégrité des données lors des transactions."
-      }
-    ],
-    "environment": [
-      {
-        "name": "PHP",
-        "category": "backend"
-      },
-      {
-        "name": "MySQL",
-        "category": "databases"
-      },
-      {
-        "name": "HTML5",
-        "category": "frontend"
-      },
-      {
-        "name": "CSS3",
-        "category": "frontend"
-      },
-      {
-        "name": "JS",
-        "category": "frontend"
       }
     ]
   }

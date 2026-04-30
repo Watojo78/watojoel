@@ -1,98 +1,98 @@
 [
   {
-    "id": 1,
-    "name": "Angular",
-    "category": "frontend",
-    "logoUrl": "https://brain.joelwafotokam.dev/assets/a0f087f8-53f4-4df3-9dc0-8d30ed2075ec"
+    "id": 9,
+    "name": "MySQL",
+    "category": "databases",
+    "logoUrl": "https://brain.joelwafotokam.dev/assets/1cbfd40e-742c-43ba-9076-304144857dfb"
   },
   {
     "id": 2,
     "name": "TypeScript",
     "category": "frontend",
-    "logoUrl": "https://brain.joelwafotokam.dev/assets/747c5baa-bfd4-4f2b-ba4c-93fe363f33dc"
-  },
-  {
-    "id": 3,
-    "name": "Tailwind CSS",
-    "category": "frontend",
-    "logoUrl": "https://brain.joelwafotokam.dev/assets/94686843-56a2-427f-8cd9-f67ace27e681"
-  },
-  {
-    "id": 4,
-    "name": "Material Design",
-    "category": "frontend",
-    "logoUrl": "https://brain.joelwafotokam.dev/assets/f3eeeefe-2234-4209-b0ea-fcda6c504036"
-  },
-  {
-    "id": 5,
-    "name": "Sass",
-    "category": "frontend",
-    "logoUrl": "https://brain.joelwafotokam.dev/assets/ed3b1093-6d71-4c1b-bd57-1980424e2689"
-  },
-  {
-    "id": 6,
-    "name": "Java",
-    "category": "backend",
-    "logoUrl": "https://brain.joelwafotokam.dev/assets/d9a8d772-d44f-4967-a5b7-adfd945415f2"
-  },
-  {
-    "id": 7,
-    "name": "SpringBoot",
-    "category": "backend",
-    "logoUrl": "https://brain.joelwafotokam.dev/assets/5da969e5-0635-4124-8abd-ba593ee74dd4"
-  },
-  {
-    "id": 9,
-    "name": "MySQL",
-    "category": "databases",
-    "logoUrl": "https://brain.joelwafotokam.dev/assets/95446047-4464-40d3-816a-8f39bf2dba60"
-  },
-  {
-    "id": 8,
-    "name": "PostgreSQL",
-    "category": "databases",
-    "logoUrl": "https://brain.joelwafotokam.dev/assets/c6e04e3f-e240-4c1b-8936-f5d2e2d437a5"
-  },
-  {
-    "id": 10,
-    "name": "PHP",
-    "category": "backend",
-    "logoUrl": "https://brain.joelwafotokam.dev/assets/d5171f63-f8d0-4cfb-b356-6f7572a7d55c"
+    "logoUrl": "https://brain.joelwafotokam.dev/assets/631dc0fc-3586-41c0-bfd1-c62a3645960c"
   },
   {
     "id": 11,
     "name": "Git",
     "category": "devops",
-    "logoUrl": "https://brain.joelwafotokam.dev/assets/a5a422eb-ffe0-42cb-8d4c-c4c725a83f9f"
+    "logoUrl": "https://brain.joelwafotokam.dev/assets/97762963-d6a5-4e39-a77f-53f3beed8b9a"
   },
   {
-    "id": 12,
-    "name": "Docker",
-    "category": "devops",
-    "logoUrl": "https://brain.joelwafotokam.dev/assets/010a3685-5b96-4d8b-92cb-0308b77cce26"
-  },
-  {
-    "id": 13,
-    "name": "Directus",
-    "category": "backend",
-    "logoUrl": "https://brain.joelwafotokam.dev/assets/fd8ac726-cd2c-4baf-90d1-e92fb4c69c2b"
+    "id": 1,
+    "name": "Angular",
+    "category": "frontend",
+    "logoUrl": "https://brain.joelwafotokam.dev/assets/499865f3-3b08-4dde-88d3-4f91f4010a60"
   },
   {
     "id": 14,
     "name": "HTML5",
     "category": "frontend",
-    "logoUrl": "https://brain.joelwafotokam.dev/assets/af08969f-d3a5-4fb4-8279-17efd7b38a9d"
-  },
-  {
-    "id": 15,
-    "name": "CSS3",
-    "category": "frontend",
-    "logoUrl": "https://brain.joelwafotokam.dev/assets/58a8b479-3941-4879-b89a-18b40bedbc61"
+    "logoUrl": "https://brain.joelwafotokam.dev/assets/15067d5a-47de-4a8e-9f98-9af976fb4189"
   },
   {
     "id": 16,
     "name": "JS",
     "category": "frontend",
-    "logoUrl": "https://brain.joelwafotokam.dev/assets/76c4b5a8-73c7-46f8-b363-6dfe97efb922"
+    "logoUrl": "https://brain.joelwafotokam.dev/assets/8fe7a0c4-0b12-4bbe-8fff-89b1cf76f243"
+  },
+  {
+    "id": 15,
+    "name": "CSS3",
+    "category": "frontend",
+    "logoUrl": "https://brain.joelwafotokam.dev/assets/72d9d900-68d6-4123-9596-1f7056ac4fdc"
+  },
+  {
+    "id": 13,
+    "name": "Directus",
+    "category": "backend",
+    "logoUrl": "https://brain.joelwafotokam.dev/assets/4282c466-7562-431d-a29e-b91ae5b6107c"
+  },
+  {
+    "id": 7,
+    "name": "SpringBoot",
+    "category": "backend",
+    "logoUrl": "https://brain.joelwafotokam.dev/assets/51aa0108-428d-4572-9c5b-94ba19ec05f4"
+  },
+  {
+    "id": 10,
+    "name": "PHP",
+    "category": "backend",
+    "logoUrl": "https://brain.joelwafotokam.dev/assets/85354245-113c-4992-8a71-9b96eec4c3d1"
+  },
+  {
+    "id": 5,
+    "name": "Sass",
+    "category": "frontend",
+    "logoUrl": "https://brain.joelwafotokam.dev/assets/242c8a0f-9344-49ca-8498-1c05b1a01867"
+  },
+  {
+    "id": 3,
+    "name": "Tailwind CSS",
+    "category": "frontend",
+    "logoUrl": "https://brain.joelwafotokam.dev/assets/55db3e7d-7f5c-46a5-a4b7-957949a43cba"
+  },
+  {
+    "id": 12,
+    "name": "Docker",
+    "category": "devops",
+    "logoUrl": "https://brain.joelwafotokam.dev/assets/f34e858e-4520-496a-8a4a-33e0ac08c1d2"
+  },
+  {
+    "id": 8,
+    "name": "PostgreSQL",
+    "category": "databases",
+    "logoUrl": "https://brain.joelwafotokam.dev/assets/ace36596-b445-4428-845b-791a8eec3d58"
+  },
+  {
+    "id": 6,
+    "name": "Java",
+    "category": "backend",
+    "logoUrl": "https://brain.joelwafotokam.dev/assets/10e17180-dfbd-4d51-b88b-a30631d062fa"
+  },
+  {
+    "id": 4,
+    "name": "Material Design",
+    "category": "frontend",
+    "logoUrl": "https://brain.joelwafotokam.dev/assets/f143a440-df8c-4df0-8767-a369a1091d74"
   }
 ]

@@ -49,14 +49,14 @@
     ],
     "availabilityStatus": true,
     "resumeUrl": "https://brain.joelwafotokam.dev/assets/606b9bc1-a5ac-4b84-b931-c380d5dafb33",
-    "translations": [
-      {
-        "lang": "en-US",
+    "translations": {
+      "en-US": {
         "title": "Fullstack Developer",
         "bio": "Building Modern & Dynamic Apps.",
-        "aboutMe": "\"Welcome to my portfolio! My name is Wafo Joël and I enjoy creating smooth apps with user-friendly UIs and enjoyable UXs. Explore my best projects to see how I bring ideas to life through clean code and innovative design.\""
+        "aboutMe": "\"Welcome to my portfolio! My name is Wafo Joël and I enjoy creating smooth apps with user-friendly UIs and enjoyable UXs. Explore my best projects to see how I bring ideas to life through clean code and innovative design.\"",
+        "resumeUrl": "https://brain.joelwafotokam.dev/assets/6e06a1d6-db3a-4b2d-a867-06041f17b0de"
       }
-    ]
+    }
   },
   "projects": [
     {
@@ -66,18 +66,12 @@
       "repositoryUrl": "https://github.com/Watojo78/watojoel",
       "previewUrl": "https://joelwafotokam.dev/home",
       "thumbnailUrl": "https://brain.joelwafotokam.dev/assets/b06480bd-d68f-45ba-9784-f455ef825984",
-      "translations": [
-        {
-          "lang": null,
-          "title": "Mon Portfolio",
-          "summary": "Ceci est Mon Univers Personnel (Portfolio)!"
-        },
-        {
-          "lang": "en-US",
+      "translations": {
+        "en-US": {
           "title": "My Portfolio",
           "summary": "This is My Personal Universe (Portfolio)!"
         }
-      ],
+      },
       "techstack": [
         {
           "name": "Angular",
@@ -120,18 +114,12 @@
       "repositoryUrl": "https://github.com/Watojo78/movoo-clone",
       "previewUrl": "https://movoo-clone.vercel.app/",
       "thumbnailUrl": "https://brain.joelwafotokam.dev/assets/eb5bed8f-450b-406c-900d-ae3a0be7be90",
-      "translations": [
-        {
-          "lang": "en-US",
+      "translations": {
+        "en-US": {
           "title": "Movoo Clone",
           "summary": "Web application for movies (Exclusives, new releases, etc.)"
-        },
-        {
-          "lang": null,
-          "title": "Movoo Clone",
-          "summary": "Application web de films (Exclu, nouveautés, etc.)"
         }
-      ],
+      },
       "techstack": [
         {
           "name": "Angular",
@@ -175,10 +163,10 @@
           "description": "Mise en place de standards de code stricts pour assurer la cohérence de l'expérience utilisateur sur des interfaces complexes."
         }
       ],
-      "translations": [
-        {
-          "lang": "en-US",
+      "translations": {
+        "en-US": {
           "role": "Frontend Developer",
+          "company": "AfroMetaverse",
           "achievements": [
             {
               "description": "Design of a modular and reusable component architecture (Angular), reducing technical debt and facilitating maintenance. Optimization of load times via Lazy Loading strategies."
@@ -191,7 +179,7 @@
             }
           ]
         }
-      ],
+      },
       "environment": [
         {
           "name": "Angular",
@@ -220,64 +208,6 @@
       ]
     },
     {
-      "id": 3,
-      "company": "Camtel",
-      "role": "Développeur Fullstack",
-      "isCurrent": false,
-      "startDate": "2021-03-23T08:30:00",
-      "endDate": "2021-07-01T18:30:00",
-      "achievements": [
-        {
-          "description": "Développement d'un tableau de bord (Dashboard) interactif (HTML, CSS, JS, PHP) de A à Z pour la gestion et le suivi des affectations de la flotte automobile."
-        },
-        {
-          "description": "Conception d'une architecture relationnelle complexe (UML) gérant des cardinalités avancées pour modéliser finement les véhicules, modèles et profils conducteurs."
-        },
-        {
-          "description": "Implémentation d'un système d'authentification sécurisé et intégration de règles métier strictes garantissant l'intégrité des données lors des transactions."
-        }
-      ],
-      "translations": [
-        {
-          "lang": "en-US",
-          "role": "Fullstack Developer",
-          "achievements": [
-            {
-              "description": "Development of an interactive dashboard (HTML, CSS, JS, PHP) from start to finish for managing and tracking fleet assignments."
-            },
-            {
-              "description": "Design of a complex relational architecture (UML) handling advanced cardinalities to accurately model vehicles, models, and driver profiles."
-            },
-            {
-              "description": "Implementation of a secure authentication system and integration of strict business rules guaranteeing data integrity during transactions."
-            }
-          ]
-        }
-      ],
-      "environment": [
-        {
-          "name": "PHP",
-          "category": "backend"
-        },
-        {
-          "name": "MySQL",
-          "category": "databases"
-        },
-        {
-          "name": "HTML5",
-          "category": "frontend"
-        },
-        {
-          "name": "CSS3",
-          "category": "frontend"
-        },
-        {
-          "name": "JS",
-          "category": "frontend"
-        }
-      ]
-    },
-    {
       "id": 2,
       "company": "Institut Universitaire de Technologies",
       "role": "Analyste & Développeur Frontend",
@@ -295,10 +225,10 @@
           "description": "Application des principes Agile pour itérer rapidement sur les fonctionnalités critiques et livrer de la valeur en continu."
         }
       ],
-      "translations": [
-        {
-          "lang": "en-US",
+      "translations": {
+        "en-US": {
           "role": "Analyst & Frontend Developer",
+          "company": "University Institute of Technology",
           "achievements": [
             {
               "description": "Development of a multi-user web platform (B2C/C2B) by managing the entire lifecycle: requirements gathering, writing technical specifications/UML, and API integration."
@@ -311,7 +241,7 @@
             }
           ]
         }
-      ],
+      },
       "environment": [
         {
           "name": "Angular",
@@ -346,6 +276,64 @@
           "category": "devops"
         }
       ]
+    },
+    {
+      "id": 3,
+      "company": "Camtel",
+      "role": "Développeur Fullstack",
+      "isCurrent": false,
+      "startDate": "2021-03-23T08:30:00",
+      "endDate": "2021-07-01T18:30:00",
+      "achievements": [
+        {
+          "description": "Développement d'un tableau de bord (Dashboard) interactif (HTML, CSS, JS, PHP) de A à Z pour la gestion et le suivi des affectations de la flotte automobile."
+        },
+        {
+          "description": "Conception d'une architecture relationnelle complexe (UML) gérant des cardinalités avancées pour modéliser finement les véhicules, modèles et profils conducteurs."
+        },
+        {
+          "description": "Implémentation d'un système d'authentification sécurisé et intégration de règles métier strictes garantissant l'intégrité des données lors des transactions."
+        }
+      ],
+      "translations": {
+        "en-US": {
+          "role": "Fullstack Developer",
+          "company": "Camtel",
+          "achievements": [
+            {
+              "description": "Development of an interactive dashboard (HTML, CSS, JS, PHP) from start to finish for managing and tracking fleet assignments."
+            },
+            {
+              "description": "Design of a complex relational architecture (UML) handling advanced cardinalities to accurately model vehicles, models, and driver profiles."
+            },
+            {
+              "description": "Implementation of a secure authentication system and integration of strict business rules guaranteeing data integrity during transactions."
+            }
+          ]
+        }
+      },
+      "environment": [
+        {
+          "name": "PHP",
+          "category": "backend"
+        },
+        {
+          "name": "MySQL",
+          "category": "databases"
+        },
+        {
+          "name": "HTML5",
+          "category": "frontend"
+        },
+        {
+          "name": "CSS3",
+          "category": "frontend"
+        },
+        {
+          "name": "JS",
+          "category": "frontend"
+        }
+      ]
     }
   ],
   "educations": [
@@ -358,14 +346,13 @@
       "isCurrent": true,
       "startDate": "2025-08-25T12:00:00",
       "endDate": null,
-      "translations": [
-        {
-          "lang": "en-US",
-          "institution": null,
+      "translations": {
+        "en-US": {
+          "institution": " University of Sherbrooke",
           "degree": "Master",
           "field": "Software Engineering"
         }
-      ]
+      }
     },
     {
       "id": 2,
@@ -376,14 +363,13 @@
       "isCurrent": false,
       "startDate": "2019-10-21T12:00:00",
       "endDate": "2022-07-29T12:00:00",
-      "translations": [
-        {
-          "lang": "en-US",
-          "institution": null,
+      "translations": {
+        "en-US": {
+          "institution": "University Institute of Technology",
           "degree": "Bachelor",
           "field": "Software Engineering"
         }
-      ]
+      }
     }
   ],
   "skills": [

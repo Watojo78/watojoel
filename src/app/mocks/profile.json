@@ -48,12 +48,12 @@
   ],
   "availabilityStatus": true,
   "resumeUrl": "https://brain.joelwafotokam.dev/assets/606b9bc1-a5ac-4b84-b931-c380d5dafb33",
-  "translations": [
-    {
-      "lang": "en-US",
+  "translations": {
+    "en-US": {
       "title": "Fullstack Developer",
       "bio": "Building Modern & Dynamic Apps.",
-      "aboutMe": "\"Welcome to my portfolio! My name is Wafo Joël and I enjoy creating smooth apps with user-friendly UIs and enjoyable UXs. Explore my best projects to see how I bring ideas to life through clean code and innovative design.\""
+      "aboutMe": "\"Welcome to my portfolio! My name is Wafo Joël and I enjoy creating smooth apps with user-friendly UIs and enjoyable UXs. Explore my best projects to see how I bring ideas to life through clean code and innovative design.\"",
+      "resumeUrl": "https://brain.joelwafotokam.dev/assets/6e06a1d6-db3a-4b2d-a867-06041f17b0de"
     }
-  ]
+  }
 }

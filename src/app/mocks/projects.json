@@ -6,18 +6,12 @@
     "repositoryUrl": "https://github.com/Watojo78/watojoel",
     "previewUrl": "https://joelwafotokam.dev/home",
     "thumbnailUrl": "https://brain.joelwafotokam.dev/assets/b06480bd-d68f-45ba-9784-f455ef825984",
-    "translations": [
-      {
-        "lang": null,
-        "title": "Mon Portfolio",
-        "summary": "Ceci est Mon Univers Personnel (Portfolio)!"
-      },
-      {
-        "lang": "en-US",
+    "translations": {
+      "en-US": {
         "title": "My Portfolio",
         "summary": "This is My Personal Universe (Portfolio)!"
       }
-    ],
+    },
     "techstack": [
       {
         "name": "Angular",
@@ -60,18 +54,12 @@
     "repositoryUrl": "https://github.com/Watojo78/movoo-clone",
     "previewUrl": "https://movoo-clone.vercel.app/",
     "thumbnailUrl": "https://brain.joelwafotokam.dev/assets/eb5bed8f-450b-406c-900d-ae3a0be7be90",
-    "translations": [
-      {
-        "lang": "en-US",
+    "translations": {
+      "en-US": {
         "title": "Movoo Clone",
         "summary": "Web application for movies (Exclusives, new releases, etc.)"
-      },
-      {
-        "lang": null,
-        "title": "Movoo Clone",
-        "summary": "Application web de films (Exclu, nouveautés, etc.)"
       }
-    ],
+    },
     "techstack": [
       {
         "name": "Angular",

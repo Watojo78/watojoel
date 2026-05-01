@@ -1,10 +1,11 @@
-import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, computed } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { ToggleSwitch } from 'primeng/toggleswitch';
 import { MenuModule } from 'primeng/menu';
 import { MenuItem } from 'primeng/api';
+import { LanguageService } from '../../../../core/services/language.service'; // Ajuste le chemin selon ton projet
 
 @Component({
   selector: 'landing-header',
@@ -13,38 +14,51 @@ import { MenuItem } from 'primeng/api';
   styleUrl: './landing-header.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class LandingHeaderComponent implements OnInit {
+export class LandingHeaderComponent {
   private router = inject(Router);
-  checked = false;
-  isFrench = true; // Default language is French
-  items: MenuItem[] | undefined;
+  private langService = inject(LanguageService);
 
-  ngOnInit() {
-      this.items = [
-          { label: 'Accueil'},
-          { label: 'Projets'},
-          { label: 'Expertise'},
-          { label: 'Stack'},
-          { label: 'Contact'}
-      ];
-  }
+  // 1. Gestion de la Langue (Réactif grâce aux Signals)
+  readonly isFrench = computed(() => this.langService.currentLang() === 'fr-FR');
+  readonly langPrefix = computed(() => this.isFrench() ? 'fr' : 'en');
+
+  // 2. Gestion du Mode Sombre
+  // (Par défaut sur 'true' si ton starter charge le mode sombre au démarrage)
+  checked = true;
+
+  // 3. Menu Mobile (PrimeNG) rendu réactif
+  // On utilise les 'command' pour déclencher le scroll lors du clic sur mobile
+  readonly items = computed<MenuItem[]>(() => [
+    { label: 'Accueil', command: () => this.scrollToTop() },
+    { label: 'Projets', command: () => this.scrollTo('projets') },
+    { label: 'Expertise', command: () => this.scrollTo('expertise') },
+    { label: 'Stack', command: () => this.scrollTo('stack') },
+    { label: 'Contact', command: () => this.scrollTo('contact') }
+  ]);
 
   switchLanguage() {
-    this.isFrench = !this.isFrench;
-    // Here you would typically call a service or function to
-    // actually change the application's language.
-    if (this.isFrench) {
-      console.log("Switching to French");
-      // Call your language service to set French
+    // Le service va s'occuper de changer l'URL et de mettre à jour le Signal
+    this.langService.toggleLanguage();
+  }
+
+  toggleTheme() {
+    // Ajoute ou retire la classe 'dark' sur la balise <html> pour Tailwind CSS
+    if (this.checked) {
+      document.documentElement.classList.add('dark');
     } else {
-      console.log("Switching to English");
-      // Call your language service to set English
+      document.documentElement.classList.remove('dark');
     }
   }
 
+  scrollToTop(): void {
+    this.router.navigate(['/', this.langPrefix(), 'home']).then(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
   scrollTo(elementId: string): void {
-    // 1. S'assurer qu'on est sur la bonne page (Home)
-    this.router.navigate(['/']).then(() => {
+    // 1. Navigation dynamique respectant la langue actuelle (/fr/home ou /en/home)
+    this.router.navigate(['/', this.langPrefix(), 'home']).then(() => {
       // 2. Attendre un court instant que le DOM soit prêt
       setTimeout(() => {
         const element = document.getElementById(elementId);
@@ -54,7 +68,7 @@ export class LandingHeaderComponent implements OnInit {
         } else {
           console.warn(`L'élément avec l'ID ${elementId} est introuvable.`);
         }
-      }, 100); // 100ms suffit généralement
+      }, 100);
     });
   }
 }

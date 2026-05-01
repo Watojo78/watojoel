@@ -13,3 +13,5 @@ export interface Portfolio {
   skills: Skill[];
   testimonies: Testimony[];
 }
+export { Profile, Project, WorkExperience, Education, Skill, Testimony };
+

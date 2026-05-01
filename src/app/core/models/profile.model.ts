@@ -6,6 +6,7 @@ export interface Profile {
   contacts: Contact[]
   socialLinks: SocialLink[]
   resumeUrl: string
+  translations?: Record<string, ProfileTranslation>
 }
 
 export interface Contact {
@@ -19,4 +20,11 @@ export interface SocialLink {
   platform: string
   icon: string
   url: string
+}
+
+export interface ProfileTranslation {
+  title?: string;
+  bio?: string;
+  aboutMe?: string;
+  resumeUrl?: string | null;
 }

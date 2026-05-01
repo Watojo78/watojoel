@@ -1,42 +1,60 @@
-<div class="hero-wrapper relative flex justify-center items-center overflow-x-hidden overflow-y-scroll rounded-[28px] min-h-[462px] px-4 md:px-0 py-8 md:py-0">
-  <img
-    lazy
-    width="1440"
-    height="462"
-    priority="true"
-    alt="hero-pattern.svg"
-    ngSrc="../../../../../assets/images/hero-pattern.svg">
-  <div class="absolute top-7 sm:top-[unset] px-4 sm:px-8 md:px-14">
-    <div class="hero-content flex flex-col items-center justify-center">
-      <h4 class="hero-title flex flex-col md:flex-row items-center justify-center gap-[.4rem] text-xl md:text-2xl">
-        <img
-          class="h-12"
-          src="../../../../../assets/icons/terminal.svg"
-          alt="terminal.svg">
-        <span class="text-[28px] md:text-[35px] font-['Gilroy-Regular']">{{ profile().title }}</span>
-      </h4>
-      <h3 class="hero-headline text-center text-[35px] font-['Gilroy-Bold'] sm:font-['Gilroy-Heavy']">Construction d'Applis Modernes & dynamiques.</h3>
-      <p class="hero-welcome text-center text-[17px]">
-        {{ profile().aboutMe}}
-      </p>
-      <div class="hero-cta flex flex-col sm:flex-row justify-center items-center gap-4 py-4">
-        <a
-          [href]="profile().resumeUrl"
-          target="_blank"
-          class="cta-cv flex items-center justify-center gap-1">
-          <p-button [rounded]="true" severity="success">
-            <a [href]="profile().resumeUrl" target="_blank" class="cv pt-1 pb-1 pl-4 pr-4 text-[15px]">Mon CV</a>
-          </p-button>
-        </a>
-        <a class="cta-contact">
-          <p-button [rounded]="true" severity="secondary">
-            <div class="flex items-center justify-center gap-2 pt-1 pb-1 pl-4 pr-4">
-              <i class="fi fi-sr-hand-wave"></i>
-              <span class="contact text-[15px]">Me Contacter</span>
-            </div>
-          </p-button>
-        </a>
+@if (profile(); as profile) {
+  <div class="hero-wrapper relative flex justify-center items-center overflow-x-hidden overflow-y-scroll rounded-[28px] min-h-[462px] px-4 md:px-0 py-8 md:py-0 bg-transparent transition-colors duration-300">
+
+    <img
+      lazy
+      width="1440"
+      height="462"
+      priority="true"
+      alt="hero-pattern.svg"
+      ngSrc="../../../../../assets/images/hero-pattern.svg"
+      class="opacity-100 dark:opacity-30 transition-opacity"> <div class="absolute top-7 sm:top-[unset] px-4 sm:px-8 md:px-14">
+      <div class="hero-content flex flex-col items-center justify-center">
+
+        <h4 class="hero-title flex flex-col md:flex-row items-center justify-center gap-[.4rem] text-xl md:text-2xl text-gray-800 dark:text-gray-200">
+          <img
+            class="h-12 dark:invert transition-all"
+            src="../../../../../assets/icons/terminal.svg"
+            alt="terminal.svg">
+          <span class="text-[28px] md:text-[35px] font-['Gilroy-Regular']">{{ profile.title }}</span>
+        </h4>
+
+        <h3 class="hero-headline text-center text-[35px] font-['Gilroy-Bold'] sm:font-['Gilroy-Heavy'] text-black dark:text-white mt-2">
+          {{ profile.bio }}
+        </h3>
+
+        <p class="hero-welcome text-center text-[17px] text-gray-700 dark:text-gray-400 mt-4 max-w-4xl">
+          {{ profile.aboutMe }}
+        </p>
+
+        <div class="hero-cta flex flex-col sm:flex-row justify-center items-center gap-4 py-6">
+
+          @if (profile.resumeUrl) {
+            <a
+              [href]="profile.resumeUrl"
+              target="_blank"
+              class="cta-cv flex items-center justify-center gap-1">
+              <p-button [rounded]="true" severity="success">
+                <span class="cv pt-1 pb-1 pl-4 pr-4 text-[15px] font-bold">
+                  {{ isFrench() ? 'Mon CV' : 'My Resume' }}
+                </span>
+              </p-button>
+            </a>
+          }
+
+          <a class="cta-contact cursor-pointer" href="#contact">
+            <p-button [rounded]="true" severity="secondary">
+              <div class="flex items-center justify-center gap-2 pt-1 pb-1 pl-4 pr-4">
+                <i class="fi fi-sr-hand-wave dark:text-white"></i>
+                <span class="contact text-[15px] font-bold dark:text-white">
+                  {{ isFrench() ? 'Me Contacter' : 'Contact Me' }}
+                </span>
+              </div>
+            </p-button>
+          </a>
+
+        </div>
       </div>
     </div>
   </div>
-</div>
+}

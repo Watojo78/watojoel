@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { LandingTestimonyCardComponent } from "./landing-testimony-card/landing-testimony-card.component";
-import testimoniesMockData from '../../../../mocks/testimonies.json'
 import { chunkArray } from '../../../../shared/utils/array.util';
 import { PortfolioService } from '../../../../core/services/portfolio.service';
+import { LanguageService } from '../../../../core/services/language.service';
 
 @Component({
   selector: 'landing-testimonies',
@@ -12,7 +12,9 @@ import { PortfolioService } from '../../../../core/services/portfolio.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LandingTestimoniesComponent{
-  readonly #portfolioService = inject(PortfolioService);
-  readonly #testimonies = computed(() => this.#portfolioService.portfolio()?.testimonies ?? testimoniesMockData);
-  readonly chunkedTestimonies = computed(() => chunkArray(this.#testimonies(), 3));
+  readonly #portfolioService = inject(PortfolioService)
+  readonly #langService = inject(LanguageService)
+  readonly #testimonies = this.#portfolioService.testimonies
+  readonly chunkedTestimonies = computed(() => chunkArray(this.#testimonies(), 3))
+  readonly isFrench = computed(() => this.#langService.currentLang() === 'fr-FR')
 }

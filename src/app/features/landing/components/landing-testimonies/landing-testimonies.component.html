@@ -1,14 +1,15 @@
-<div id="testimonies" class="testimonies-container">
-  <div class="testimonies-header flex w-full items-center justify-between">
-      <h3 class="font-gloock flex items-center gap-4 text-center text-[28px]">
-          <i class="fi fi-sr-comment-quote"></i>
-          <span>Témoignages récents</span>
+<div id="testimonies" class="testimonies-container pt-8 pb-8">
+  <div class="testimonies-header flex w-full items-center justify-between mb-8">
+      <h3 class="font-gloock flex items-center gap-4 text-center text-[28px] text-gray-900 dark:text-white transition-colors">
+          <i class="fi fi-sr-comment-quote text-emerald-500"></i>
+          <span>{{ isFrench() ? 'Témoignages récents' : 'Recent Testimonies' }}</span>
       </h3>
   </div>
-  <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+
+  <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
     @for (column of chunkedTestimonies(); track $index) {
-      <div class="gap-4 flex flex-col">
-        @for (testimony of column; track $index) {
+      <div class="gap-6 flex flex-col">
+        @for (testimony of column; track testimony.id) {
           <landing-testimony-card [testimony]="testimony"/>
         }
       </div>

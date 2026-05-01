@@ -48,16 +48,30 @@
       }
     ],
     "availabilityStatus": true,
-    "resumeUrl": "https://brain.joelwafotokam.dev/assets/a3d01471-2914-4d6b-80f9-f4b40c1bd70c"
+    "resumeUrl": "https://brain.joelwafotokam.dev/assets/606b9bc1-a5ac-4b84-b931-c380d5dafb33",
+    "translations": {
+      "en-US": {
+        "title": "Fullstack Developer",
+        "bio": "Building Modern & Dynamic Apps.",
+        "aboutMe": "\"Welcome to my portfolio! My name is Wafo Joël and I enjoy creating smooth apps with user-friendly UIs and enjoyable UXs. Explore my best projects to see how I bring ideas to life through clean code and innovative design.\"",
+        "resumeUrl": "https://brain.joelwafotokam.dev/assets/6e06a1d6-db3a-4b2d-a867-06041f17b0de"
+      }
+    }
   },
   "projects": [
     {
       "id": 1,
       "title": "Mon Portfolio",
-      "summary": "Ceci est Mon Univers Personnel (Portfolio) !",
+      "summary": "Ceci est Mon Univers Personnel (Portfolio)!",
       "repositoryUrl": "https://github.com/Watojo78/watojoel",
       "previewUrl": "https://joelwafotokam.dev/home",
-      "thumbnailUrl": "https://brain.joelwafotokam.dev/assets/c21e3c63-4137-4bfe-aabe-d7a206b5b0a4",
+      "thumbnailUrl": "https://brain.joelwafotokam.dev/assets/b06480bd-d68f-45ba-9784-f455ef825984",
+      "translations": {
+        "en-US": {
+          "title": "My Portfolio",
+          "summary": "This is My Personal Universe (Portfolio)!"
+        }
+      },
       "techstack": [
         {
           "name": "Angular",
@@ -99,7 +113,13 @@
       "summary": "Application web de films (Exclu, nouveautés, etc.)",
       "repositoryUrl": "https://github.com/Watojo78/movoo-clone",
       "previewUrl": "https://movoo-clone.vercel.app/",
-      "thumbnailUrl": "https://brain.joelwafotokam.dev/assets/b837447b-a14c-4f65-9762-0f5d33809c2a",
+      "thumbnailUrl": "https://brain.joelwafotokam.dev/assets/eb5bed8f-450b-406c-900d-ae3a0be7be90",
+      "translations": {
+        "en-US": {
+          "title": "Movoo Clone",
+          "summary": "Web application for movies (Exclusives, new releases, etc.)"
+        }
+      },
       "techstack": [
         {
           "name": "Angular",
@@ -124,28 +144,6 @@
       ]
     }
   ],
-  "educations": [
-    {
-      "id": 2,
-      "institution": "Institut Universitaire de Technologies",
-      "degree": "Baccalauréat",
-      "field": "Génie Logiciel",
-      "gpa": null,
-      "isCurrent": null,
-      "startDate": "2019-10-21T12:00:00",
-      "endDate": "2022-07-29T12:00:00"
-    },
-    {
-      "id": 1,
-      "institution": "Université de Sherbrooke",
-      "degree": "Maîtrise",
-      "field": "Génie Logiciel",
-      "gpa": null,
-      "isCurrent": null,
-      "startDate": "2025-08-25T12:00:00",
-      "endDate": null
-    }
-  ],
   "work_experiences": [
     {
       "id": 1,
@@ -165,6 +163,23 @@
           "description": "Mise en place de standards de code stricts pour assurer la cohérence de l'expérience utilisateur sur des interfaces complexes."
         }
       ],
+      "translations": {
+        "en-US": {
+          "role": "Frontend Developer",
+          "company": "AfroMetaverse",
+          "achievements": [
+            {
+              "description": "Design of a modular and reusable component architecture (Angular), reducing technical debt and facilitating maintenance. Optimization of load times via Lazy Loading strategies."
+            },
+            {
+              "description": "Proactive definition of interface contracts with the Backend team (Spring Boot) to guarantee seamless and typed data integration, and facilitate the automation of data exchange."
+            },
+            {
+              "description": "Implementation of strict code standards to ensure consistency of the user experience across complex interfaces."
+            }
+          ]
+        }
+      },
       "environment": [
         {
           "name": "Angular",
@@ -210,6 +225,23 @@
           "description": "Application des principes Agile pour itérer rapidement sur les fonctionnalités critiques et livrer de la valeur en continu."
         }
       ],
+      "translations": {
+        "en-US": {
+          "role": "Analyst & Frontend Developer",
+          "company": "University Institute of Technology",
+          "achievements": [
+            {
+              "description": "Development of a multi-user web platform (B2C/C2B) by managing the entire lifecycle: requirements gathering, writing technical specifications/UML, and API integration."
+            },
+            {
+              "description": "Implementation of client-side security logic (RBAC - Role-Based Access Control) to manage user permissions in relation to the backend."
+            },
+            {
+              "description": "Application of Agile principles to iterate rapidly on critical features and deliver continuous value."
+            }
+          ]
+        }
+      },
       "environment": [
         {
           "name": "Angular",
@@ -263,6 +295,23 @@
           "description": "Implémentation d'un système d'authentification sécurisé et intégration de règles métier strictes garantissant l'intégrité des données lors des transactions."
         }
       ],
+      "translations": {
+        "en-US": {
+          "role": "Fullstack Developer",
+          "company": "Camtel",
+          "achievements": [
+            {
+              "description": "Development of an interactive dashboard (HTML, CSS, JS, PHP) from start to finish for managing and tracking fleet assignments."
+            },
+            {
+              "description": "Design of a complex relational architecture (UML) handling advanced cardinalities to accurately model vehicles, models, and driver profiles."
+            },
+            {
+              "description": "Implementation of a secure authentication system and integration of strict business rules guaranteeing data integrity during transactions."
+            }
+          ]
+        }
+      },
       "environment": [
         {
           "name": "PHP",
@@ -287,114 +336,141 @@
       ]
     }
   ],
-  "skills": [
+  "educations": [
     {
       "id": 1,
-      "name": "Angular",
-      "category": "frontend",
-      "logoUrl": "https://brain.joelwafotokam.dev/assets/a0f087f8-53f4-4df3-9dc0-8d30ed2075ec"
+      "institution": "Université de Sherbrooke",
+      "degree": "Maîtrise",
+      "field": "Génie Logiciel",
+      "gpa": null,
+      "isCurrent": true,
+      "startDate": "2025-08-25T12:00:00",
+      "endDate": null,
+      "translations": {
+        "en-US": {
+          "institution": " University of Sherbrooke",
+          "degree": "Master",
+          "field": "Software Engineering"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "institution": "Institut Universitaire de Technologies",
+      "degree": "Baccalauréat",
+      "field": "Génie Logiciel",
+      "gpa": null,
+      "isCurrent": false,
+      "startDate": "2019-10-21T12:00:00",
+      "endDate": "2022-07-29T12:00:00",
+      "translations": {
+        "en-US": {
+          "institution": "University Institute of Technology",
+          "degree": "Bachelor",
+          "field": "Software Engineering"
+        }
+      }
+    }
+  ],
+  "skills": [
+    {
+      "id": 9,
+      "name": "MySQL",
+      "category": "databases",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/1cbfd40e-742c-43ba-9076-304144857dfb"
     },
     {
       "id": 2,
       "name": "TypeScript",
       "category": "frontend",
-      "logoUrl": "https://brain.joelwafotokam.dev/assets/747c5baa-bfd4-4f2b-ba4c-93fe363f33dc"
-    },
-    {
-      "id": 3,
-      "name": "Tailwind CSS",
-      "category": "frontend",
-      "logoUrl": "https://brain.joelwafotokam.dev/assets/94686843-56a2-427f-8cd9-f67ace27e681"
-    },
-    {
-      "id": 4,
-      "name": "Material Design",
-      "category": "frontend",
-      "logoUrl": "https://brain.joelwafotokam.dev/assets/f3eeeefe-2234-4209-b0ea-fcda6c504036"
-    },
-    {
-      "id": 5,
-      "name": "Sass",
-      "category": "frontend",
-      "logoUrl": "https://brain.joelwafotokam.dev/assets/ed3b1093-6d71-4c1b-bd57-1980424e2689"
-    },
-    {
-      "id": 6,
-      "name": "Java",
-      "category": "backend",
-      "logoUrl": "https://brain.joelwafotokam.dev/assets/d9a8d772-d44f-4967-a5b7-adfd945415f2"
-    },
-    {
-      "id": 7,
-      "name": "SpringBoot",
-      "category": "backend",
-      "logoUrl": "https://brain.joelwafotokam.dev/assets/5da969e5-0635-4124-8abd-ba593ee74dd4"
-    },
-    {
-      "id": 9,
-      "name": "MySQL",
-      "category": "databases",
-      "logoUrl": "https://brain.joelwafotokam.dev/assets/95446047-4464-40d3-816a-8f39bf2dba60"
-    },
-    {
-      "id": 8,
-      "name": "PostgreSQL",
-      "category": "databases",
-      "logoUrl": "https://brain.joelwafotokam.dev/assets/c6e04e3f-e240-4c1b-8936-f5d2e2d437a5"
-    },
-    {
-      "id": 10,
-      "name": "PHP",
-      "category": "backend",
-      "logoUrl": "https://brain.joelwafotokam.dev/assets/d5171f63-f8d0-4cfb-b356-6f7572a7d55c"
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/631dc0fc-3586-41c0-bfd1-c62a3645960c"
     },
     {
       "id": 11,
       "name": "Git",
       "category": "devops",
-      "logoUrl": "https://brain.joelwafotokam.dev/assets/a5a422eb-ffe0-42cb-8d4c-c4c725a83f9f"
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/97762963-d6a5-4e39-a77f-53f3beed8b9a"
     },
     {
-      "id": 12,
-      "name": "Docker",
-      "category": "devops",
-      "logoUrl": "https://brain.joelwafotokam.dev/assets/010a3685-5b96-4d8b-92cb-0308b77cce26"
-    },
-    {
-      "id": 13,
-      "name": "Directus",
-      "category": "backend",
-      "logoUrl": "https://brain.joelwafotokam.dev/assets/fd8ac726-cd2c-4baf-90d1-e92fb4c69c2b"
+      "id": 1,
+      "name": "Angular",
+      "category": "frontend",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/499865f3-3b08-4dde-88d3-4f91f4010a60"
     },
     {
       "id": 14,
       "name": "HTML5",
       "category": "frontend",
-      "logoUrl": "https://brain.joelwafotokam.dev/assets/af08969f-d3a5-4fb4-8279-17efd7b38a9d"
-    },
-    {
-      "id": 15,
-      "name": "CSS3",
-      "category": "frontend",
-      "logoUrl": "https://brain.joelwafotokam.dev/assets/58a8b479-3941-4879-b89a-18b40bedbc61"
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/15067d5a-47de-4a8e-9f98-9af976fb4189"
     },
     {
       "id": 16,
       "name": "JS",
       "category": "frontend",
-      "logoUrl": "https://brain.joelwafotokam.dev/assets/76c4b5a8-73c7-46f8-b363-6dfe97efb922"
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/8fe7a0c4-0b12-4bbe-8fff-89b1cf76f243"
+    },
+    {
+      "id": 15,
+      "name": "CSS3",
+      "category": "frontend",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/72d9d900-68d6-4123-9596-1f7056ac4fdc"
+    },
+    {
+      "id": 13,
+      "name": "Directus",
+      "category": "backend",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/4282c466-7562-431d-a29e-b91ae5b6107c"
+    },
+    {
+      "id": 7,
+      "name": "SpringBoot",
+      "category": "backend",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/51aa0108-428d-4572-9c5b-94ba19ec05f4"
+    },
+    {
+      "id": 10,
+      "name": "PHP",
+      "category": "backend",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/85354245-113c-4992-8a71-9b96eec4c3d1"
+    },
+    {
+      "id": 5,
+      "name": "Sass",
+      "category": "frontend",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/242c8a0f-9344-49ca-8498-1c05b1a01867"
+    },
+    {
+      "id": 3,
+      "name": "Tailwind CSS",
+      "category": "frontend",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/55db3e7d-7f5c-46a5-a4b7-957949a43cba"
+    },
+    {
+      "id": 12,
+      "name": "Docker",
+      "category": "devops",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/f34e858e-4520-496a-8a4a-33e0ac08c1d2"
+    },
+    {
+      "id": 8,
+      "name": "PostgreSQL",
+      "category": "databases",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/ace36596-b445-4428-845b-791a8eec3d58"
+    },
+    {
+      "id": 6,
+      "name": "Java",
+      "category": "backend",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/10e17180-dfbd-4d51-b88b-a30631d062fa"
+    },
+    {
+      "id": 4,
+      "name": "Material Design",
+      "category": "frontend",
+      "logoUrl": "https://brain.joelwafotokam.dev/assets/f143a440-df8c-4df0-8767-a369a1091d74"
     }
   ],
   "testimonies": [
-    {
-      "id": 1,
-      "quote": "Joel Wafo a fait un excellent travail pendant son stage avec nous et sur tous les plans. Je le recommande vivement !",
-      "rating": "5.00000",
-      "authorRole": "Directrice Département Informatique",
-      "authorName": "Béatrice N.",
-      "authorCompany": "Camtel",
-      "authorAvatar": "https://brain.joelwafotokam.dev/assets/0861530f-0a6e-49f0-8166-9b8f2bd1a126"
-    },
     {
       "id": 3,
       "quote": "J'ai apprécié encadrer Joël lors de son stage avec nous à Camtel, il est très intelligent et talentueux. Il a démontré une grande précision dans ce qu'il nous a délivré comme produit final. Je le recommande !",
@@ -402,7 +478,16 @@
       "authorRole": "Directeur Département Télécom",
       "authorName": "Didier K.",
       "authorCompany": "Camtel",
-      "authorAvatar": "https://brain.joelwafotokam.dev/assets/748c4c2d-5caa-4400-bf97-109149efc835"
+      "authorAvatar": "https://brain.joelwafotokam.dev/assets/3b3cf9da-5e2e-455f-99c8-f0d8d603ffd8"
+    },
+    {
+      "id": 1,
+      "quote": "Joel Wafo a fait un excellent travail pendant son stage avec nous et sur tous les plans. Je le recommande vivement !",
+      "rating": "5.00000",
+      "authorRole": "Directrice Département Informatique",
+      "authorName": "Béatrice N.",
+      "authorCompany": "Camtel",
+      "authorAvatar": "https://brain.joelwafotokam.dev/assets/45a5c819-65fc-46eb-8777-36cbb5370a37"
     },
     {
       "id": 2,
@@ -411,7 +496,7 @@
       "authorRole": "Software Developer",
       "authorName": "Brayan T.",
       "authorCompany": "Phoenix d'Or",
-      "authorAvatar": "https://brain.joelwafotokam.dev/assets/748c4c2d-5caa-4400-bf97-109149efc835"
+      "authorAvatar": "https://brain.joelwafotokam.dev/assets/3b3cf9da-5e2e-455f-99c8-f0d8d603ffd8"
     }
   ]
 }

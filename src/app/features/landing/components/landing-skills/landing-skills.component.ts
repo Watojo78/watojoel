@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
-import skillsMockData from '../../../../mocks/skills.json'
 import { PortfolioService } from '../../../../core/services/portfolio.service';
+import { LanguageService } from '../../../../core/services/language.service';
 
 @Component({
   selector: 'landing-skills',
@@ -11,5 +11,7 @@ import { PortfolioService } from '../../../../core/services/portfolio.service';
 })
 export class LandingSkillsComponent {
   readonly #portfolioService = inject(PortfolioService);
-  readonly skills = computed(() => this.#portfolioService.portfolio()?.skills ?? skillsMockData);
+  readonly #langService = inject(LanguageService);
+  readonly skills = this.#portfolioService.skills;
+  readonly isFrench = computed(() => this.#langService.currentLang() === 'fr-FR');
 }

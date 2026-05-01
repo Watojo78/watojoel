@@ -1,18 +1,24 @@
 <div id="projets" class="recent-projects-wrapper">
-    <div class="recent-projects-header">
-      <div class="flex items-center justify-center bg-slate-100 rounded-2xl p-4">
-        <img src="../../../../../assets/icons/briefcase.svg" alt="recent-projects" height="42">
+  <div class="recent-projects-header flex flex-col items-center mb-10 gap-4">
+    <div class="flex items-center justify-center bg-slate-100 dark:bg-zinc-800 rounded-2xl p-4 transition-colors">
+      <img src="../../../../../assets/icons/briefcase.svg" alt="recent-projects" class="h-[42px] dark:invert transition-all">
+    </div>
+
+    <h3 class="text-3xl font-bold text-gray-900 dark:text-white">
+      {{ isFrench() ? 'Projets Récents' : 'Recent Projects' }}
+    </h3>
+    <p class="text-center text-gray-600 dark:text-zinc-400 pl-10 pr-10 max-w-2xl">
+      {{ isFrench() ? "Ces projets démontrent mon expertise dans la création de conceptions axées sur l'utilisateur et de visuels percutants." : "These projects demonstrate my expertise in creating user-centered designs and impactful visuals." }}
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
+    @for(column of chunkedProjects(); track $index){
+      <div class="flex flex-col gap-4">
+        @for (projectItem of column; track projectItem.id) {
+          <landing-project-card-minimal [project]="projectItem"/>
+        }
       </div>
-      <h3>Projets Récents</h3>
-      <p class="text-center pl-10 pr-10">Ces projets démontrent mon expertise dans la création de conceptions axées sur l'utilisateur et de visuels percutants.</p>
-    </div>
-    <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
-      @for(column of chunkedProjects(); track $index){
-        <div class="flex flex-col gap-4">
-          @for (projectItem of column; track $index) {
-            <landing-project-card-minimal [project]="projectItem"/>
-          }
-        </div>
-      }
-    </div>
- </div>
+    }
+  </div>
+</div>

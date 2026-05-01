@@ -1,14 +1,27 @@
-<div class="testimony-card rounded-3xl shadow flex flex-grow">
-  <div class="testimony-card-message ">
-    <p>{{testimony().quote}}</p>
-    <p-rating [(ngModel)]="testimony().rating" [stars]="5" [readonly]="true" />
-  </div>
-  <p-divider class="my-2" />
-  <div class="testimony-card-profile">
-    <div class="role-name">
-    <h4 class="title">{{testimony().authorRole}}</h4>
-      <span class="fullname">{{testimony().authorName}}</span>
+<div class="testimony-card rounded-3xl shadow-lg flex flex-col p-6 bg-white dark:bg-zinc-800 border border-transparent dark:border-zinc-700 transition-colors h-full">
+  <div class="testimony-card-message flex-grow text-gray-700 dark:text-gray-300">
+    <p class="italic leading-relaxed">"{{ testimony().quote }}"</p>
+
+    <div class="mt-4">
+      <p-rating [ngModel]="ratingValue" [stars]="5" [readonly]="true"></p-rating>
     </div>
-    <img [src]="testimony().authorAvatar" alt="testimony-profile-sample" height="56">
+  </div>
+
+  <p-divider class="my-3 opacity-50 dark:opacity-20"></p-divider>
+
+  <div class="testimony-card-profile flex items-center justify-between">
+    <div class="role-name flex flex-col">
+      <h4 class="title font-bold text-gray-900 dark:text-white">{{ testimony().authorRole }}</h4>
+      <span class="fullname text-sm font-medium text-emerald-600 dark:text-emerald-400">
+        {{ testimony().authorName }} - {{ testimony().authorCompany }}
+      </span>
+    </div>
+
+    @if (testimony().authorAvatar) {
+      <img
+        [src]="testimony().authorAvatar"
+        alt="Avatar"
+        class="w-14 h-14 rounded-full object-cover border-2 border-emerald-500 shadow-sm">
+    }
   </div>
 </div>

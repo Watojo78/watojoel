@@ -1,20 +1,21 @@
-<!--Home Container-->
-<div class="flex flex-col gap-y-10 pt-4 pb-4 px-4 md:px-16 lg:px-28">
-  <!--Hero Section-->
-  <landing-hero/>
+@if (!portfolio.rawData()) {
+  <div class="min-h-screen flex items-center justify-center">
+    <div class="animate-pulse text-emerald-500 font-bold tracking-widest">
+      CHARGEMENT...
+    </div>
+  </div>
+} @else {
+  <div class="flex flex-col gap-y-10 pt-4 pb-4 px-4 md:px-16 lg:px-28">
+    <landing-hero/>
 
-  <!--Recents projects-->
-  <landing-recent-projects id="projets"/>
+    <landing-recent-projects id="projets"/>
 
-  <!--Home Expertise-->
-  <landing-expertise id="expertise"/>
+    <landing-expertise id="expertise"/>
 
-  <!--Home Skills-->
-  <landing-skills id="stack"/>
+    <landing-skills id="stack"/>
 
-  <!--Home Testimonies-->
-  <landing-testimonies id="testimonies"/>
+    <landing-testimonies id="testimonies"/>
 
-  <!--Home Contact-->
-  <home-contact id="contact"/>
-</div>
+    <home-contact id="contact"/>
+  </div>
+}

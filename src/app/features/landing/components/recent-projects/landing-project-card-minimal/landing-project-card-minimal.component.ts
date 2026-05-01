@@ -1,6 +1,7 @@
-import { ChangeDetectionStrategy, Component, input } from '@angular/core'; // 1. On importe 'input' au lieu de 'Input'
+import { ChangeDetectionStrategy, Component, computed, inject, input } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { Project } from '../../../../../core/models/project.model';
+import { LanguageService } from '../../../../../core/services/language.service';
 
 @Component({
   selector: 'landing-project-card-minimal',
@@ -12,5 +13,7 @@ import { Project } from '../../../../../core/models/project.model';
 export class LandingProjectCardMinimalComponent {
 
   // 2. La nouvelle syntaxe magique ✨
-  project = input.required<Project>();
+  readonly project = input.required<Project>()
+  readonly #langService = inject(LanguageService)
+  readonly isFrench = computed(() => this.#langService.currentLang() === 'fr-FR')
 }

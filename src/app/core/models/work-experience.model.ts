@@ -7,6 +7,7 @@ export interface WorkExperience {
   endDate: string
   achievements: Achievement[]
   environment: Environment[]
+  translations?: Record<string, WorkExperienceTranslation>
 }
 
 export interface Achievement {
@@ -16,4 +17,10 @@ export interface Achievement {
 export interface Environment {
   name: string
   category: string
+}
+
+export interface WorkExperienceTranslation {
+  role?: string;
+  company?: string;
+  achievements?: Achievement[];
 }

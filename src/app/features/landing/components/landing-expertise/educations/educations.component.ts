@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { TimelineModule } from 'primeng/timeline';
-import educationMockData from '../../../../../mocks/educations.json';
 import { CommonModule } from '@angular/common';
 import { PortfolioService } from '../../../../../core/services/portfolio.service';
+import { LanguageService } from '../../../../../core/services/language.service';
 
 @Component({
   selector: 'educations',
@@ -13,5 +13,7 @@ import { PortfolioService } from '../../../../../core/services/portfolio.service
 })
 export class EducationsComponent {
   readonly #portfolioService = inject(PortfolioService);
-  readonly educations = computed(() => this.#portfolioService.portfolio()?.educations ?? educationMockData);
+  readonly #langService = inject(LanguageService);
+  readonly educations = this.#portfolioService.educations;
+  readonly isFrench = computed(() => this.#langService.currentLang() === 'fr-FR');
 }

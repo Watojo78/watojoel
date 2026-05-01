@@ -1,80 +1,77 @@
-<div class="project-minimal-card flex flex-col">
-  <div class="project-minimal-card-wrapper p-8 rounded-3xl bg-slate-300">
-    <div class="project-minimal-card-container rounded-2xl bg-white">
-      <div class="container-header">
-        <div class="header-actions">
-          <span class="action oval1"></span>
-          <span class="action oval2"></span>
-          <span class="action oval3"></span>
+<div class="project-minimal-card flex flex-col group">
+
+  <div class="project-minimal-card-wrapper p-4 md:p-8 rounded-3xl bg-slate-300 dark:bg-zinc-800 transition-colors duration-300">
+
+    <div class="project-minimal-card-container rounded-2xl bg-white dark:bg-zinc-950 overflow-hidden shadow-lg border border-transparent dark:border-zinc-700 transition-colors">
+
+      <div class="container-header flex items-center p-3 bg-gray-100 dark:bg-zinc-900 border-b border-gray-200 dark:border-zinc-800">
+        <div class="header-actions flex gap-2">
+          <span class="w-3 h-3 rounded-full bg-red-400"></span>
+          <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
+          <span class="w-3 h-3 rounded-full bg-green-400"></span>
         </div>
-        <div class="header-tab">
-          <span class="tab-title">
-            <span class="title-before-outer">
-              <span class="outer-abs-left"></span>
-            </span>
-            <span class="title-before-inner"></span>
-            <span class="title">{{project().title}}</span>
-            <span class="title-after-inner"></span>
-            <span class="title-after-outer">
-              <span class="outer-abs-right"></span>
-            </span>
-          </span>
-        </div>
-        <div class="header-new-tab">
-          <p-button [rounded]="true" severity="secondary">
-            <img src="../../../../../../assets/common/icons/plus.svg" alt="" height="10">
-          </p-button>
+
+        <div class="flex-1 text-center text-xs font-semibold text-gray-500 dark:text-zinc-400 truncate px-4">
+          {{ project().title }}
         </div>
       </div>
-      <div class="container-nav-bar">
-        <img src="../../../../../../assets/common/icons/angle-small-left.svg" alt="angle-small-left">
-        <img src="../../../../../../assets/common/icons/angle-small-right.svg" alt="angle-small-right">
-        <img src="../../../../../../assets/common/icons/house-blank2.svg" alt="web-home">
-        <div class="nav-bar-url overflow-hidden">
-          <img src="../../../../../../assets/common/icons/padlock-check@br.svg" alt="mobile-lock-check">
-          <p class="overflow-hidden">{{project().previewUrl}}</p>
+
+      <div class="container-nav-bar flex items-center gap-3 p-2 bg-white dark:bg-zinc-950 border-b border-gray-100 dark:border-zinc-800/50">
+        <div class="flex gap-2 opacity-50 dark:invert">
+          <img src="../../../../../../assets/common/icons/angle-small-left.svg" alt="back" class="w-4">
+          <img src="../../../../../../assets/common/icons/angle-small-right.svg" alt="forward" class="w-4">
         </div>
-        <div class="fake-menu">
-          <p-button [rounded]="true" severity="secondary">
-            <img src="../../../../../../assets/common/icons/menu-dots-vertical.svg" alt="mobile-menu" height="11">
-          </p-button>
+
+        <div class="nav-bar-url flex items-center gap-2 flex-1 bg-gray-100 dark:bg-zinc-900 rounded-md px-3 py-1.5 overflow-hidden">
+          <img src="../../../../../../assets/common/icons/padlock-check@br.svg" alt="secure" class="w-3 opacity-60 dark:invert">
+          <p class="text-xs text-gray-600 dark:text-zinc-400 truncate">{{ project().previewUrl }}</p>
         </div>
       </div>
-      <div class="container-content">
-        <div class="content-thumb">
-          <img [src]="[project().thumbnailUrl]" alt="around-login">
+
+      <div class="container-content relative overflow-hidden group-hover:shadow-inner">
+        <div class="content-thumb w-full h-auto">
+          <img [src]="project().thumbnailUrl" [alt]="project().title" class="w-full object-cover transition-transform duration-700 group-hover:scale-105">
         </div>
-        <div class="content-absolute">
-          <div class="absolute-cta">
-            <a [href]="[project().previewUrl]" class="cta-one">
-              <p-button [rounded]="true" severity="contrast">
-                <img src="../../../../../../assets/icons/play.svg" alt="play.svg" height="20">
-              </p-button>
-            </a>
-            <a [href]="[project().previewUrl]" target="_blank" class="cta-two">
+
+        <div class="content-absolute absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
+          <div class="absolute-cta flex flex-wrap justify-center gap-3 p-4">
+
+            <a [href]="project().previewUrl" target="_blank" class="cta-two hover:scale-105 transition-transform">
               <p-button [rounded]="true" severity="secondary">
-                <img src="../../../../../../assets/common/icons/arrow-up-right-from-square.svg" alt="" height="21">
-                <span>Aperçu</span>
+                <img src="../../../../../../assets/common/icons/arrow-up-right-from-square.svg" alt="" height="18" class="mr-2">
+                <span class="font-bold">{{ isFrench() ? 'Aperçu' : 'Live Preview' }}</span>
               </p-button>
             </a>
-            <a [href]="[project().repositoryUrl]" target="_blank" class="cta-three">
+
+            <a [href]="project().repositoryUrl" target="_blank" class="cta-three hover:scale-105 transition-transform">
               <p-button [rounded]="true" severity="secondary">
-                <img src="../../../../../../assets/common/icons/github.svg" alt="" height="21">
-                <span>Source</span>
+                <img src="../../../../../../assets/common/icons/github.svg" alt="" height="18" class="mr-2">
+                <span class="font-bold">{{ isFrench() ? 'Source' : 'Code' }}</span>
               </p-button>
             </a>
+
           </div>
         </div>
       </div>
+
     </div>
   </div>
-  <div class="resume flex flex-col gap-2 pt-4 pb-4">
-    <h4>{{project().title}}</h4>
-    <p>{{project().summary}}</p>
-    <div class="resume-techstack flex items-center justify-start gap-2 flex-wrap">
-      @for (skill of project().techstack; track $index) {
-        <span class="text-white text-sm bg-black rounded-full pt-1 pb-1 pl-4 pr-4">{{skill.name}}</span>
+
+  <div class="resume flex flex-col gap-2 mt-4 px-2">
+    <h4 class="text-2xl font-bold text-gray-900 dark:text-white transition-colors">
+      {{ project().title }}
+    </h4>
+    <p class="text-gray-600 dark:text-zinc-400 line-clamp-2">
+      {{ project().summary }}
+    </p>
+
+    <div class="resume-techstack flex items-center justify-start gap-2 flex-wrap mt-2">
+      @for (skill of project().techstack; track skill.name) {
+        <span class="text-sm font-semibold pt-1 pb-1 pl-4 pr-4 rounded-full bg-gray-900 text-white dark:bg-emerald-500/10 dark:text-emerald-400 dark:border dark:border-emerald-500/20 transition-colors">
+          {{ skill.name }}
+        </span>
       }
     </div>
   </div>
+
 </div>
